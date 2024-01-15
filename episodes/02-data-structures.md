@@ -11,7 +11,17 @@ objectives:
 keypoints:
 - ""
 ---
-## Vectors, dataframes, lists, dictionaries, arrays
+## Tuple
+
+## Series
+
+## List
+
+## DataFrame
+
+## Dictionary
+
+## Array
 ~~~
 df_genes=pd.DataFrame(genes, columns=['Genes'])
 df_genome_genes=df_genes["Genes"].str.split("|", n = 1, expand = True)
