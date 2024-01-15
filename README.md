@@ -1,6 +1,6 @@
 # Introduction to Python
 
-An introduction to the Python language. This lesson is part of the [Comparative Genomics Workshop](https://carpentries-incubator.github.io/pangenomics-workshop/).
+An introduction to the Python language. This lesson is part of the [Comparative Genomics Workshop](https://czirion.github.io/pangenomics-workshop/).
 
 ## Contribution
 
