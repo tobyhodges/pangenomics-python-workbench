@@ -9,6 +9,62 @@ objectives:
 keypoints:
 - ""
 ---
+## Using Python
+
+In the following episodes, we will learn the fundamental knowledge to read and run the Python programming language. To run Python commands we will use a Jupyter Notebook, which is an interactive platform in which you can run code, write text, and see your results, for example, plots. Follow the instructions in the Setup [page](https://czirion.github.io/pangenomics-workshop/setup.html) to open a Notebook.
+
+## Variables and data types
+
+I Python you store information in variables, which have a name and an assigned value.
+~~~
+variable_name = "value" # Here we assign the value to the variable name
+variable_name # Here we ask to see the value
+~~~
+{: .language-python}
+~~~
+'value'
+~~~
+{: .output}
+The values can be the result of operations.
+~~~
+new_variable = "a" + "Longer" + "Value"
+new_variable
+~~~
+{: .language-python}
+~~~
+'aLongerValue'
+~~~
+{: .output}
+Until now the type of data that we have been using is string (`str`). And we saw that the result of summing strings is a longer combined string.
+If we work with numerical values the result will be the mathematical one.
+~~~
+a_number = 300
+a_number
+~~~
+{: .language-python}
+~~~
+300
+~~~
+{: .output}
+~~~
+a_biger_number = 300 + 300
+a_biger_number
+~~~
+{: .language-python}
+~~~
+600
+~~~
+{: .output}
+We can also perform operations with variables that are already set.
+~~~
+a_new_number = a_number + a_biger_number + 100
+a_new_number
+~~~
+{: .language-python}
+~~~
+1000
+~~~
+{: .output}
 
 ## Libraries and builtin functions
 
