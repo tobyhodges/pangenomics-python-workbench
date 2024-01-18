@@ -1,19 +1,24 @@
 ---
 title: "Introduction to Python"
-teaching: 30
-exercises: 15
+teaching:  10
+exercises: 5
 questions:
-- ""
+- "How can I store information?"
+- "How can I perform actions?"
 objectives:
-- ""
+- "Assign values to variables."
+- "Run built-in functions."
+- "Import libraries."
 keypoints:
-- ""
+- "Variables are Python object that store information when you assign it to them."
+- "Python has built-in functions that are always accessible."
+- "Libraries give you access to more functions."
 ---
 ## Using Python
 
 In the following episodes, we will learn the fundamental knowledge to read and run the Python programming language. To run Python commands we will use a Jupyter Notebook, which is an interactive platform in which you can run code, write text, and see your results, for example, plots. Follow the instructions in the Setup [page](https://czirion.github.io/pangenomics-workshop/setup.html) to open a Notebook.
 
-## Variables and data types
+## Variables
 
 In Python, you store information in variables, which have a name and an assigned value.
 ~~~
@@ -55,6 +60,7 @@ a_biger_number
 600
 ~~~
 {: .output}
+
 We can also perform operations with variables that are already set.
 ~~~
 a_new_number = a_number + a_biger_number + 100
@@ -66,8 +72,29 @@ a_new_number
 ~~~
 {: .output}
 
+And if we want to be more efficient, we can assign values to more that one variable in the same line.
+
+~~~
+nice_variable , ugly_variable = "nice_value", "ugly_value"
+nice_variable
+~~~
+{: .language-python}
+~~~
+'nice_value'
+~~~
+{: .output}
+~~~
+ugly_variable
+~~~
+{: .language-python}
+~~~
+'ugly_value'
+~~~
+{: .output}
+
 ## Built-in functions and libraries
-Python has basic functions to carry out specific actions. For example `len()
+
+Python has basic functions to carry out specific actions. For example `len()``
 ~~~
 len(new_variable)
 ~~~
@@ -91,7 +118,7 @@ TypeError: object of type 'int' has no len()
 ~~~
 {: .error}
 
-The `len()` function can give us the number of characters in a string but it can not do anything with a number (type `int`, meaning integer).
+The `len()` function can give us the number of characters in a string but it can not do anything with a number (that is of the type `int`, meaning integer). 
 
 [Here](https://docs.python.org/3/library/functions.html) you can check the built-in functions of the Python language.
 
