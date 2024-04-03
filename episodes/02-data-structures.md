@@ -510,6 +510,157 @@ Toyota's Model: Corolla
 {: .output}
 
 
+## Array
+
+An method for creating and manipulating multidimensional arrays is by using NumPy. NumPy serves as a foundational library for scientific computing in Python, offering robust support for multidimensional arrays and an extensive array of mathematical functions for efficient memory utilization and rapid numerical operations.
+
+To import it, we use the following.
+
+~~~
+import numpy as np
+~~~
+{: .language-python}
+
+To create a one-dimensional array, we use the following.
+
+~~~
+myarray = np.array([1,2,3,4,5,6])
+print(myarray)
+~~~
+{: .language-python}
+
+~~~
+[1 2 3 4 5 6]
+~~~
+{: .output}
+
+In NumPy, there are functions to create arrays of zeros or ones. To create an array filled with zeros, you can use `np.zeros(shape)`, where shape is the desired shape of the array:
+
+~~~
+zeros_array = np.zeros(10)
+print(zeros_array)
+~~~
+{: .language-python}
+
+~~~
+[0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+~~~
+{: .output}
+
+To create an array filled with ones, you can use `np.ones(shape)`.
+
+~~~
+ones_array = np.ones(10)
+print(ones_array)
+~~~
+{: .language-python}
+
+~~~
+~~~
+{: .output}~~~
+
+~~~
+{: .language-python}
+
+~~~
+[1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+~~~
+{: .output}
+
+Another way to create arrays is by using sequences with `arange()`, for example:
+
+~~~
+np.arange(10)
+~~~
+{: .language-python}
+
+~~~
+array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+~~~
+{: .output}
+
+Or using a notation similar to slices: `arange(start, stop, step)`:
+
+~~~
+np.arange(1,10,1)
+~~~
+{: .language-python}
+
+~~~
+array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+~~~
+{: .output}
+
+We can also create them using random values:
+
+~~~
+np.random.randint(0, 10, 5)
+~~~
+{: .language-python}
+
+~~~
+array([9, 6, 0, 2, 7])
+~~~
+{: .output}
+
+Multidimensional arrays can be created in various ways by specifying the dimensions of each dimension. For example, to create a 2-dimensional array filled with zeros, ones, or random values:
+
+~~~
+array_zeros = np.zeros((3,3))
+array_ones = np.ones((3,3))
+array_rand = np.random.randint(0,10,(3,3))
+
+print(array_zeros)
+print(array_ones)
+print(array_rand)
+~~~
+{: .language-python}
+
+~~~
+[[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]
+ 
+[[1. 1. 1.]
+ [1. 1. 1.]
+ [1. 1. 1.]]
+
+[[4 5 4]
+ [1 7 8]
+ [7 9 9]]
+~~~
+{: .output}
+
+Another way to create a two dimensional array is:
+
+~~~
+arr_2d = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print(arr_2d)
+~~~
+{: .language-python}
+
+~~~
+[[1 2 3]
+ [4 5 6]
+ [7 8 9]]
+~~~
+{: .output}
+
+The expression `len(array)` returns the length of the array, which corresponds to the number of elements in the array. For a one-dimensional array, this is the number of elements it contains. For a two-dimensional array, it is the number of rows in the array. For example, for the two-dimensional array:
+
+~~~
+length = len(arr_2d)
+print(length)
+~~~
+{: .language-python}
+
+~~~
+3
+~~~
+{: .output}
+
+
+
 ## DataFrame
 ~~~
 
@@ -519,13 +670,3 @@ Toyota's Model: Corolla
 
 ~~~
 {: .output}
-## Array
-~~~
-
-~~~
-{: .language-python}
-~~~
-
-~~~
-{: .output}
-
