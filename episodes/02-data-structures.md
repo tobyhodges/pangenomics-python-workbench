@@ -739,18 +739,20 @@ print(thisdict)
 ~~~
 {: .output}
 
+We will add a row name with `index`.
+
 ~~~
-df = pd.DataFrame(thisdict)
+df = pd.DataFrame(thisdict, index = ['C1', 'C2', 'C3'])
 print(df)
 ~~~
 {: .language-python}
 
 
 ~~~
-    brand    model  year  color  price
-0    Ford  Mustang  1964    red  15000
-1  Toyota  Corolla  2020   blue  20000
-2   Honda    Civic  2019  green  18000
+     brand    model  year  color  price
+C1    Ford  Mustang  1964    red  15000
+C2  Toyota  Corolla  2020   blue  20000
+C3   Honda    Civic  2019  green  18000
 ~~~
 {: .output}
 
@@ -764,9 +766,9 @@ print(df.head(2))
 {: .language-python}
 
 ~~~
-    brand    model  year color  price
-0    Ford  Mustang  1964   red  15000
-1  Toyota  Corolla  2020  blue  20000
+     brand    model  year color  price
+C1    Ford  Mustang  1964   red  15000
+C2  Toyota  Corolla  2020  blue  20000
 ~~~
 {: .output}
 
@@ -777,9 +779,9 @@ print(df.tail(2))
 {: .language-python}
 
 ~~~
-    brand    model  year  color  price
-1  Toyota  Corolla  2020   blue  20000
-2   Honda    Civic  2019  green  18000
+     brand    model  year  color  price
+C2  Toyota  Corolla  2020   blue  20000
+C3   Honda    Civic  2019  green  18000
 ~~~
 {: .output}
 
@@ -811,7 +813,7 @@ print(df.info())
 
 ~~~
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 3 entries, 0 to 2
+Index: 3 entries, C1 to C3
 Data columns (total 5 columns):
  #   Column  Non-Null Count  Dtype 
 ---  ------  --------------  ----- 
@@ -821,32 +823,177 @@ Data columns (total 5 columns):
  3   color   3 non-null      object
  4   price   3 non-null      int64 
 dtypes: int64(2), object(3)
-memory usage: 248.0+ bytes
+memory usage: 144.0+ bytes
 None
 ~~~
 {: .output}
 
 Pandas provides different methods for indexing and selecting data from DataFrames. You can use `iloc[]` for integer-based indexing and `loc[]` for label-based indexing. For example:
 
+- Select columns by name:
+  
 ~~~
-
+print(df['model'])
 ~~~
 {: .language-python}
 
 ~~~
+C1    Mustang
+C2    Corolla
+C3      Civic
+Name: model, dtype: object
+~~~
+{: .output}
+
+- Select rows by index using `iloc[]`
+
+~~~
+print(df.iloc[1])
+~~~
+{: .language-python}
+
+~~~
+brand     Toyota
+model    Corolla
+year        2020
+color       blue
+price      20000
+Name: C2, dtype: object
+~~~
+{: .output}
+
+- Select rows by index name using `loc[]`
+
+~~~
+print(df.loc['C1'])
+~~~
+{: .language-python}
+
+~~~
+brand       Ford
+model    Mustang
+year        1964
+color        red
+price      15000
+Name: C1, dtype: object
+~~~
+{: .output}
+
+
+- Select rows and columns with `iloc[]`
+
+~~~
+print(df.iloc[0:2, 0:2])
+~~~
+{: .language-python}
+
+~~~
+     brand    model
+C1    Ford  Mustang
+C2  Toyota  Corolla
+~~~
+{: .output}
+
+- Select multiple columns.
+
+~~~
+print(df[['model', 'year']])
+~~~
+{: .language-python}
+
+~~~
+      model  year
+C1  Mustang  1964
+C2  Corolla  2020
+C3    Civic  2019
+~~~
+{: .output}
+
+We can filter the data by some conditions. For example:
+
+
+~~~
+print(df[df['year']> 2000])
+~~~
+{: .language-python}
+
+~~~
+     brand    model  year  color  price
+C2  Toyota  Corolla  2020   blue  20000
+C3   Honda    Civic  2019  green  18000
+~~~
+{: .output}
+
+
+We can modify DataFrames by adding or removing rows and columns, updating values, and performing various data transformations. For example:
+
+~~~
+# Add a column
+df['mileage'] = [150000, 5000, 30000]
+print(df)
+~~~
+{: .language-python}
+
+~~~
+     brand    model  year  color  price  mileage
+C1    Ford  Mustang  1964    red  15000   150000
+C2  Toyota  Corolla  2020   blue  20000     5000
+C3   Honda    Civic  2019  green  18000    30000
 ~~~
 {: .output}
 
 
 ~~~
+# Remove a column from the DataFrame
+df.drop(columns=['color'], inplace=True)
 
+print(df)
 ~~~
 {: .language-python}
 
 ~~~
+     brand    model  year  price  mileage
+C1    Ford  Mustang  1964  15000   150000
+C2  Toyota  Corolla  2020  20000     5000
+C3   Honda    Civic  2019  18000    30000
 ~~~
 {: .output}
 
+~~~
+# Update values in a DataFrame
+df.loc[df['model'] == 'Corolla', 'mileage'] = 25000
+
+print(df)
+~~~
+{: .language-python}
+
+~~~
+     brand    model  year  price  mileage
+C1    Ford  Mustang  1964  15000   150000
+C2  Toyota  Corolla  2020  20000    25000
+C3   Honda    Civic  2019  18000    30000
+~~~
+{: .output}
+
+Just like with numpy, we can read CSV files that are stored on our computer or on the internet.
+
+~~~
+# Read the url database
+url = "https://raw.githubusercontent.com/carpentries-incubator/pangenomics/gh-pages/files/familias_minis.csv"
+df_genes = pd.read_csv(url, index_col=0)
+df_genes.head(5)
+~~~
+{: .language-python}
+
+~~~
+                                  g_A909               g_2603V               g_515               g_NEM316
+A909|MGIDGNCP_01408  A909|MGIDGNCP_01408  2603V|GBPINHCM_01420   515|LHMFJANI_01310  NEM316|AOGPFIKH_01528
+A909|MGIDGNCP_00096  A909|MGIDGNCP_00096  2603V|GBPINHCM_00097   515|LHMFJANI_00097  NEM316|AOGPFIKH_00098
+A909|MGIDGNCP_01343  A909|MGIDGNCP_01343                   NaN                  NaN  NEM316|AOGPFIKH_01415
+A909|MGIDGNCP_01221  A909|MGIDGNCP_01221                   NaN   515|LHMFJANI_01130                    NaN
+A909|MGIDGNCP_01268  A909|MGIDGNCP_01268  2603V|GBPINHCM_01231   515|LHMFJANI_01178  NEM316|AOGPFIKH_01341  
+~~~
+{: .output}
 
 
 > ## Exercise 5: 
