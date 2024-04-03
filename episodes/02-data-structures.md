@@ -96,6 +96,16 @@ print(myset)
 
 Sets are useful when you need to store a collection of unique elements and perform efficient set operations such as removing duplicates and comparing collections.
 
+> ## Exercise 1: 
+> 
+>  
+> > ## Solution
+> >
+> > 
+> {: .solution}
+{: .challenge}
+
+
 ## List
 
 A list is indexed, ordered, changeable sequence of elementes that can be of different types and allows duplicate values. They are defined using square brackets `[]`:
@@ -274,6 +284,15 @@ newlist[::2]
 ['orange', 'grape', 'banana']
 ~~~
 {: .output}
+
+> ## Exercise 2: 
+>
+>  
+> > ## Solution
+> >
+> > 
+> {: .solution}
+{: .challenge}
 
 
 ## Dictionary
@@ -509,6 +528,14 @@ Toyota's Model: Corolla
 ~~~
 {: .output}
 
+> ## Exercise 3: 
+>
+>  
+> > ## Solution
+> >
+> > 
+> {: .solution}
+{: .challenge}
 
 ## Array
 
@@ -552,13 +579,6 @@ To create an array filled with ones, you can use `np.ones(shape)`.
 ~~~
 ones_array = np.ones(10)
 print(ones_array)
-~~~
-{: .language-python}
-
-~~~
-~~~
-{: .output}~~~
-
 ~~~
 {: .language-python}
 
@@ -659,14 +679,181 @@ print(length)
 ~~~
 {: .output}
 
+The NumPy library also allows us to load databases using `loadtxt`. We will use a toy dataset to learn how to import a `csv` file into a numpy array. The `request` module is used in Python to make HTTP requests to web servers.
 
+~~~
+import requests
+
+#  The url to the csv file
+url = "https://raw.githubusercontent.com/carpentries-incubator/pangenomics/gh-pages/files/spiral_2d.csv"
+
+# Get the content of the file
+response = requests.get(url)
+content = response.text
+
+# Load the data into a NumPy array
+data = np.loadtxt(content.splitlines(), delimiter=' ')
+
+data
+~~~
+{: .language-python}
+
+~~~
+array([[   2.728,    6.513],
+       [   3.776,   26.114],
+       [   5.595,   38.47 ],
+       ...,
+       [2003.23 , 1849.23 ],
+       [2003.95 , 1928.41 ],
+       [2004.09 , 1966.77 ]])
+~~~
+{: .output}
+
+> ## Exercise 4: 
+>
+>  
+> > ## Solution
+> >
+> > 
+> {: .solution}
+{: .challenge}
 
 ## DataFrame
+
+As we see in the first episode, Pandas is an indispensable library specialized in working with tabular data or a DataFrame. We will import the Pandas with its usual alias `pd`.
+
+~~~
+import pandas as pd
+~~~
+{: .language-python}
+
+One form to create a DataFrame is with a dictionary. We will use the dictionary `thisdict` and then we will convert it to a dataframe.
+
+~~~
+print(thisdict)
+~~~
+{: .language-python}
+
+~~~
+{'brand': ['Ford', 'Toyota', 'Honda'], 'model': ['Mustang', 'Corolla', 'Civic'], 'year': [1964, 2020, 2019], 'color': ['red', 'blue', 'green'], 'price': [15000, 20000, 18000]}
+~~~
+{: .output}
+
+~~~
+df = pd.DataFrame(thisdict)
+print(df)
+~~~
+{: .language-python}
+
+
+~~~
+    brand    model  year  color  price
+0    Ford  Mustang  1964    red  15000
+1  Toyota  Corolla  2020   blue  20000
+2   Honda    Civic  2019  green  18000
+~~~
+{: .output}
+
+
+We can explore the dataframe using different methods, such as head(), tail(), info(), describe(), etc. For example:
+
+~~~
+# Print the first two rows
+print(df.head(2))
+~~~
+{: .language-python}
+
+~~~
+    brand    model  year color  price
+0    Ford  Mustang  1964   red  15000
+1  Toyota  Corolla  2020  blue  20000
+~~~
+{: .output}
+
+~~~
+# Print the last two rows
+print(df.tail(2))
+~~~
+{: .language-python}
+
+~~~
+    brand    model  year  color  price
+1  Toyota  Corolla  2020   blue  20000
+2   Honda    Civic  2019  green  18000
+~~~
+{: .output}
+
+
+~~~
+# Display summary statistics
+print(df.describe())
+~~~
+{: .language-python}
+
+~~~
+              year         price
+count     3.000000      3.000000
+mean   2001.000000  17666.666667
+std      32.046841   2516.611478
+min    1964.000000  15000.000000
+25%    1991.500000  16500.000000
+50%    2019.000000  18000.000000
+75%    2019.500000  19000.000000
+max    2020.000000  20000.000000
+~~~
+{: .output}
+
+~~~
+# Display the information of the DataFrame
+print(df.info())
+~~~
+{: .language-python}
+
+~~~
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 3 entries, 0 to 2
+Data columns (total 5 columns):
+ #   Column  Non-Null Count  Dtype 
+---  ------  --------------  ----- 
+ 0   brand   3 non-null      object
+ 1   model   3 non-null      object
+ 2   year    3 non-null      int64 
+ 3   color   3 non-null      object
+ 4   price   3 non-null      int64 
+dtypes: int64(2), object(3)
+memory usage: 248.0+ bytes
+None
+~~~
+{: .output}
+
+Pandas provides different methods for indexing and selecting data from DataFrames. You can use `iloc[]` for integer-based indexing and `loc[]` for label-based indexing. For example:
+
 ~~~
 
 ~~~
 {: .language-python}
+
+~~~
+~~~
+{: .output}
+
+
 ~~~
 
 ~~~
+{: .language-python}
+
+~~~
+~~~
 {: .output}
+
+
+
+> ## Exercise 5: 
+>
+>  
+> > ## Solution
+> >
+> > 
+> {: .solution}
+{: .challenge}
