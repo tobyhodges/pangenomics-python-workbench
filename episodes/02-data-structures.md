@@ -163,9 +163,9 @@ print(newlist)
 
 Consider that the `sort()` method modifies the original list and does not return any value. To sort a list without modifying the original, you can use the `sorted()` function, which returns a new sorted list.
 
-> ## Slice method
+> ## Select elements of a list with slices
 >
-> > ## Select elements of a list with slices
+> > ## Extra content
 >> Another way to access list data in Python is by using the "slice" method: list[start:end]. This slice includes the elements whose indices are in the range from `start` to `end - 1`: 
 >> - **start:** It is the index from which we start including elements in the slice.
 >> - **end:** It is the index up to which we include elements in the slice, but not including the element at this index.
@@ -374,7 +374,7 @@ dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 2022)])
 
 > ## Modify a dictionary
 >
-> > ## Update a dictionary
+> > ## Extra content
 >> You can modify (update) a dictionary using the `update()` method. When you call the `update()` method on a dictionary, you pass another dictionary as an argument. The method then iterates over the key-value pairs in the second dictionary and adds them to the first dictionary. If any keys in the second dictionary already exist in the first dictionary, their corresponding values are updated to the new values.
 >>
 >> ~~~
@@ -452,7 +452,7 @@ dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 2022)])
 {: .callout}
 
 
-> ## Exercise 3: 
+> ## Exercise 2: 
 >
 >  
 > > ## Solution
@@ -511,97 +511,107 @@ print(ones_array)
 ~~~
 {: .output}
 
-Another way to create arrays is by using sequences with `arange()`, for example:
+
+> ## Other ways to create arrays and multidimensional arrays
+>
+> > ## Extra content
+>> Another way to create arrays is by using sequences with `arange()`, for example:
+>>
+>> ~~~
+>> np.arange(10)
+>> ~~~
+>> {: .language-python}
+>> 
+>> ~~~
+>> array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+>> ~~~
+>> {: .output}
+>>
+>> 
+>> Or using a notation similar to slices: `arange(start, stop, step)`:
+>>
+>> ~~~
+>> np.arange(1,10,1)
+>> ~~~
+>> {: .language-python}
+>> 
+>> ~~~
+>> array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+>> ~~~
+>> {: .output}
+>>
+>> We can also create them using random values:
+>>
+>> ~~~
+>> np.random.randint(0, 10, 5)
+>> ~~~
+>>{: .language-python}
+>>
+>> ~~~
+>> array([9, 6, 0, 2, 7])
+>> ~~~
+>> {: .output}
+>>
+>> Multidimensional arrays can be created in various ways by specifying the dimensions of each dimension. For example, to create a 2-dimensional array filled with zeros, ones, or random values:
+>>
+>> ~~~
+>> array_zeros = np.zeros((3,3))
+>> array_ones = np.ones((3,3))
+>> array_rand = np.random.randint(0,10,(3,3))
+>> 
+>> print(array_zeros)
+>> print(array_ones)
+>> print(array_rand)
+>> ~~~
+>> {: .language-python}
+>>
+>> ~~~
+>> [[0. 0. 0.]
+>> [0. 0. 0.]
+>> [0. 0. 0.]]
+>> 
+>> [[1. 1. 1.]
+>> [1. 1. 1.]
+>> [1. 1. 1.]]
+>>
+>> [[4 5 4]
+>> [1 7 8]
+>> [7 9 9]]
+>> ~~~
+>> {: .output}
+>>
+>> Another way to create a two dimensional array is:
+>>
+>> ~~~
+>> arr_2d = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+>> print(arr_2d)
+>> ~~~
+>> {: .language-python}
+>> 
+>> ~~~
+>> [[1 2 3]
+>> [4 5 6]
+>> [7 8 9]]
+>> ~~~
+>> {: .output}
+>>
+>>
+> {: .solution}
+{: .callout}
+
+The expression `len(array)` returns the length of the array, which corresponds to the number of elements in the array. For a one-dimensional array, this is the number of elements it contains. For a two-dimensional array, it is the number of rows in the array. 
 
 ~~~
-np.arange(10)
-~~~
-{: .language-python}
-
-~~~
-array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-~~~
-{: .output}
-
-Or using a notation similar to slices: `arange(start, stop, step)`:
-
-~~~
-np.arange(1,10,1)
-~~~
-{: .language-python}
-
-~~~
-array([1, 2, 3, 4, 5, 6, 7, 8, 9])
-~~~
-{: .output}
-
-We can also create them using random values:
-
-~~~
-np.random.randint(0, 10, 5)
-~~~
-{: .language-python}
-
-~~~
-array([9, 6, 0, 2, 7])
-~~~
-{: .output}
-
-Multidimensional arrays can be created in various ways by specifying the dimensions of each dimension. For example, to create a 2-dimensional array filled with zeros, ones, or random values:
-
-~~~
-array_zeros = np.zeros((3,3))
-array_ones = np.ones((3,3))
-array_rand = np.random.randint(0,10,(3,3))
-
-print(array_zeros)
-print(array_ones)
-print(array_rand)
-~~~
-{: .language-python}
-
-~~~
-[[0. 0. 0.]
- [0. 0. 0.]
- [0. 0. 0.]]
- 
-[[1. 1. 1.]
- [1. 1. 1.]
- [1. 1. 1.]]
-
-[[4 5 4]
- [1 7 8]
- [7 9 9]]
-~~~
-{: .output}
-
-Another way to create a two dimensional array is:
-
-~~~
-arr_2d = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
-print(arr_2d)
-~~~
-{: .language-python}
-
-~~~
-[[1 2 3]
- [4 5 6]
- [7 8 9]]
-~~~
-{: .output}
-
-The expression `len(array)` returns the length of the array, which corresponds to the number of elements in the array. For a one-dimensional array, this is the number of elements it contains. For a two-dimensional array, it is the number of rows in the array. For example, for the two-dimensional array:
-
-~~~
-length = len(arr_2d)
+length = len(ones_array)
 print(length)
 ~~~
 {: .language-python}
 
 ~~~
-3
+10
 ~~~
 {: .output}
+
 
 The NumPy library also allows us to load databases using `loadtxt`. We will use a toy dataset to learn how to import a `csv` file into a numpy array. The `request` module is used in Python to make HTTP requests to web servers.
 
@@ -633,7 +643,7 @@ array([[   2.728,    6.513],
 ~~~
 {: .output}
 
-> ## Exercise 4: 
+> ## Exercise 3: 
 >
 >  
 > > ## Solution
@@ -928,101 +938,96 @@ A909|MGIDGNCP_01268  A909|MGIDGNCP_01268  2603V|GBPINHCM_01231   515|LHMFJANI_01
 > > df_genes['Number of genes'] = df_genes.count(axis=1)
 > > ~~~
 > > {: .language-python}
-
-## Another data structures
-
-### Tuple
-
-Tuples are indexed and ordered sequences, they are immutable, meaning they cannot be modified after creation. The elements of a tuple can be numbers, strings, or combinations of both types. A tuple is defined using parentheses `()`:
-
-~~~
-thistuple = ("apple", "banana", "cherry", 3)
-print(thistuple)
-~~~
-{: .language-python}
-
-~~~
-('apple', 'banana', 'cherry', 3)
-~~~
-{: .output}
-
-To access the elements of a tuple, we can use its index. In Python, indexing typically starts at 0. This means that the first element in a sequence (such as a list, tuple, or string) has an index of 0, the second element has an index of 1, and so on.
-
-~~~
-first_element = thistuple[0]
-print(first_element)
-~~~
-{: .language-python}
-
-~~~
-apple
-~~~
-{: .output}
-
-We can also access tuple elements using negative indices, which count from the end of the tuple towards the beginning.
-
-~~~
-print(thistuple[-1])
-~~~
-{: .language-python}
-
-~~~
-3
-~~~
-{: .output}
-
-
-### Set
-
-Sets are unindexed, unordered collections of  unique element, duplicates are not allowed. The sets can contain different data types. They are defined using curly braces {}:
-
-~~~
-myset = {"apple", "banana", "cherry", 4}
-print(myset)
-~~~
-{: .language-python}
-
-~~~
-{'banana', 3, 'cherry', 'apple'}
-~~~
-{: .output}
-
-Sets in Python are mutable, meaning you can add and remove elements, but you cannot directly modify existing elements. To add elements to a set, you can use the `add()` method.
-
-
-~~~
-myset.add('grape')
-print(myset)
-~~~
-{: .language-python}
-
-~~~
-{3, 'cherry', 'apple', 'grape', 'banana'}
-~~~
-{: .output}
-
-To remove an element from a set, you can use the `remove()`.
-~~~
-myset.remove(3)
-print(myset)
-~~~
-{: .language-python}
-
-~~~
-{'cherry', 'apple', 'grape', 'banana'}
-~~~
-{: .output}
-
-Sets are useful when you need to store a collection of unique elements and perform efficient set operations such as removing duplicates and comparing collections.
-
-> ## Exercise 5: 
-> 
->  
-> > ## Solution
-> >
-> > 
 > {: .solution}
 {: .challenge}
 
+
+> ## Another data structures: Sets and Tuples
+>
+> > ## Extra content
+>> ### Tuple
+>>
+>> Tuples are indexed and ordered sequences, they are immutable, meaning they cannot be modified after creation. The elements of a tuple can be numbers, strings, or combinations of both types. A tuple is defined using parentheses `()`:
+>> 
+>> ~~~
+>> thistuple = ("apple", "banana", "cherry", 3)
+>> print(thistuple)
+>> ~~~
+>> {: .language-python}
+>>
+>> ~~~
+>> ('apple', 'banana', 'cherry', 3)
+>> ~~~
+>> {: .output}
+>> 
+>> To access the elements of a tuple, we can use its index. In Python, indexing typically starts at 0. This means that the first element in a sequence (such as a list, tuple, or string) has an index of 0, the second element has an index of 1, and so on.
+>>
+>> ~~~
+>> first_element = thistuple[0]
+>> print(first_element)
+>> ~~~
+>> {: .language-python}
+>> 
+>> ~~~
+>> apple
+>> ~~~
+>> {: .output}
+>> 
+>> We can also access tuple elements using negative indices, which count from the end of the tuple towards the beginning.
+>> 
+>> ~~~
+>> print(thistuple[-1])
+>> ~~~
+>> {: .language-python}
+>>
+>> ~~~
+>> 3
+>> ~~~
+>> {: .output}
+>>
+>> ### Set
+>> 
+>> Sets are unindexed, unordered collections of  unique element, duplicates are not allowed. The sets can contain different data types. They are defined using curly braces {}:
+>> 
+>> ~~~
+>> myset = {"apple", "banana", "cherry", 4}
+>> print(myset)
+>> ~~~
+>> {: .language-python}
+>>
+>> ~~~
+>> {'banana', 3, 'cherry', 'apple'}
+>> ~~~
+>> {: .output}
+>> 
+>> Sets in Python are mutable, meaning you can add and remove elements, but you cannot directly modify existing elements. To add elements to a set, you can use the `add()` method.
+>>
+>> ~~~
+>> myset.add('grape')
+>> print(myset)
+>> ~~~
+>> {: .language-python}
+>>
+>> ~~~
+>> {3, 'cherry', 'apple', 'grape', 'banana'}
+>> ~~~
+>> {: .output}
+>>
+>> To remove an element from a set, you can use the `remove()`.
+>> ~~~
+>> myset.remove(3)
+>> print(myset)
+>> ~~~
+>> {: .language-python}
+>>
+>> ~~~
+>> {'cherry', 'apple', 'grape', 'banana'}
+>> ~~~
+>> {: .output}
+>> 
+>> Sets are useful when you need to store a collection of unique elements and perform efficient set operations such as removing duplicates and comparing collections.
+>> 
 > {: .solution}
-{: .challenge}
+{: .callout}
+
+
