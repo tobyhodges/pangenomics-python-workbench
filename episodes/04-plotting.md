@@ -263,7 +263,7 @@ fig.show()
 
 ~~~
 # Define some triangles (example)
-triangles = [(1, 2, 3), (2, 3, 1)]
+triangles = [(1, 2, 3), (4, 3, 2)]
 ~~~
 {: .language-python}
 
@@ -324,7 +324,10 @@ fig.show() # Show the figure
 ~~~
 {: .language-python}
 
-    
+
+ <a href="../fig/TrianglesGraph.png">
+  <img src="../fig/TrianglesGraph.png" alt="Example" width="70%" height="auto"/>
+</a>    
 
 > ## Exercise 2: 
 >
@@ -334,6 +337,8 @@ fig.show() # Show the figure
 > > 
 > {: .solution}
 {: .challenge}
+
+
 
 ~~~
 def visualize_simplicial_complex(simplex_tree, filtration_value, vertex_names=None, save_filename=None, plot_size=1, dpi=600, pos=None):
