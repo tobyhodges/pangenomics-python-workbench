@@ -3,16 +3,18 @@ title: "Plotting"
 teaching: 10
 exercises: 10
 questions:
-- "How can I plot a graph with vertex and edges"
 - "How can I plot histograms"
+- "How can I plot a graph with vertex and edges"
 
 objectives:
-- "Create a graph with NetworkX"
 - "Create a graph with matplotlib"
+- "Create a graph with NetworkX"
+
 
 keypoints:
-- "NetworkX is a library"
 - "matplotlib is a library"
+- "NetworkX is a library"
+
 ---
 
 
@@ -87,6 +89,15 @@ The bars are colored sky blue with black edges for better visibility.
 FIXME
 ~~~
 {: .output}
+
+> ## Exercise 1: 
+>
+>  
+> > ## Solution
+> >
+> > 
+> {: .solution}
+{: .challenge}
 
 ## Creating graphs with NetworkX and Plotly 
 Let's create a simple graph with NetworkX and visualize it using Plotly. 
@@ -196,8 +207,15 @@ FIXME
 ~~~
 {: .output}
 
-EXERCISE 1
-EXERCISE 2
+> ## Exercise 2: 
+>
+>  
+> > ## Solution
+> >
+> > 
+> {: .solution}
+{: .challenge}
+
 ~~~
 def visualize_simplicial_complex(simplex_tree, filtration_value, vertex_names=None, save_filename=None, plot_size=1, dpi=600, pos=None):
     G = nx.Graph()
