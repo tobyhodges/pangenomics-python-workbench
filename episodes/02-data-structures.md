@@ -204,11 +204,39 @@ Consider that the `sort()` method modifies the original list and does not return
 
 
 > ## Exercise 1: 
->
->  
+> You are working with genetic data represented by the following list:
+> ~~~
+> genes = ["AGCT", "TCGA", "ATCG", "CGTA"]
+> ~~~
+> {: .language-python}
+>  How can you remove the sequence "TCGA" and add a new sequence "CATG"? What is the sequence at index 2. 
 > > ## Solution
-> >
+> > You can remove "TCGA" from the list using the remove() method:
+>> ~~~
+>> genes.remove("TCGA")
+>> ~~~
+>> {: .language-python}
 > > 
+>> To add "CATG" to the list, you can use the append() method:
+>> ~~~
+>> genes.append("CATG")
+>> ~~~
+>> {: .language-python}
+>>
+>> To find the sequence at index 2, you can access the element at that index using indexing.
+>> ~~~
+>> sequence_at_index_2 = genes[2]
+>> print(sequence_at_index_2)
+>> ~~~
+>>
+>> ~~~
+>> CGTA
+>> ~~~
+>> {: .output}
+>> 
+>> {: .language-python}
+
+
 > {: .solution}
 {: .challenge}
 
