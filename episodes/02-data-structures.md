@@ -203,7 +203,7 @@ Consider that the `sort()` method modifies the original list and does not return
 {: .callout}
 
 
-> ## Exercise 2: 
+> ## Exercise 1: 
 >
 >  
 > > ## Solution
@@ -372,79 +372,85 @@ dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 2022)])
 {: .output}
 
 
-You can modify (update) a dictionary using the `update()` method. When you call the `update()` method on a dictionary, you pass another dictionary as an argument. The method then iterates over the key-value pairs in the second dictionary and adds them to the first dictionary. If any keys in the second dictionary already exist in the first dictionary, their corresponding values are updated to the new values.
+> ## Modify a dictionary
+>
+> > ## Update a dictionary
+>> You can modify (update) a dictionary using the `update()` method. When you call the `update()` method on a dictionary, you pass another dictionary as an argument. The method then iterates over the key-value pairs in the second dictionary and adds them to the first dictionary. If any keys in the second dictionary already exist in the first dictionary, their corresponding values are updated to the new values.
+>>
+>> ~~~
+>> otherdict = {'model': 'Focus', 'price': 30000}
+>> thisdict.update(otherdict)
+>> print(thisdict)
+>> ~~~
+>> {: .language-python}
+>>
+>> ~~~
+>> {'brand': 'Ford', 'model': 'Focus', 'year': 2022, 'price': 30000}
+>> ~~~
+>> {: .output}
+>>
+>> To add new entries to our dictionary, we use the `append()` method.
+>> 
+>> ~~~
+>> thisdict = {
+>>    'brand': ['Ford', 'Toyota'],
+>>    'model': ['Mustang', 'Corolla'],
+>>    'year': [1964, 2020],
+>>    'color': ['red', 'blue'],
+>>    'price': [15000, 20000]
+>> }
+>> # Add a new brand, model, year, color, and price
+>> new_brand = 'Honda'
+>> new_model = 'Civic'
+>> new_year = 2019
+>> new_color = 'green'
+>> new_price = 18000
+>>
+>> thisdict['brand'].append(new_brand)
+>> thisdict['model'].append(new_model)
+>> thisdict['year'].append(new_year)
+>> thisdict['color'].append(new_color)
+>> thisdict['price'].append(new_price)
+>>
+>> # Print the updated dictionary
+>> print(thisdict)
+>> ~~~
+>> {: .language-python}
+>>
+>> ~~~
+>> {'brand': ['Ford', 'Toyota', 'Honda'], 'model': ['Mustang', 'Corolla', 'Civic'], 'year': [1964, 2020, 2019], 'color': ['red', 'blue', 'green'], 'price': [15000, 20000, 18000]}
+>> ~~~
+>> {: .output}
+>> 
+>> One way to get the model and year values for each brand is as follows.
+>> 
+>> ~~~
+>> # Get the year and model of each car directly from the dictionary
+>> ford_year = thisdict['year'][thisdict['brand'].index('Ford')]
+>> ford_model = thisdict['model'][thisdict['brand'].index('Ford')]
+>> 
+>> toyota_year = thisdict['year'][thisdict['brand'].index('Toyota')]
+>> toyota_model = thisdict['model'][thisdict['brand'].index('Toyota')]
+>> 
+>> # Print the year and model of each car
+>> print("Ford's Year:", ford_year)
+>> print("Ford's Model:", ford_model)
+>> print("Toyota's Year:", toyota_year)
+>> print("Toyota's Model:", toyota_model)
+>> ~~~
+>> {: .language-python}
+>>
+>> ~~~
+>> Ford's Year: 1964
+>> Ford's Model: Mustang
+>> Toyota's Year: 2020
+>> Toyota's Model: Corolla
+>> ~~~
+>> {: .output}
+>>
+> {: .solution}
+{: .callout}
 
-~~~
-otherdict = {'model': 'Focus', 'price': 30000}
-thisdict.update(otherdict)
-print(thisdict)
-~~~
-{: .language-python}
-
-~~~
-{'brand': 'Ford', 'model': 'Focus', 'year': 2022, 'price': 30000}
-~~~
-{: .output}
-
-
-To add new entries to our dictionary, we use the `append()` method.
-~~~
-thisdict = {
-    'brand': ['Ford', 'Toyota'],
-    'model': ['Mustang', 'Corolla'],
-    'year': [1964, 2020],
-    'color': ['red', 'blue'],
-    'price': [15000, 20000]
-}
-
-# Add a new brand, model, year, color, and price
-new_brand = 'Honda'
-new_model = 'Civic'
-new_year = 2019
-new_color = 'green'
-new_price = 18000
-
-thisdict['brand'].append(new_brand)
-thisdict['model'].append(new_model)
-thisdict['year'].append(new_year)
-thisdict['color'].append(new_color)
-thisdict['price'].append(new_price)
-
-# Print the updated dictionary
-print(thisdict)
-~~~
-{: .language-python}
-
-~~~
-{'brand': ['Ford', 'Toyota', 'Honda'], 'model': ['Mustang', 'Corolla', 'Civic'], 'year': [1964, 2020, 2019], 'color': ['red', 'blue', 'green'], 'price': [15000, 20000, 18000]}
-~~~
-{: .output}
-
-One way to get the model and year values for each brand is as follows.
-
-~~~
-# Get the year and model of each car directly from the dictionary
-ford_year = thisdict['year'][thisdict['brand'].index('Ford')]
-ford_model = thisdict['model'][thisdict['brand'].index('Ford')]
-
-toyota_year = thisdict['year'][thisdict['brand'].index('Toyota')]
-toyota_model = thisdict['model'][thisdict['brand'].index('Toyota')]
-
-# Print the year and model of each car
-print("Ford's Year:", ford_year)
-print("Ford's Model:", ford_model)
-print("Toyota's Year:", toyota_year)
-print("Toyota's Model:", toyota_model)
-~~~
-{: .language-python}
-
-~~~
-Ford's Year: 1964
-Ford's Model: Mustang
-Toyota's Year: 2020
-Toyota's Model: Corolla
-~~~
-{: .output}
 
 > ## Exercise 3: 
 >
