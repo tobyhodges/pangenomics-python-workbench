@@ -34,19 +34,18 @@ We import the matplotlib.pyplot module, which provides a MATLAB-like plotting in
 import matplotlib.pyplot as plt
 ~~~
 {: .language-python}
-~~~
-FIXME
-~~~
-{: .output}
+
 
 
 We defined some sample data for which we wanted to create a histogram.
 ~~~
 data = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5]
+print(data)
 ~~~
 {: .language-python}
 ~~~
-FIXME
+[1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5]
+
 ~~~
 {: .output}
 
@@ -58,7 +57,10 @@ plt.hist(data, bins=5, color='skyblue', edgecolor='black')
 ~~~
 {: .language-python}
 ~~~
-FIXME
+(array([1., 2., 3., 4., 5.]),
+ array([1. , 1.8, 2.6, 3.4, 4.2, 5. ]),
+ <BarContainer object of 5 artists>)
+PlotMatplotlib
 ~~~
 {: .output}
 
@@ -68,11 +70,15 @@ add a title to the plot using plt.title().
 plt.xlabel('Value')
 plt.ylabel('Frequency')
 plt.title('Histogram of Sample Data')
+plt.hist(data, bins=5, color='skyblue', edgecolor='black')
 ~~~
 {: .language-python}
 
 ~~~
-FIXME
+(array([1., 2., 3., 4., 5.]),
+ array([1. , 1.8, 2.6, 3.4, 4.2, 5. ]),
+ <BarContainer object of 5 artists>)
+PlotMatplotlibLabels
 ~~~
 {: .output}
 
