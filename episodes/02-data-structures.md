@@ -8,7 +8,7 @@ questions:
 - "How can I efficiently manage tabular data in Python?"
 
 objectives:
-- "Understand fundamental data structures such as list, tuples, sets, arrays, dictionaries and Panda dataframes."
+- "Understand fundamental data structures such as list, arrays, dictionaries and Panda dataframes."
 - "Efficient data manipulation, selectiom and filtering."
 - "Tabular data management with Pandas."
 - "Read data from an URL."
@@ -18,100 +18,6 @@ keypoints:
 - "Develop skills in manipulating data by accessing, modifying and filtering elements within data structures."
 - "Lear to work with tabular data using Pandas DataFrames, including loading and exploring data."
 ---
-
-## Tuple
-
-Tuples are indexed and ordered sequences, they are immutable, meaning they cannot be modified after creation. The elements of a tuple can be numbers, strings, or combinations of both types. A tuple is defined using parentheses `()`:
-
-~~~
-thistuple = ("apple", "banana", "cherry", 3)
-print(thistuple)
-~~~
-{: .language-python}
-
-~~~
-('apple', 'banana', 'cherry', 3)
-~~~
-{: .output}
-
-To access the elements of a tuple, we can use its index. In Python, indexing typically starts at 0. This means that the first element in a sequence (such as a list, tuple, or string) has an index of 0, the second element has an index of 1, and so on.
-
-~~~
-first_element = thistuple[0]
-print(first_element)
-~~~
-{: .language-python}
-
-~~~
-apple
-~~~
-{: .output}
-
-We can also access tuple elements using negative indices, which count from the end of the tuple towards the beginning.
-
-~~~
-print(thistuple[-1])
-~~~
-{: .language-python}
-
-~~~
-3
-~~~
-{: .output}
-
-
-## Set
-
-Sets are unindexed, unordered collections of  unique element, duplicates are not allowed. The sets can contain different data types. They are defined using curly braces {}:
-
-~~~
-myset = {"apple", "banana", "cherry", 4}
-print(myset)
-~~~
-{: .language-python}
-
-~~~
-{'banana', 3, 'cherry', 'apple'}
-~~~
-{: .output}
-
-Sets in Python are mutable, meaning you can add and remove elements, but you cannot directly modify existing elements. To add elements to a set, you can use the `add()` method.
-
-
-~~~
-myset.add('grape')
-print(myset)
-~~~
-{: .language-python}
-
-~~~
-{3, 'cherry', 'apple', 'grape', 'banana'}
-~~~
-{: .output}
-
-To remove an element from a set, you can use the `remove()`.
-~~~
-myset.remove(3)
-print(myset)
-~~~
-{: .language-python}
-
-~~~
-{'cherry', 'apple', 'grape', 'banana'}
-~~~
-{: .output}
-
-Sets are useful when you need to store a collection of unique elements and perform efficient set operations such as removing duplicates and comparing collections.
-
-> ## Exercise 1: 
-> 
->  
-> > ## Solution
-> >
-> > 
-> {: .solution}
-{: .challenge}
-
 
 ## List
 
@@ -257,40 +163,44 @@ print(newlist)
 
 Consider that the `sort()` method modifies the original list and does not return any value. To sort a list without modifying the original, you can use the `sorted()` function, which returns a new sorted list.
 
-Another way to access list data in Python is by using the "slice" method: list[start:end]. This slice includes the elements whose indices are in the range from `start` to `end - 1`:
-
-- **start:** It is the index from which we start including elements in the slice.
-- **end:** It is the index up to which we include elements in the slice, but not including the element at this index.
-
-For example, if we want to get a slice of `newlist` from index 1 to index 4, we would use the notation `newlist[1:4]` and we will get a slice that includes elements from index 1 (inclusive) to index 4 (exclusive).
-
-~~~
+> ## Slice method
+>
+> > ## Select elements of a list with slices
+>> Another way to access list data in Python is by using the "slice" method: list[start:end]. This slice includes the elements whose indices are in the range from `start` to `end - 1`: 
+>> - **start:** It is the index from which we start including elements in the slice.
+>> - **end:** It is the index up to which we include elements in the slice, but not including the element at this index.
+>>
+>> 
+>> For example, if we want to get a slice of `newlist` from index 1 to index 4, we would use the notation `newlist[1:4]` and we will get a slice that includes elements from index 1 (inclusive) to index 4 (exclusive).
+>> ~~~
 newlist[1:4]
 ~~~
 {: .language-python}
-
-~~~
+>> ~~~
 ['lemon', 'grape', 'cherry']
 ~~~
 {: .output}
-
-Another syntax of "slices" in Python with the notation list[start:end:step] refers to the technique for selecting a subset of elements from a list using three parameters:
-
-- **start:** Indicates the index from which we start including elements in the slice.
-- **end:** Indicates the index up to which we include elements in the slice, excluding the element at this index.
-- **step:** Indicates the size of the step or increment between the selected elements. That is, how many elements we skip in each step.
-  
-If we run `newlist[::2]`, we get a slice that includes elements of the `newlist`, but selecting every second element. It's like starting from the beginning of the list, ending at the end, and selecting every second element.
-
-~~~
+>>
+>> Another syntax of "slices" in Python with the notation list[start:end:step] refers to the technique for selecting a subset of elements from a list using three parameters:
+>> - **start:** Indicates the index from which we start including elements in the slice.
+>> - **end:** Indicates the index up to which we include elements in the slice, excluding the element at this index.
+>> - **step:** Indicates the size of the step or increment between the selected elements. That is, how many elements we skip in each step.
+>>
+>> If we run `newlist[::2]`, we get a slice that includes elements of the `newlist`, but selecting every second element. It's like starting from the beginning of the list, ending at the end, and selecting every second element.
+>>
+>> ~~~
 newlist[::2]
 ~~~
 {: .language-python}
-
-~~~
+>>
+>> ~~~
 ['orange', 'grape', 'banana']
 ~~~
 {: .output}
+>>
+> {: .solution}
+{: .callout}
+
 
 > ## Exercise 2: 
 >
@@ -1011,5 +921,101 @@ A909|MGIDGNCP_01268  A909|MGIDGNCP_01268  2603V|GBPINHCM_01231   515|LHMFJANI_01
 > > df_genes['Number of genes'] = df_genes.count(axis=1)
 > > ~~~
 > > {: .language-python}
+
+## Another data structures
+
+### Tuple
+
+Tuples are indexed and ordered sequences, they are immutable, meaning they cannot be modified after creation. The elements of a tuple can be numbers, strings, or combinations of both types. A tuple is defined using parentheses `()`:
+
+~~~
+thistuple = ("apple", "banana", "cherry", 3)
+print(thistuple)
+~~~
+{: .language-python}
+
+~~~
+('apple', 'banana', 'cherry', 3)
+~~~
+{: .output}
+
+To access the elements of a tuple, we can use its index. In Python, indexing typically starts at 0. This means that the first element in a sequence (such as a list, tuple, or string) has an index of 0, the second element has an index of 1, and so on.
+
+~~~
+first_element = thistuple[0]
+print(first_element)
+~~~
+{: .language-python}
+
+~~~
+apple
+~~~
+{: .output}
+
+We can also access tuple elements using negative indices, which count from the end of the tuple towards the beginning.
+
+~~~
+print(thistuple[-1])
+~~~
+{: .language-python}
+
+~~~
+3
+~~~
+{: .output}
+
+
+### Set
+
+Sets are unindexed, unordered collections of  unique element, duplicates are not allowed. The sets can contain different data types. They are defined using curly braces {}:
+
+~~~
+myset = {"apple", "banana", "cherry", 4}
+print(myset)
+~~~
+{: .language-python}
+
+~~~
+{'banana', 3, 'cherry', 'apple'}
+~~~
+{: .output}
+
+Sets in Python are mutable, meaning you can add and remove elements, but you cannot directly modify existing elements. To add elements to a set, you can use the `add()` method.
+
+
+~~~
+myset.add('grape')
+print(myset)
+~~~
+{: .language-python}
+
+~~~
+{3, 'cherry', 'apple', 'grape', 'banana'}
+~~~
+{: .output}
+
+To remove an element from a set, you can use the `remove()`.
+~~~
+myset.remove(3)
+print(myset)
+~~~
+{: .language-python}
+
+~~~
+{'cherry', 'apple', 'grape', 'banana'}
+~~~
+{: .output}
+
+Sets are useful when you need to store a collection of unique elements and perform efficient set operations such as removing duplicates and comparing collections.
+
+> ## Exercise 5: 
+> 
+>  
+> > ## Solution
+> >
+> > 
+> {: .solution}
+{: .challenge}
+
 > {: .solution}
 {: .challenge}
