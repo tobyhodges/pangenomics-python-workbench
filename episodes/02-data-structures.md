@@ -3,13 +3,20 @@ title: "Data Structures"
 teaching: 10
 exercises: 10
 questions:
-- ""
+- "How can I store information in Python?"
+- "How can I acces to the elements of an array or a dictionary?"
+- "How can I efficiently manage tabular data in Python?"
 
 objectives:
-- ""
+- "Understand fundamental data structures such as list, tuples, sets, arrays, dictionaries and Panda dataframes."
+- "Efficient data manipulation, selectiom and filtering."
+- "Tabular data management with Pandas."
+- "Read data from an URL."
 
 keypoints:
-- ""
+- "Gain familiarity with fundamental data structures such as tuples, sets, list, dictionaries and arrays."
+- "Develop skills in manipulating data by accessing, modifying and filtering elements within data structures."
+- "Lear to work with tabular data using Pandas DataFrames, including loading and exploring data."
 ---
 
 ## Tuple
@@ -997,10 +1004,12 @@ A909|MGIDGNCP_01268  A909|MGIDGNCP_01268  2603V|GBPINHCM_01231   515|LHMFJANI_01
 
 
 > ## Exercise 5: 
->
+> Use the dataframe `df_genes` and add a column that counts how many genes are in each row, for example, the first row has 4 genes but the third row has only two. 
 >  
 > > ## Solution
-> >
-> > 
+> > ~~~
+> > df_genes['Number of genes'] = df_genes.count(axis=1)
+> > ~~~
+> > {: .language-python}
 > {: .solution}
 {: .challenge}
