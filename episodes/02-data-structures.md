@@ -205,18 +205,22 @@ Consider that the `sort()` method modifies the original list and does not return
 
 > ## Exercise 1: 
 > You are working with genetic data represented by the following list:
+> 
 > ~~~
 > genes = ["AGCT", "TCGA", "ATCG", "CGTA"]
 > ~~~
 > {: .language-python}
->  How can you remove the sequence "TCGA" and add a new sequence "CATG"? What is the sequence at index 2. 
+> 
+>  How can you remove the sequence "TCGA" and add a new sequence "CATG"? What is the sequence at index 2.
+> 
 > > ## Solution
-> > You can remove "TCGA" from the list using the remove() method:
+>> 
+>> You can remove "TCGA" from the list using the remove() method:
 >> ~~~
 >> genes.remove("TCGA")
 >> ~~~
 >> {: .language-python}
-> > 
+>> 
 >> To add "CATG" to the list, you can use the append() method:
 >> ~~~
 >> genes.append("CATG")
@@ -235,8 +239,6 @@ Consider that the `sort()` method modifies the original list and does not return
 >> {: .output}
 >> 
 >> {: .language-python}
-
-
 > {: .solution}
 {: .challenge}
 
@@ -482,12 +484,14 @@ dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 2022)])
 
 > ## Exercise 2: 
 > Suppose that you have the following dictionary:
+> 
 > ~~~~
 > genes_dict = {"gene1": { "name": "BRCA1", "start_position": 43044295, "end_position": 43125483},
 >               "gene2": { "name": "TP53", "start_position": 7571720, "end_position": 7588830},
 >               "gene3": { "name": "EGFR", "start_position": 55086715, "end_position": 55225454}}
 > ~~~
 > {: .language-python}
+> 
 > Which command correctly adds a new gene "gene4" with its associated information to an existing genes dictionary in Python?
 >  
 > a) `genes_dict.add("gene4", {"name": "GENE4", "start_position": 123456, "end_position": 234567})`
@@ -498,7 +502,8 @@ dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 2022)])
 >  
 > d) `genes_dict.insert(4, {"name": "GENE4", "start_position": 123456, "end_position": 234567})`
 >  
-> > ## Solution
+>> ## Solution
+>>
 >> The correct answer is option b).
 >> It uses the indexing syntax to add a new key-value pair to the genes_dict dictionary, where the key is "gene4" and the value is a dictionary representing the gene's characteristics.
 >> 
