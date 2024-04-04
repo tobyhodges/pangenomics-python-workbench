@@ -64,7 +64,7 @@ plt.hist(data, bins=5, color='skyblue', edgecolor='black')
 ~~~
 {: .output}
 
- <a href="../fig/tda_paste.png">
+ <a href="../fig/PlotMatplotlib.png">
   <img src="../fig/PlotMatplotlib.png" alt="Example" width="70%" height="auto"/>
 </a>
 
@@ -84,7 +84,7 @@ plt.hist(data, bins=5, color='skyblue', edgecolor='black')
  <BarContainer object of 5 artists>)
 ~~~
 {: .output}
- <a href="../fig/tda_paste.png">
+ <a href="../fig/PlotMatplotlibLabels.png">
   <img src="../fig/PlotMatplotlibLabels.png" alt="Example" width="70%" height="auto"/>
 </a>
 
@@ -248,30 +248,18 @@ node_y [0.9964892191512681, -0.41570474278971886, -0.9951418290175523, 0.4143573
 ~~~
 {: .output}
 
-Create the Plotly figure
+Let's create the Plotly figure and show it using Plotly's show() method.
 ~~~
 fig = go.Figure(data=edge_traces + [node_trace], layout=go.Layout(showlegend=False))
-~~~
-{: .language-python}
-
-
-~~~
-FIXME
-~~~
-{: .output}
-
-We show the figure using Plotly's show() method.
-# Show the figure
-~~~
 fig.show()
 ~~~
 {: .language-python}
 
+ <a href="../fig/plotly.png">
+  <img src="../fig/plotly.png" alt="Example" width="70%" height="auto"/>
+</a>
 
-~~~
-FIXME
-~~~
-{: .output}
+
 
 > ## Exercise 2: 
 >
