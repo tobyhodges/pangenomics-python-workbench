@@ -97,6 +97,16 @@ distance=0
 
             
 ## Functions
+The function hamming_distance() takes two parameters: str1 and str2, which are the two strings 
+for which the Hamming distance is to be calculated.
+We first check if the lengths of the two strings are equal. If they are not equal, we raise a ValueError 
+because the Hamming distance is only defined for strings of equal length.
+We initialize a variable distance to store the Hamming distance.
+We then iterate over the characters of the two strings using the zip() function, which pairs 
+corresponding elements of the two strings together.
+For each pair of characters, if they are different, we increment the distance variable.
+Finally, we return the calculated Hamming distance.
+You can use this function to calculate the Hamming distance between any two strings in Python.
 ~~~
 def hamming_distance(str1, str2):
     """
@@ -167,6 +177,7 @@ def hamming_distance(str1, str2):
 
 
 Let's assume that "population" is a numpy ndarray with genomes as rows.
+
 ~~~
 def calculate_hamming_matrix(population):
     # Number of genomes
@@ -186,12 +197,8 @@ def calculate_hamming_matrix(population):
 {: .language-python}
 
 
-Apart from the built-in functions and the library functions you can make your own functions, first you define them and then you use them. To define a function you need to give it a name, say what information you need to feed to it, and what output you want.
+Apart from the built-in functions and the library functions you can make your own functions, 
+first you define them and then you use them. To define a function you need to give it a name, 
+say what information you need to feed to it, and what output you want.
 
-The function hamming_distance() takes two parameters: str1 and str2, which are the two strings for which the Hamming distance is to be calculated.
-We first check if the lengths of the two strings are equal. If they are not equal, we raise a ValueError because the Hamming distance is only defined for strings of equal length.
-We initialize a variable distance to store the Hamming distance.
-We then iterate over the characters of the two strings using the zip() function, which pairs corresponding elements of the two strings together.
-For each pair of characters, if they are different, we increment the distance variable.
-Finally, we return the calculated Hamming distance.
-You can use this function to calculate the Hamming distance between any two strings in Python.
+
