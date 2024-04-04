@@ -60,7 +60,9 @@ plt.hist(data, bins=5, color='skyblue', edgecolor='black')
 (array([1., 2., 3., 4., 5.]),
  array([1. , 1.8, 2.6, 3.4, 4.2, 5. ]),
  <BarContainer object of 5 artists>)
-PlotMatplotlib
+ <a href="../fig/tda_paste.png">
+  <img src="../fig/PlotMatplotlib.png" alt="Example" width="70%" height="auto"/>
+</a>
 ~~~
 {: .output}
 
@@ -78,7 +80,10 @@ plt.hist(data, bins=5, color='skyblue', edgecolor='black')
 (array([1., 2., 3., 4., 5.]),
  array([1. , 1.8, 2.6, 3.4, 4.2, 5. ]),
  <BarContainer object of 5 artists>)
-PlotMatplotlibLabels
+ <a href="../fig/tda_paste.png">
+  <img src="../fig/PlotMatplotlibLabels.png" alt="Example" width="70%" height="auto"/>
+</a>
+
 ~~~
 {: .output}
 
