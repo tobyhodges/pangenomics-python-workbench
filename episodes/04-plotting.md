@@ -23,6 +23,71 @@ Python has several libraries that plot and visualize data.
 is a comprehensive plotting library for creating static and interactive visualizations in Python. 
 Each of these libraries serves different purposes and can be used for various data visualization 
 tasks depending on the requirements and preferences of the user.
+
+## Plot with matplotlib
+
+We import the matplotlib.pyplot module, which provides a MATLAB-like plotting interface.
+~~~
+import matplotlib.pyplot as plt
+~~~
+{: .language-python}
+~~~
+FIXME
+~~~
+{: .output}
+
+
+We define some sample data for which we want to create a histogram.
+~~~
+data = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5]
+~~~
+{: .language-python}
+~~~
+FIXME
+~~~
+{: .output}
+
+We use the plt.hist() function to create the histogram. We pass the data as the first argument, 
+specify the number of bins using the bins parameter, and optionally specify the color of the bars
+and their edges using the color and edgecolor parameters, respectively.
+~~~
+plt.hist(data, bins=5, color='skyblue', edgecolor='black')
+~~~
+{: .language-python}
+~~~
+FIXME
+~~~
+{: .output}
+
+We add labels to the x-axis and y-axis using plt.xlabel() and plt.ylabel(), and we
+add a title to the plot using plt.title().
+~~~
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+plt.title('Histogram of Sample Data')
+~~~
+{: .language-python}
+
+~~~
+FIXME
+~~~
+{: .output}
+
+Finally, we use plt.show() to display the plot.
+~~~
+plt.show()
+~~~
+{: .language-python}
+
+This will produce a simple histogram of the sample data with five bins, 
+with each bin representing the frequency of values falling within its range. 
+The bars are colored sky blue with black edges for better visibility.
+
+~~~
+FIXME
+~~~
+{: .output}
+
 ## Creating graphs with NetworkX and Plotly 
 Let's create a simple graph with NetworkX and visualize it using Plotly. 
 In this example, we'll create a graph with four nodes and four edges.
@@ -47,7 +112,7 @@ We create a simple undirected graph G.
 G = nx.Graph()
 G.add_edges_from([(1, 2), (2, 3), (3, 4), (4, 1)])
 ~~~
-:{ .language-python}
+{: .language-python}
 
 ~~~
 FIXME
@@ -59,7 +124,7 @@ We define positions for nodes using a spring layout algorithm (spring_layout). T
 # Define positions for nodes
 pos = nx.spring_layout(G)
 ~~~
-:{ .language-python}
+{: .language-python}
 
 
 ~~~
@@ -78,7 +143,7 @@ for edge in G.edges():
     edge_trace = go.Scatter(x=[x0, x1], y=[y0, y1], mode='lines', line=dict(width=3))
     edge_traces.append(edge_trace)
 ~~~
-:{ .language-python}
+{: .language-python}
 
 ~~~
 FIXME
@@ -98,7 +163,7 @@ for node in G.nodes():
 
 node_trace = go.Scatter(x=node_x, y=node_y, mode='markers', marker=dict(size=14, color='rgb(255,0,0)'))
 ~~~
-:{ .language-python}
+{: .language-python}
 
 
 ~~~
@@ -110,7 +175,7 @@ Create the Plotly figure
 ~~~
 fig = go.Figure(data=edge_traces + [node_trace], layout=go.Layout(showlegend=False))
 ~~~
-:{ .language-python}
+{: .language-python}
 
 
 ~~~
@@ -123,7 +188,7 @@ We show the figure using Plotly's show() method.
 ~~~
 fig.show()
 ~~~
-:{ .language-python}
+{: .language-python}
 
 
 ~~~
@@ -190,69 +255,5 @@ def visualize_simplicial_complex(simplex_tree, filtration_value, vertex_names=No
 
     return G
 ~~~
-:{ .language-python}
+{: .language-python}
 
-## Plot with matplotlib
-
-We import the matplotlib.pyplot module, which provides a MATLAB-like plotting interface.
-~~~
-import matplotlib.pyplot as plt
-~~~
-:{ .language-python}
-
-~~~
-FIXME
-~~~
-{: .output}
-
-
-We define some sample data for which we want to create a histogram.
-~~~
-data = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5]
-~~~
-:{ .language-python}
-~~~
-FIXME
-~~~
-{: .output}
-
-We use the plt.hist() function to create the histogram. We pass the data as the first argument, 
-specify the number of bins using the bins parameter, and optionally specify the color of the bars
-and their edges using the color and edgecolor parameters, respectively.
-~~~
-plt.hist(data, bins=5, color='skyblue', edgecolor='black')
-~~~
-:{ .language-python}
-~~~
-FIXME
-~~~
-{: .output}
-
-We add labels to the x-axis and y-axis using plt.xlabel() and plt.ylabel(), and we
-add a title to the plot using plt.title().
-~~~
-plt.xlabel('Value')
-plt.ylabel('Frequency')
-plt.title('Histogram of Sample Data')
-~~~
-:{ .language-python}
-
-~~~
-FIXME
-~~~
-{: .output}
-
-Finally, we use plt.show() to display the plot.
-~~~
-plt.show()
-~~~
-:{ .language-python}
-
-This will produce a simple histogram of the sample data with five bins, 
-with each bin representing the frequency of values falling within its range. 
-The bars are colored sky blue with black edges for better visibility.
-
-~~~
-FIXME
-~~~
-{: .output}
