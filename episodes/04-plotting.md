@@ -15,6 +15,15 @@ keypoints:
 - "matplotlib is a library"
 ---
 
+Python has several libraries that plot and visualize data.
+[NetworkX](https://networkx.org/) is a library for working with graph data structures and algorithms, 
+[Plotly](https://plotly.com/) is a library for creating interactive and publication-quality plots, and 
+[Matplotlib](https://matplotlib.org/) 
+is a comprehensive plotting library for creating static and interactive visualizations in Python. 
+Each of these libraries serves different purposes and can be used for various data visualization 
+tasks depending on the requirements and preferences of the user.
+
+## Creating graphs with NetworkX and Plotly 
 Let's create a simple graph with NetworkX and visualize it using Plotly. 
 In this example, we'll create a graph with four nodes and four edges.
 Nodes are represented as red markers and edges are represented as black lines.
@@ -23,7 +32,7 @@ Nodes are represented as red markers and edges are represented as black lines.
 import networkx as nx
 import plotly.graph_objects as go
 ~~~
-:{language-python}
+:{.language-python}
 
 We create a simple undirected graph G.
 ~~~
@@ -31,7 +40,7 @@ We create a simple undirected graph G.
 G = nx.Graph()
 G.add_edges_from([(1, 2), (2, 3), (3, 4), (4, 1)])
 ~~~
-:{language-python}
+:{.language-python}
 
 
 We define positions for nodes using a spring layout algorithm (spring_layout). This assigns positions to nodes in such a way that minimizes the forces between them, resulting in a visually appealing layout.
@@ -39,7 +48,7 @@ We define positions for nodes using a spring layout algorithm (spring_layout). T
 # Define positions for nodes
 pos = nx.spring_layout(G)
 ~~~
-:{language-python}
+:{.language-python}
 
 
 We create traces for edges and nodes. Each edge is represented by a line connecting the positions of its 
@@ -53,7 +62,7 @@ for edge in G.edges():
     edge_trace = go.Scatter(x=[x0, x1], y=[y0, y1], mode='lines', line=dict(width=3))
     edge_traces.append(edge_trace)
 ~~~
-:{language-python}
+:{.language-python}
 
 We create a Plotly figure with the specified data and layout. We disable the legend for simplicity.
 
@@ -68,7 +77,7 @@ for node in G.nodes():
 
 node_trace = go.Scatter(x=node_x, y=node_y, mode='markers', marker=dict(size=14, color='rgb(255,0,0)'))
 ~~~
-:{language-python}
+:{.language-python}
 
 Create the Plotly figure
 ~~~
@@ -81,7 +90,7 @@ We show the figure using Plotly's show() method.
 ~~~
 fig.show()
 ~~~
-:{language-python}
+:{.language-python}
 
 
 ~~~
@@ -141,4 +150,4 @@ def visualize_simplicial_complex(simplex_tree, filtration_value, vertex_names=No
 
     return G
 ~~~
-:{language-python}
+:{.language-python}
