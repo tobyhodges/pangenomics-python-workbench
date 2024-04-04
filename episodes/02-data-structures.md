@@ -491,10 +491,11 @@ dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 2022)])
 > b) `genes_dict["gene4"] = {"name": "GENE4", "start_position": 123456, "end_position": 234567}`
 > c) `genes_dict.append("gene4": {"name": "GENE4", "start_position": 123456, "end_position": 234567})`
 > d) `genes_dict.insert(4, {"name": "GENE4", "start_position": 123456, "end_position": 234567})`
+>  
 > > ## Solution
-> > The correct answer is option b) genes_dict["gene4"] = {"name": "GENE4", "start_position": 123456, "end_position": 234567}.
-> > It uses the indexing syntax to add a new key-value pair to the genes_dict dictionary, where the key is "gene4" and the value is a dictionary representing the gene's characteristics.
-> > 
+>> The correct answer is option b) genes_dict["gene4"] = {"name": "GENE4", "start_position": 123456, "end_position": 234567}.
+>> It uses the indexing syntax to add a new key-value pair to the genes_dict dictionary, where the key is "gene4" and the value is a dictionary representing the gene's characteristics.
+>> 
 > {: .solution}
 {: .challenge}
 
