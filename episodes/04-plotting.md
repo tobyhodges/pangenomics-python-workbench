@@ -15,6 +15,7 @@ keypoints:
 - "matplotlib is a library"
 ---
 
+
 Python has several libraries that plot and visualize data.
 [NetworkX](https://networkx.org/) is a library for working with graph data structures and algorithms, 
 [Plotly](https://plotly.com/) is a library for creating interactive and publication-quality plots, and 
@@ -22,7 +23,6 @@ Python has several libraries that plot and visualize data.
 is a comprehensive plotting library for creating static and interactive visualizations in Python. 
 Each of these libraries serves different purposes and can be used for various data visualization 
 tasks depending on the requirements and preferences of the user.
-
 ## Creating graphs with NetworkX and Plotly 
 Let's create a simple graph with NetworkX and visualize it using Plotly. 
 In this example, we'll create a graph with four nodes and four edges.
@@ -193,3 +193,66 @@ def visualize_simplicial_complex(simplex_tree, filtration_value, vertex_names=No
 :{ .language-python}
 
 ## Plot with matplotlib
+
+We import the matplotlib.pyplot module, which provides a MATLAB-like plotting interface.
+~~~
+import matplotlib.pyplot as plt
+~~~
+:{ .language-python}
+
+~~~
+FIXME
+~~~
+{: .output}
+
+
+We define some sample data for which we want to create a histogram.
+~~~
+data = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5]
+~~~
+:{ .language-python}
+~~~
+FIXME
+~~~
+{: .output}
+
+We use the plt.hist() function to create the histogram. We pass the data as the first argument, 
+specify the number of bins using the bins parameter, and optionally specify the color of the bars
+and their edges using the color and edgecolor parameters, respectively.
+~~~
+plt.hist(data, bins=5, color='skyblue', edgecolor='black')
+~~~
+:{ .language-python}
+~~~
+FIXME
+~~~
+{: .output}
+
+We add labels to the x-axis and y-axis using plt.xlabel() and plt.ylabel(), and we
+add a title to the plot using plt.title().
+~~~
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+plt.title('Histogram of Sample Data')
+~~~
+:{ .language-python}
+
+~~~
+FIXME
+~~~
+{: .output}
+
+Finally, we use plt.show() to display the plot.
+~~~
+plt.show()
+~~~
+:{ .language-python}
+
+This will produce a simple histogram of the sample data with five bins, 
+with each bin representing the frequency of values falling within its range. 
+The bars are colored sky blue with black edges for better visibility.
+
+~~~
+FIXME
+~~~
+{: .output}
