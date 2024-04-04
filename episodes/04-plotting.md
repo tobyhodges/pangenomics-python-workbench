@@ -28,6 +28,7 @@ tasks depending on the requirements and preferences of the user.
 
 ## Plot with matplotlib
 
+
 We import the matplotlib.pyplot module, which provides a MATLAB-like plotting interface.
 ~~~
 import matplotlib.pyplot as plt
@@ -39,7 +40,7 @@ FIXME
 {: .output}
 
 
-We define some sample data for which we want to create a histogram.
+We defined some sample data for which we wanted to create a histogram.
 ~~~
 data = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5]
 ~~~
@@ -90,12 +91,28 @@ FIXME
 ~~~
 {: .output}
 
-> ## Exercise 1: 
->
->  
+> ## Exercise 1: Create a function that plots
+> dna_sequence = "ATGCTGACCTGAAGCTAAGCTAGGCT"
+>  plot_nucleotide_frequency(dna_sequence)
+> 
 > > ## Solution
+> > ~~~
+> > def plot_nucleotide_frequency(sequence):
+> > nucleotide_counts = calculate_nucleotide_frequency(sequence)
+> >    nucleotides = list(nucleotide_counts.keys())
+> >    frequencies = list(nucleotide_counts.values())
 > >
-> > 
+> >    plt.bar(nucleotides, frequencies, color='skyblue')
+> >    plt.xlabel('Nucleotide')
+> >    plt.ylabel('Frequency')
+> >    plt.title('Nucleotide Frequency Histogram')
+> >    plt.show()
+
+
+
+
+> > ~~~
+> > {: .language-python}
 > {: .solution}
 {: .challenge}
 
