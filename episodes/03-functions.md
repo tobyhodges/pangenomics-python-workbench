@@ -3,7 +3,9 @@ title: "Functions"
 teaching: 10
 exercises: 10
 questions:
-- ""
+- "How can evaluate a condition?"
+- "How can I repeat an action?"
+- "How can create my custom functions?"
 
 objectives:
 - "Use the `if` conditional to decide an action"
@@ -11,7 +13,7 @@ objectives:
 - "Create your functions"
 
 keypoints:
-- "The conditional `if` evaluate a statement and perform an action"
+- "The conditional `if` evaluates a statement and performs an action"
 - "The for loop repeats an action a predetermined number of times"
 - "Custom functions can be defined with `def`"
 ---
@@ -78,17 +80,35 @@ def hamming_distance(str1, str2):
 ~~~
 {: .language-python}
 
-~~~
-def calculate_nucleotide_frequency(sequence):
-    nucleotide_counts = {'A': 0, 'C': 0, 'G': 0, 'T': 0}
+> ## Exercise 1: Sort the function to count the nucleotides in a string
+>  ~~~
+>   return nucleotide_counts  
+>    nucleotide_counts = {'A': 0, 'C': 0, 'G': 0, 'T': 0}
+>
+>      if nucleotide in nucleotide_counts:
+>    for nucleotide in sequence:
+>            nucleotide_counts[nucleotide] += 1
+>
+>     def calculate_nucleotide_frequency(sequence):
+>  ~~~
+> {: .language-python}
+>
+> > ## Solution
+> > ~~~
+> >     def calculate_nucleotide_frequency(sequence):
+> >     nucleotide_counts = {'A': 0, 'C': 0, 'G': 0, 'T': 0}
+> > 
+> >     for nucleotide in sequence:
+> >        if nucleotide in nucleotide_counts:
+> >             nucleotide_counts[nucleotide] += 1
+> > 
+> >    return nucleotide_counts
+> >  ~~~
+> > {: .language-python}
+> > 
+> {: .solution}
+{: .challenge}
 
-    for nucleotide in sequence:
-        if nucleotide in nucleotide_counts:
-            nucleotide_counts[nucleotide] += 1
-
-    return nucleotide_counts
-~~~
-{: .language-python}
 
 Let's assume that "population" is a numpy ndarray with your genomes as rows.
 ~~~
