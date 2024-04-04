@@ -173,13 +173,14 @@ Consider that the `sort()` method modifies the original list and does not return
 >> 
 >> For example, if we want to get a slice of `newlist` from index 1 to index 4, we would use the notation `newlist[1:4]` and we will get a slice that includes elements from index 1 (inclusive) to index 4 (exclusive).
 >> ~~~
-newlist[1:4]
-~~~
-{: .language-python}
+>> newlist[1:4]
 >> ~~~
-['lemon', 'grape', 'cherry']
-~~~
-{: .output}
+>> {: .language-python}
+>> 
+>> ~~~
+>> ['lemon', 'grape', 'cherry']
+>> ~~~
+>> {: .output}
 >>
 >> Another syntax of "slices" in Python with the notation list[start:end:step] refers to the technique for selecting a subset of elements from a list using three parameters:
 >> - **start:** Indicates the index from which we start including elements in the slice.
@@ -189,14 +190,14 @@ newlist[1:4]
 >> If we run `newlist[::2]`, we get a slice that includes elements of the `newlist`, but selecting every second element. It's like starting from the beginning of the list, ending at the end, and selecting every second element.
 >>
 >> ~~~
-newlist[::2]
-~~~
-{: .language-python}
+>> newlist[::2]
+>> ~~~
+>> {: .language-python}
 >>
 >> ~~~
-['orange', 'grape', 'banana']
-~~~
-{: .output}
+>> ['orange', 'grape', 'banana']
+>> ~~~
+>> {: .output}
 >>
 > {: .solution}
 {: .callout}
