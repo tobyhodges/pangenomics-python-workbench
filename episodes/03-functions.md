@@ -109,8 +109,17 @@ def hamming_distance(str1, str2):
 > {: .solution}
 {: .challenge}
 
+> ## Exercise 2: Evaluate the number of nucleotides in a string 
+>
+>  
+> > ## Solution
+> >
+> > 
+> {: .solution}
+{: .challenge}
 
-Let's assume that "population" is a numpy ndarray with your genomes as rows.
+
+Let's assume that "population" is a numpy ndarray with genomes as rows.
 ~~~
 def calculate_hamming_matrix(population):
     # Number of genomes
