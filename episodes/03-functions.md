@@ -22,20 +22,58 @@ keypoints:
 
 
 ## If statements
+The `if` statement is a conditional statement in Python that allows us to execute a 
+block of code only if a certain condition is true. It follows this syntax:
 ~~~
+if condition:
+    # code block to execute if condition is True
+~~~
+{: .language-python}
 
-   # Check if the strings have equal length
-    if len(str1) != len(str2):
-        raise ValueError("Strings must have equal length")
+Lets look if two characters representing nucleotides are equal.
+~~~
+char1='A'
+char2='A'
+
+if char1 == char2:
+  print( char1,"equal", char2)
 ~~~
 {: .language-python}
 
-Another example
+The else conditional executes a block when the condition in the if is not true.
 ~~~
-if char1 != char2:
-            distance += 1
+char1='A'
+char1='G'
+
+if char1 == char2:
+  print( char1,"equal", char2)
+else:
+  print( char1,"is not equal", char2)
 ~~~
 {: .language-python}
+
+> ## Exercise 1: Evaluate if two strings have equal length
+> Fill in the blanks to evaluate if the following strings have equal lengths.
+> ~~~
+> str1="ACGT"
+> str2="GATAKA"
+> 
+> __ ___(____) != ___(____):
+>       print("Strings does not have equal length")
+> ~~~
+> {: .language-python}
+>   
+> 
+{: .language-python}
+> > ## Solution
+> > ~~~
+> > if len(str1) != len(str2):
+> >       print("Strings does not have equal length")
+> > ~~~
+> > {: .language-python}
+> {: .solution}
+{: .challenge}
+
 
 ## For loops
  # Iterate over the characters of the strings
