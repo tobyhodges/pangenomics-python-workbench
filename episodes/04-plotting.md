@@ -261,6 +261,71 @@ fig.show()
 
 
 
+~~~
+# Define some triangles (example)
+triangles = [(1, 2, 3), (2, 3, 1)]
+~~~
+{: .language-python}
+
+
+~~~
+# Node trace
+node_trace = go.Scatter(x=[], y=[], mode='markers+text', hoverinfo='text', marker=dict(size=14), text=['Node 1', 'Node 2', 'Node 3'], textposition='top center', textfont=dict(size=14))
+~~~
+{: .language-python}
+
+
+~~~
+# Edge traces
+edge_traces = []
+for edge in G.edges():
+    x0, y0 = pos[edge[0]]
+    x1, y1 = pos[edge[1]]
+    edge_trace = go.Scatter(x=[x0, x1, None], y=[y0, y1, None], mode='lines', line=dict(width=3, color='rgba(0,0,0,0.5)'))
+    edge_traces.append(edge_trace)
+~~~
+{: .language-python}
+
+
+~~~
+# Triangle traces
+triangle_traces = []
+for triangle in triangles:
+    x = [pos[vertex][0] for vertex in triangle]
+    y = [pos[vertex][1] for vertex in triangle]
+    triangle_trace = go.Scatter(x=x + [x[0]], y=y + [y[0]], fill='toself', mode='lines+markers', line=dict(width=2), fillcolor='rgba(255,0,0,0.2)')
+    triangle_traces.append(triangle_trace)
+~~~
+{: .language-python}
+
+~~~
+# Configure the layout of the plot
+layout = go.Layout(showlegend=False, hovermode='closest', xaxis=dict(showgrid=False, zeroline=False, tickfont=dict(size=16, family='Arial, sans-serif')), yaxis=dict(showgrid=False, zeroline=False, tickfont=dict(size=16, family='Arial, sans-serif')))
+~~~
+{: .language-python}
+
+
+~~~
+# Create the figure
+fig = go.Figure(data=edge_traces + triangle_traces + [node_trace], layout=layout)
+~~~
+{: .language-python}
+
+~~~
+# Set the figure size
+plot_size = 1
+dpi = 600
+fig.update_layout(width=plot_size * dpi, height=plot_size * dpi)
+~~~
+{: .language-python}
+
+~~~
+fig.show() # Show the figure
+~~~
+{: .language-python}
+
+    
+
 > ## Exercise 2: 
 >
 >  
