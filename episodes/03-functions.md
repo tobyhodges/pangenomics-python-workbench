@@ -6,10 +6,14 @@ questions:
 - ""
 
 objectives:
-- ""
+- "Use the `if` conditional to decide an action"
+- "Use the `for` loop to iterate actions"
+- "Create your functions"
 
 keypoints:
-- " The con"
+- "The conditional `if` evaluate a statement and perform an action"
+- "The for loop repeats an action a predetermined number of times"
+- "Custom functions can be defined with `def`"
 ---
 
 
