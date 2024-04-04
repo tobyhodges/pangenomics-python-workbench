@@ -76,8 +76,17 @@ else:
 
 
 ## For loops
- # Iterate over the characters of the strings
+The for loop is used in Python to iterate over a sequence (such as a list, tuple, string, etc.) 
+and execute a block of code for each element in the sequence. It follows this syntax:
 ~~~
+for item in sequence:
+    # code block to execute for each item
+~~~
+{: .language-python}
+
+~~~
+> str1="ACGTAC"
+> str2="GATAKA"
 distance=0
     for char1, char2 in zip(str1, str2):
         # If the characters are different, increment the distance
