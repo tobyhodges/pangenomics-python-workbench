@@ -76,6 +76,19 @@ def hamming_distance(str1, str2):
     # Return the calculated Hamming distance
     return distance
 ~~~
+{: .language-python}
+
+~~~
+def calculate_nucleotide_frequency(sequence):
+    nucleotide_counts = {'A': 0, 'C': 0, 'G': 0, 'T': 0}
+
+    for nucleotide in sequence:
+        if nucleotide in nucleotide_counts:
+            nucleotide_counts[nucleotide] += 1
+
+    return nucleotide_counts
+~~~
+{: .language-python}
 
 Let's assume that "population" is a numpy ndarray with your genomes as rows.
 ~~~
