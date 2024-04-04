@@ -32,7 +32,14 @@ Nodes are represented as red markers and edges are represented as black lines.
 import networkx as nx
 import plotly.graph_objects as go
 ~~~
-:{.language-python}
+{: .language-python}
+
+
+~~~
+FIXME
+~~~
+{: .output}
+
 
 We create a simple undirected graph G.
 ~~~
@@ -40,16 +47,25 @@ We create a simple undirected graph G.
 G = nx.Graph()
 G.add_edges_from([(1, 2), (2, 3), (3, 4), (4, 1)])
 ~~~
-:{.language-python}
+:{ .language-python}
 
+~~~
+FIXME
+~~~
+{: .output}
 
 We define positions for nodes using a spring layout algorithm (spring_layout). This assigns positions to nodes in such a way that minimizes the forces between them, resulting in a visually appealing layout.
 ~~~
 # Define positions for nodes
 pos = nx.spring_layout(G)
 ~~~
-:{.language-python}
+:{ .language-python}
 
+
+~~~
+FIXME
+~~~
+{: .output}
 
 We create traces for edges and nodes. Each edge is represented by a line connecting the positions of its 
 two endpoints, and each node is represented by a marker at its position.
@@ -62,7 +78,12 @@ for edge in G.edges():
     edge_trace = go.Scatter(x=[x0, x1], y=[y0, y1], mode='lines', line=dict(width=3))
     edge_traces.append(edge_trace)
 ~~~
-:{.language-python}
+:{ .language-python}
+
+~~~
+FIXME
+~~~
+{: .output}
 
 We create a Plotly figure with the specified data and layout. We disable the legend for simplicity.
 
@@ -77,22 +98,41 @@ for node in G.nodes():
 
 node_trace = go.Scatter(x=node_x, y=node_y, mode='markers', marker=dict(size=14, color='rgb(255,0,0)'))
 ~~~
-:{.language-python}
+:{ .language-python}
+
+
+~~~
+FIXME
+~~~
+{: .output}
 
 Create the Plotly figure
 ~~~
 fig = go.Figure(data=edge_traces + [node_trace], layout=go.Layout(showlegend=False))
 ~~~
-:{language-python}
+:{ .language-python}
+
+
+~~~
+FIXME
+~~~
+{: .output}
 
 We show the figure using Plotly's show() method.
 # Show the figure
 ~~~
 fig.show()
 ~~~
-:{.language-python}
+:{ .language-python}
 
 
+~~~
+FIXME
+~~~
+{: .output}
+
+EXERCISE 1
+EXERCISE 2
 ~~~
 def visualize_simplicial_complex(simplex_tree, filtration_value, vertex_names=None, save_filename=None, plot_size=1, dpi=600, pos=None):
     G = nx.Graph()
@@ -150,4 +190,6 @@ def visualize_simplicial_complex(simplex_tree, filtration_value, vertex_names=No
 
     return G
 ~~~
-:{.language-python}
+:{ .language-python}
+
+## Plot with matplotlib
