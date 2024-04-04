@@ -148,25 +148,38 @@ G.add_edges_from([(1, 2), (2, 3), (3, 4), (4, 1)])
 ~~~
 {: .language-python}
 
-~~~
-FIXME
-~~~
-{: .output}
+We define positions for nodes using a spring layout 
+algorithm (spring_layout). This assigns positions to nodes 
+in such a way that minimizes the forces between them, 
+resulting in a visually appealing layout. 
 
-We define positions for nodes using a spring layout algorithm (spring_layout). This assigns positions to nodes in such a way that minimizes the forces between them, resulting in a visually appealing layout.
+When you call nx.spring_layout(G) without specifying any 
+arguments, the layout is generated randomly each time the 
+function is called. However, if you want to ensure that you get 
+the same layout each time you generate it, you can 
+set a seed for the random number generator.
 ~~~
 # Define positions for nodes
-pos = nx.spring_layout(G)
+# Set a seed for the random number generator
+seed_value = 42  # Choose any integer value as the seed
+pos = nx.spring_layout(G, seed=seed_value)
+pos
 ~~~
 {: .language-python}
 
 
 ~~~
-FIXME
+{1: array([0.4112362 , 0.99648922]),
+ 2: array([ 1.        , -0.41570474]),
+ 3: array([-0.41137359, -0.99514183]),
+ 4: array([-0.99986261,  0.41435735])}
 ~~~
 {: .output}
 
-We create traces for edges and nodes. Each edge is represented by a line connecting the positions of its 
+Try removing or changing the seed_value; what do you observe?
+
+We create traces for edges and nodes. Each edge is represented 
+by a line connecting the positions of its 
 two endpoints, and each node is represented by a marker at its position.
 ~~~
 # Create edge traces
@@ -176,17 +189,43 @@ for edge in G.edges():
     x1, y1 = pos[edge[1]]
     edge_trace = go.Scatter(x=[x0, x1], y=[y0, y1], mode='lines', line=dict(width=3))
     edge_traces.append(edge_trace)
+
+edge_traces
 ~~~
 {: .language-python}
 
 ~~~
-FIXME
+[Scatter({
+     'line': {'width': 3},
+      'mode': 'lines',
+      'x': [0.4112362006825586, 1.0],
+      'y': [0.9964892191512681, -0.41570474278971886]
+ }),
+ Scatter({
+     'line': {'width': 3},
+     'mode': 'lines',
+     'x': [0.4112362006825586, -0.9998626088117056],
+     'y': [0.9964892191512681, 0.41435735265600393]
+ }),
+ Scatter({
+     'line': {'width': 3},
+     'mode': 'lines',
+     'x': [1.0, -0.4113735918708533],
+     'y': [-0.41570474278971886, -0.9951418290175523]
+ }),
+ Scatter({
+     'line': {'width': 3},
+     'mode': 'lines',
+     'x': [-0.4113735918708533, -0.9998626088117056],
+     'y': [-0.9951418290175523, 0.41435735265600393]
+ })]
+Productos pagados de Colab - Cancela los contratos aquí
+
 ~~~
 {: .output}
 
-We create a Plotly figure with the specified data and layout. We disable the legend for simplicity.
-
-
+We create a Plotly figure with the specified data and layout. 
+We disable the legend for simplicity.
 ~~~
 node_x = []
 node_y = []
@@ -196,12 +235,16 @@ for node in G.nodes():
     node_y.append(y)
 
 node_trace = go.Scatter(x=node_x, y=node_y, mode='markers', marker=dict(size=14, color='rgb(255,0,0)'))
+
+print("node_x",node_x)
+print("node_y",node_y)
 ~~~
 {: .language-python}
 
 
 ~~~
-FIXME
+node_x [0.4112362006825586, 1.0, -0.4113735918708533, -0.9998626088117056]
+node_y [0.9964892191512681, -0.41570474278971886, -0.9951418290175523, 0.41435735265600393]
 ~~~
 {: .output}
 
