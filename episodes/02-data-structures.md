@@ -693,11 +693,28 @@ array([[   2.728,    6.513],
 {: .output}
 
 > ## Exercise 3: 
+> Suppose you have a the following array dna_array containing DNA sequences as strings.
+> ~~~
+> dna_sequences = ["AGCT", "TCGA", "ATCG", "CGTA", "GATTACA"]
+> dna_array = np.array(dna_sequences)
+> print(dna_array)
+> ~~~
+> {: .language-python}
+> 
+> You want to extract the sequences that meet a specific condition. Which NumPy function would you use to extract DNA sequences from `dna_array` that contain "AT"?
 >
->  
+> a) `np.extract(dna_array == 'AT', dna_array)`
+>
+> b) `np.where(dna_array == 'AT')`
+>
+> c) `np.extract(np.char.startswith(dna_array, 'AT'), dna_array)`
+>
+> d) `dna_array[np.char.count(dna_array, 'AT') > 0]`
+> 
 > > ## Solution
-> >
-> > 
+>>
+>> The correct is d).
+>> 
 > {: .solution}
 {: .challenge}
 
@@ -979,10 +996,11 @@ A909|MGIDGNCP_01268  A909|MGIDGNCP_01268  2603V|GBPINHCM_01231   515|LHMFJANI_01
 {: .output}
 
 
-> ## Exercise 5: 
+> ## Exercise 4: 
 > Use the dataframe `df_genes` and add a column that counts how many genes are in each row, for example, the first row has 4 genes but the third row has only two. 
 >  
 > > ## Solution
+> > With the following command you can add a column. The method `count` counts how many elements there are per row, with `axis = 1` we can fix the column. 
 > > ~~~
 > > df_genes['Number of genes'] = df_genes.count(axis=1)
 > > ~~~
