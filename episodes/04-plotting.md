@@ -55,16 +55,18 @@ and their edges using the color and edgecolor parameters, respectively.
 ~~~
 plt.hist(data, bins=5, color='skyblue', edgecolor='black')
 ~~~
+
 {: .language-python}
 ~~~
 (array([1., 2., 3., 4., 5.]),
  array([1. , 1.8, 2.6, 3.4, 4.2, 5. ]),
  <BarContainer object of 5 artists>)
+~~~
+{: .output}
+
  <a href="../fig/tda_paste.png">
   <img src="../fig/PlotMatplotlib.png" alt="Example" width="70%" height="auto"/>
 </a>
-~~~
-{: .output}
 
 We add labels to the x-axis and y-axis using plt.xlabel() and plt.ylabel(), and we
 add a title to the plot using plt.title().
@@ -80,12 +82,12 @@ plt.hist(data, bins=5, color='skyblue', edgecolor='black')
 (array([1., 2., 3., 4., 5.]),
  array([1. , 1.8, 2.6, 3.4, 4.2, 5. ]),
  <BarContainer object of 5 artists>)
+~~~
+{: .output}
  <a href="../fig/tda_paste.png">
   <img src="../fig/PlotMatplotlibLabels.png" alt="Example" width="70%" height="auto"/>
 </a>
 
-~~~
-{: .output}
 
 If you are not in colab or Jupyter notebook, but in stand alone Python
 you will need plt.show() to display the plot.
@@ -98,13 +100,9 @@ In this example will produce a simple histogram of the sample data with five bin
 with each bin representing the frequency of values falling within its range. 
 The bars are colored sky blue with black edges for better visibility.
 
-~~~
-FIXME
-~~~
-{: .output}
 
 > ## Exercise 1: Create a function that plots
-> dna_sequence = "ATGCTGACCTGAAGCTAAGCTAGGCT"
+>  dna_sequence = "ATGCTGACCTGAAGCTAAGCTAGGCT"
 >  plot_nucleotide_frequency(dna_sequence)
 > 
 > > ## Solution
@@ -119,10 +117,6 @@ FIXME
 > >    plt.ylabel('Frequency')
 > >    plt.title('Nucleotide Frequency Histogram')
 > >    plt.show()
-
-
-
-
 > > ~~~
 > > {: .language-python}
 > {: .solution}
