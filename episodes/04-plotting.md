@@ -7,13 +7,82 @@ questions:
 - "How can I plot histograms"
 
 objectives:
-- "Create a graph with nx"
+- "Create a graph with NetworkX"
 - "Create a graph with matplotlib"
 
 keypoints:
-- "xgraph is a library"
+- "NetworkX is a library"
 - "matplotlib is a library"
 ---
+
+Let's create a simple graph with NetworkX and visualize it using Plotly. 
+In this example, we'll create a graph with four nodes and four edges.
+Nodes are represented as red markers and edges are represented as black lines.
+
+~~~
+import networkx as nx
+import plotly.graph_objects as go
+~~~
+:{language-python}
+
+We create a simple undirected graph G.
+~~~
+# Create a simple graph
+G = nx.Graph()
+G.add_edges_from([(1, 2), (2, 3), (3, 4), (4, 1)])
+~~~
+:{language-python}
+
+
+We define positions for nodes using a spring layout algorithm (spring_layout). This assigns positions to nodes in such a way that minimizes the forces between them, resulting in a visually appealing layout.
+~~~
+# Define positions for nodes
+pos = nx.spring_layout(G)
+~~~
+:{language-python}
+
+
+We create traces for edges and nodes. Each edge is represented by a line connecting the positions of its 
+two endpoints, and each node is represented by a marker at its position.
+~~~
+# Create edge traces
+edge_traces = []
+for edge in G.edges():
+    x0, y0 = pos[edge[0]]
+    x1, y1 = pos[edge[1]]
+    edge_trace = go.Scatter(x=[x0, x1], y=[y0, y1], mode='lines', line=dict(width=3))
+    edge_traces.append(edge_trace)
+~~~
+:{language-python}
+
+We create a Plotly figure with the specified data and layout. We disable the legend for simplicity.
+
+
+~~~
+node_x = []
+node_y = []
+for node in G.nodes():
+    x, y = pos[node]
+    node_x.append(x)
+    node_y.append(y)
+
+node_trace = go.Scatter(x=node_x, y=node_y, mode='markers', marker=dict(size=14, color='rgb(255,0,0)'))
+~~~
+:{language-python}
+
+Create the Plotly figure
+~~~
+fig = go.Figure(data=edge_traces + [node_trace], layout=go.Layout(showlegend=False))
+~~~
+:{language-python}
+
+We show the figure using Plotly's show() method.
+# Show the figure
+~~~
+fig.show()
+~~~
+:{language-python}
+
 
 ~~~
 def visualize_simplicial_complex(simplex_tree, filtration_value, vertex_names=None, save_filename=None, plot_size=1, dpi=600, pos=None):
