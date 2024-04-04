@@ -14,9 +14,25 @@ keypoints:
 
 
 
-## For loops
 
 ## If statements
+
+   # Check if the strings have equal length
+    if len(str1) != len(str2):
+        raise ValueError("Strings must have equal length")
+
+    # Initialize the Hamming distance to 0
+    distance = 0
+
+   
+## For loops
+ # Iterate over the characters of the strings
+    for char1, char2 in zip(str1, str2):
+        # If the characters are different, increment the distance
+        if char1 != char2:
+            distance += 1
+
+            
 ## 
 Let's assume that "population" is a numpy ndarray with your genomes as rows.
 def calculate_hamming_matrix(population):
@@ -71,5 +87,4 @@ def hamming_distance(str1, str2):
 
     # Return the calculated Hamming distance
     return distance
-
 ~~~
