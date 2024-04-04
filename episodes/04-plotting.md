@@ -82,13 +82,14 @@ PlotMatplotlibLabels
 ~~~
 {: .output}
 
-Finally, we use plt.show() to display the plot.
+If you are not in colab or Jupyter notebook, but in stand alone Python
+you will need plt.show() to display the plot.
 ~~~
 plt.show()
 ~~~
 {: .language-python}
 
-This will produce a simple histogram of the sample data with five bins, 
+In this example will produce a simple histogram of the sample data with five bins, 
 with each bin representing the frequency of values falling within its range. 
 The bars are colored sky blue with black edges for better visibility.
 
