@@ -124,10 +124,10 @@ The bars were colored sky blue with black edges for better visibility.
 > >    plt.title('Nucleotide Frequency Histogram')
 > >    plt.bar(nucleotides, frequencies, color='skyblue')
 > >
-> > <a href="{{ page.root }}/fig/DNAfrequency.png">
-> >  <img src="{{ page.root }}/fig/DNAfrequency.png" alt=" histogram of the nucleotide frequency on a DNA sequence" />
-> > </a>
-> > <em> Figure 5. Histogram of the nucleotide frequency on a DNA sequence. <em/>
+>> <a href="{{ page.root }}/fig/DNAfrequency.png">
+>>  <img src="{{ page.root }}/fig/DNAfrequency.png" alt=" histogram of the nucleotide frequency on a DNA sequence" />
+>> </a>
+>> <em> Figure 5. Histogram of the nucleotide frequency on a DNA sequence. <em/>
 > >    
 > > ~~~
 > > {: .language-python}
@@ -264,14 +264,31 @@ fig.show()
   <img src="../fig/plotly.png" alt="Example" width="70%" height="auto"/>
 </a>
 
-
+In the [Topological Data Analysis for Pangenomics](https://carpentries-incubator.github.io/topological-data-analysis/) lesson, we need to graph and color triangles beside edges and nodes. Let's do an example with NetworkX. First, we define two triangles, one with vertexes (1,2,3) and another with vertexes in nodes (4,3,2) of the above object.
 
 ~~~
-# Define some triangles (example)
-triangles = [(1, 2, 3), (4, 3, 2)]
+triangles = [(1, 2, 3), (4, 3, 2)] # Define some triangles (example)
 ~~~
 {: .language-python}
 
+Now, we will use node_trace to define some characteristics of the nodes in the graph. 
+Each node is represented by a marker (dot) with a corresponding text label displayed above it. 
+The parameters used in its creation control various aspects of the appearance 
+and behavior of the markers and text labels.
+
+- x=[] and y=[]: These parameters specify the x and y coordinates of the nodes in the scatter plot. Since we're defining a trace for nodes, these lists are initially empty. The actual coordinates of the nodes will be added later based on the graph's layout.
+
+- mode='markers+text': This parameter specifies the scatter plot's mode. markers+text indicates that markers (dots representing nodes) and text labels will be displayed for each node.
+
+- hoverinfo='text': This parameter specifies what information will be displayed when hovering over a node. In this case, it's set to 'text', meaning the text labels provided for each node will be displayed when hovering over the corresponding marker.
+
+- marker=dict(size=14): This parameter specifies the properties of the markers (nodes) in the scatter plot. Here, size=14 indicates the size of the markers.
+
+- text=['Node 1', 'Node 2', 'Node 3']: This parameter specifies the text labels for each node. 
+
+- textposition='top center': This parameter specifies the text's position relative to the markers. 
+
+textfont=dict(size=14): This parameter specifies the font properties of the text labels. Here, size=14 indicates the font size of the text.
 
 ~~~
 # Node trace
@@ -279,7 +296,10 @@ node_trace = go.Scatter(x=[], y=[], mode='markers+text', hoverinfo='text', marke
 ~~~
 {: .language-python}
 
-
+Now that you know the `for` cycle, let's iterate over all edges in the graph, 
+extract the positions of the nodes connected by each edge, and create a 
+scatter plot trace representing the edge with a line connecting the two endpoints. 
+These traces are stored in a list (edge_traces) to be later included in the plot.
 ~~~
 # Edge traces
 edge_traces = []
@@ -291,7 +311,11 @@ for edge in G.edges():
 ~~~
 {: .language-python}
 
-
+Now, we iterate over all triangles in the graph, 
+extract the positions of the vertices of each triangle, 
+and create scatter plot traces representing the triangles 
+as filled polygons with lines connecting the vertices. 
+These traces are stored in a list (triangle_traces) to be later included in the plot.
 ~~~
 # Triangle traces
 triangle_traces = []
@@ -303,104 +327,130 @@ for triangle in triangles:
 ~~~
 {: .language-python}
 
+Now, we want to configure the plot layout by specifying 
+settings for various components such as the legend, 
+hover behavior, appearance of axes, and font properties of tick labels. 
+These settings are organized into a layout object (layout) using the go.Layout() constructor.
 ~~~
 # Configure the layout of the plot
 layout = go.Layout(showlegend=False, hovermode='closest', xaxis=dict(showgrid=False, zeroline=False, tickfont=dict(size=16, family='Arial, sans-serif')), yaxis=dict(showgrid=False, zeroline=False, tickfont=dict(size=16, family='Arial, sans-serif')))
 ~~~
 {: .language-python}
 
-
+To create the figure, we add edges, triangles, and nodes to the data and then use the go.Figure function.
 ~~~
 # Create the figure
 fig = go.Figure(data=edge_traces + triangle_traces + [node_trace], layout=layout)
 ~~~
 {: .language-python}
 
+Finally, we want to adjust the size of the plot by setting 
+its width and height based on the plot_size and dpi variables. 
 ~~~
 # Set the figure size
 plot_size = 1
 dpi = 600
 fig.update_layout(width=plot_size * dpi, height=plot_size * dpi)
-~~~
-{: .language-python}
-
-~~~
 fig.show() # Show the figure
 ~~~
 {: .language-python}
-
 
  <a href="../fig/TrianglesGraph.png">
   <img src="../fig/TrianglesGraph.png" alt="Example" width="70%" height="auto"/>
 </a>    
 
-> ## Exercise 2: 
+Here, we have plotted two filled triangles, we will need this ability to graph objects called 
+simplicial complexes in the following lesson.
+
+> ## Exercise 2: Documenting your code
+>  Look at the following function used in the Horizontal Gene transfer episode.
+>  1) Based on what you learned about plotting triangles and edges, sort the comments that document
+>  what that part of the code is doing.
+>  2) What do you think the simplex tree contain?
+>  3) what is the save_fiename doing?
+>     
+>   Calculate node positions if not provided
+>   Node trace
+>   Edge traces
+>   Triangle traces
+> Configure the layout of the plot
+> Save the figure if a filename is provided
+>  Show the figure
+> ~~~
+> def visualize_simplicial_complex(simplex_tree, filtration_value, vertex_names=None, save_filename=None, plot_size=1, dpi=600, pos=None):
+>    G = nx.Graph()
+>   triangles = []  # List to store triangles (3-nodes simplices)
+>   
+>    for simplex, filt in simplex_tree.get_filtration():
+>        if filt <= filtration_value:
+>            if len(simplex) == 2:
+>                G.add_edge(simplex[0], simplex[1])
+>            elif len(simplex) == 1:
+>                G.add_node(simplex[0])
+>            elif len(simplex) == 3:
+>                triangles.append(simplex)
+>    
+>    # FIRST COMMENT
+>    if pos is None:
+>        pos = nx.spring_layout(G)
+>    
+>    # SECOND COMMENT
+>    x_values, y_values = zip(*[pos[node] for node in G.nodes()])
+>    node_labels = [vertex_names[node] if vertex_names else str(node) for node in G.nodes()]
+>    node_trace = go.Scatter(x=x_values, y=y_values, mode='markers+text', hoverinfo='text', marker=dict(size=14), text=node_labels, textposition='top center', textfont=dict(size=14))
+>    
+>    # THIRD COMMENT
+>    edge_traces = []
+>    for edge in G.edges():
+>        x0, y0 = pos[edge[0]]
+>        x1, y1 = pos[edge[1]]
+>        edge_trace = go.Scatter(x=[x0, x1, None], y=[y0, y1, None], mode='lines', line=dict(width=3, color='rgba(0,0,0,0.5)'))
+>        edge_traces.append(edge_trace)
+>    
+>    # FOURTH COMMENT
+>    triangle_traces = []
+>    for triangle in triangles:
+>        x0, y0 = pos[triangle[0]]
+>        x1, y1 = pos[triangle[1]]
+>        x2, y2 = pos[triangle[2]]
+>        triangle_trace = go.Scatter(x=[x0, x1, x2, x0, None], y=[y0, y1, y2, y0, None], fill='toself', mode='lines+markers', line=dict(width=2), fillcolor='rgba(255,0,0,0.2)')
+>        triangle_traces.append(triangle_trace)
+>    
+>    # 5Th comment
+>    layout = go.Layout(showlegend=False, hovermode='closest', xaxis=dict(showgrid=False, zeroline=False, tickfont=dict(size=16, family='Arial, sans-serif')), yaxis=dict(showgrid=False, zeroline=False, tickfont=dict(size=16, family='Arial, sans-serif')))
+>    
+>    fig = go.Figure(data=edge_traces + triangle_traces + [node_trace], layout=layout)
+>    
+>    # Set the figure size
+>    fig.update_layout(width=plot_size * dpi, height=plot_size * dpi)
+>   
+>    # 6th comment
+>    if save_filename:
+>        pio.write_image(fig, save_filename, width=plot_size * dpi, height=plot_size * dpi, scale=1)
+>    
+> 
+>   # 7th comment
+>    fig.show()
 >
+>   return G
+>~~~
+>{: .language-python}
 >  
 > > ## Solution
 > >
 > > 
+> > FIRST COMMENT:   Calculate node positions if not provided
+> > SECOND COMMENT:   Node trace
+>  > Edge traces
+>   Triangle traces
+>   Configure the layout of the plot
+>   Save the figure if a filename is provided
+>   Show the figure
 > {: .solution}
 {: .challenge}
 
 
 
 ~~~
-def visualize_simplicial_complex(simplex_tree, filtration_value, vertex_names=None, save_filename=None, plot_size=1, dpi=600, pos=None):
-    G = nx.Graph()
-    triangles = []  # List to store triangles (3-nodes simplices)
-    
-    for simplex, filt in simplex_tree.get_filtration():
-        if filt <= filtration_value:
-            if len(simplex) == 2:
-                G.add_edge(simplex[0], simplex[1])
-            elif len(simplex) == 1:
-                G.add_node(simplex[0])
-            elif len(simplex) == 3:
-                triangles.append(simplex)
-    
-    # Calculate node positions if not provided
-    if pos is None:
-        pos = nx.spring_layout(G)
-    
-    # Node trace
-    x_values, y_values = zip(*[pos[node] for node in G.nodes()])
-    node_labels = [vertex_names[node] if vertex_names else str(node) for node in G.nodes()]
-    node_trace = go.Scatter(x=x_values, y=y_values, mode='markers+text', hoverinfo='text', marker=dict(size=14), text=node_labels, textposition='top center', textfont=dict(size=14))
-    
-    # Edge traces
-    edge_traces = []
-    for edge in G.edges():
-        x0, y0 = pos[edge[0]]
-        x1, y1 = pos[edge[1]]
-        edge_trace = go.Scatter(x=[x0, x1, None], y=[y0, y1, None], mode='lines', line=dict(width=3, color='rgba(0,0,0,0.5)'))
-        edge_traces.append(edge_trace)
-    
-    # Triangle traces
-    triangle_traces = []
-    for triangle in triangles:
-        x0, y0 = pos[triangle[0]]
-        x1, y1 = pos[triangle[1]]
-        x2, y2 = pos[triangle[2]]
-        triangle_trace = go.Scatter(x=[x0, x1, x2, x0, None], y=[y0, y1, y2, y0, None], fill='toself', mode='lines+markers', line=dict(width=2), fillcolor='rgba(255,0,0,0.2)')
-        triangle_traces.append(triangle_trace)
-    
-    # Configure the layout of the plot
-    layout = go.Layout(showlegend=False, hovermode='closest', xaxis=dict(showgrid=False, zeroline=False, tickfont=dict(size=16, family='Arial, sans-serif')), yaxis=dict(showgrid=False, zeroline=False, tickfont=dict(size=16, family='Arial, sans-serif')))
-    
-    fig = go.Figure(data=edge_traces + triangle_traces + [node_trace], layout=layout)
-    
-    # Set the figure size
-    fig.update_layout(width=plot_size * dpi, height=plot_size * dpi)
-    
-    # Save the figure if a filename is provided
-    if save_filename:
-        pio.write_image(fig, save_filename, width=plot_size * dpi, height=plot_size * dpi, scale=1)
-    
-    # Show the figure
-    fig.show()
 
-    return G
-~~~
-{: .language-python}
 
