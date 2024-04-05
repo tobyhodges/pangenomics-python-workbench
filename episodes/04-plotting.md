@@ -29,15 +29,13 @@ tasks depending on the requirements and preferences of the user.
 ## Plot with matplotlib
 
 
-We import the matplotlib.pyplot module, which provides a MATLAB-like plotting interface.
+First, we import the matplotlib.pyplot module, which provides a MATLAB-like plotting interface.
 ~~~
 import matplotlib.pyplot as plt
 ~~~
 {: .language-python}
 
-
-
-We defined some sample data for which we wanted to create a histogram.
+Now, we defined some sample data for which we wanted to create a histogram.
 ~~~
 data = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5]
 print(data)
@@ -65,7 +63,7 @@ plt.hist(data, bins=5, color='skyblue', edgecolor='black')
 {: .output}
 
  <a href="../fig/PlotMatplotlib.png">
-  <img src="../fig/PlotMatplotlib.png" alt="Example" width="70%" height="auto"/>
+  <img src="../fig/PlotMatplotlib.png" alt="Example" width="50%" height="50%"/>
 </a>
 
 We add labels to the x-axis and y-axis using plt.xlabel() and plt.ylabel(), and we
@@ -85,38 +83,41 @@ plt.hist(data, bins=5, color='skyblue', edgecolor='black')
 ~~~
 {: .output}
  <a href="../fig/PlotMatplotlibLabels.png">
-  <img src="../fig/PlotMatplotlibLabels.png" alt="Example" width="70%" height="auto"/>
+  <img src="../fig/PlotMatplotlibLabels.png" alt="Example" width="50%" height="50%"/>
 </a>
 
 
-If you are not in colab or Jupyter notebook, but in stand alone Python
+Notice that if you are not in colab or Jupyter notebook, but in stand-alone Python
 you will need plt.show() to display the plot.
 ~~~
 plt.show()
 ~~~
 {: .language-python}
 
-In this example will produce a simple histogram of the sample data with five bins, 
+In this example, we produced a simple histogram of the sample data with five bins, 
 with each bin representing the frequency of values falling within its range. 
-The bars are colored sky blue with black edges for better visibility.
+The bars were colored sky blue with black edges for better visibility.
 
 
-> ## Exercise 1: Create a function that plots
->  dna_sequence = "ATGCTGACCTGAAGCTAAGCTAGGCT"
->  plot_nucleotide_frequency(dna_sequence)
+> ## Exercise 1: The nucleotides frequency of a DNA sequence
+> Consider the DNA sequence stored in the string dna_sequence.
+>  dna_sequence = "ATGCTGACCTGAAGCTAAGCTAGGCT"  
+>
+>       nucleotide_counts = calculate_nucleotide_frequency(dna_sequence)
+>       nucleotides = list(nucleotide_counts.keys())
+>       frequencies = list(nucleotide_counts.values())
 > 
 > > ## Solution
 > > ~~~
-> > def plot_nucleotide_frequency(sequence):
-> > nucleotide_counts = calculate_nucleotide_frequency(sequence)
+> > 
+> > 
 > >    nucleotides = list(nucleotide_counts.keys())
 > >    frequencies = list(nucleotide_counts.values())
 > >
-> >    plt.bar(nucleotides, frequencies, color='skyblue')
 > >    plt.xlabel('Nucleotide')
 > >    plt.ylabel('Frequency')
 > >    plt.title('Nucleotide Frequency Histogram')
-> >    plt.show()
+> >    plt.bar(nucleotides, frequencies, color='skyblue')
 > > ~~~
 > > {: .language-python}
 > {: .solution}
@@ -125,20 +126,13 @@ The bars are colored sky blue with black edges for better visibility.
 ## Creating graphs with NetworkX and Plotly 
 Let's create a simple graph with NetworkX and visualize it using Plotly. 
 In this example, we'll create a graph with four nodes and four edges.
-Nodes are represented as red markers and edges are represented as black lines.
+Nodes are represented as red markers, and edges are represented as black lines.
 
 ~~~
 import networkx as nx
 import plotly.graph_objects as go
 ~~~
 {: .language-python}
-
-
-~~~
-FIXME
-~~~
-{: .output}
-
 
 We create a simple undirected graph G.
 ~~~
