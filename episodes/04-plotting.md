@@ -99,18 +99,23 @@ with each bin representing the frequency of values falling within its range.
 The bars were colored sky blue with black edges for better visibility.
 
 
-> ## Exercise 1: The nucleotides frequency of a DNA sequence
-> Consider the DNA sequence stored in the string dna_sequence.
->  dna_sequence = "ATGCTGACCTGAAGCTAAGCTAGGCT"  
->
->       nucleotide_counts = calculate_nucleotide_frequency(dna_sequence)
->       nucleotides = list(nucleotide_counts.keys())
->       frequencies = list(nucleotide_counts.values())
+> ## Exercise 1: The nucleotide frequency of a DNA sequence
+> In the DNA sequence stored in the string dna_sequence, we want to graph the frequency of each nucleotide.
+> Sort and fill in the blanks in the following code to get the frequency plot. Notice that we are using the function
+> nucleotide_counts, that we constructed in the previous episode
+> 
+> ~~~~
+> plt.bar(__________, __________, color='skyblue')
+> frequencies = list(nucleotide_counts.values())
+> nucleotide_counts = calculate_nucleotide_frequency(_______)
+> dna_sequence = "ATGCTGACCTGAAGCTAAGCTAGGCT"  
+> nucleotides = ____(nucleotide_counts.keys())
+> ~~~
+> {: .language-python}
 > 
 > > ## Solution
 > > ~~~
-> > 
-> > 
+> >    nucleotide_counts = calculate_nucleotide_frequency(dna_sequence)
 > >    nucleotides = list(nucleotide_counts.keys())
 > >    frequencies = list(nucleotide_counts.values())
 > >
@@ -118,7 +123,12 @@ The bars were colored sky blue with black edges for better visibility.
 > >    plt.ylabel('Frequency')
 > >    plt.title('Nucleotide Frequency Histogram')
 > >    plt.bar(nucleotides, frequencies, color='skyblue')
-> >    DNAfrequency.png
+> >
+> > >> <a href="{{ page.root }}/fig/DNAfrequency.png">
+>>  <img src="{{ page.root }}/fig/DNAfrequency.png" alt=" histogram of the nucleotide frequency on a DNA sequence" />
+>> </a>
+>> <em> Figure 5. Histogram of the nucleotide frequency on a DNA sequence. <em/>
+> >    
 > > ~~~
 > > {: .language-python}
 > {: .solution}
