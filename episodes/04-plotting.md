@@ -124,10 +124,10 @@ The bars were colored sky blue with black edges for better visibility.
 > >    plt.title('Nucleotide Frequency Histogram')
 > >    plt.bar(nucleotides, frequencies, color='skyblue')
 > >
-> > >> <a href="{{ page.root }}/fig/DNAfrequency.png">
->>  <img src="{{ page.root }}/fig/DNAfrequency.png" alt=" histogram of the nucleotide frequency on a DNA sequence" />
->> </a>
->> <em> Figure 5. Histogram of the nucleotide frequency on a DNA sequence. <em/>
+> > <a href="{{ page.root }}/fig/DNAfrequency.png">
+> >  <img src="{{ page.root }}/fig/DNAfrequency.png" alt=" histogram of the nucleotide frequency on a DNA sequence" />
+> > </a>
+> > <em> Figure 5. Histogram of the nucleotide frequency on a DNA sequence. <em/>
 > >    
 > > ~~~
 > > {: .language-python}
