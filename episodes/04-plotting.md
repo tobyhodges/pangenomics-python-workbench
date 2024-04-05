@@ -118,6 +118,7 @@ The bars were colored sky blue with black edges for better visibility.
 > >    plt.ylabel('Frequency')
 > >    plt.title('Nucleotide Frequency Histogram')
 > >    plt.bar(nucleotides, frequencies, color='skyblue')
+> >    DNAfrequency.png
 > > ~~~
 > > {: .language-python}
 > {: .solution}
