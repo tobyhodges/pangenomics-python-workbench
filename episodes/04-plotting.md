@@ -365,21 +365,18 @@ simplicial complexes in the following lesson.
 > ## Exercise 2: Documenting your code
 >  Look at the following function used in the Horizontal Gene transfer episode.
 >  1) Based on what you learned about plotting triangles and edges, sort the comments that document
->  what that part of the code is doing.
->  COMMENT: Triangle traces
->  COMMENT: Calculate node positions if not provided
->  COMMENT: Show the figure
->  COMMENT: Node trace
->  COMMENT: Save the figure if a filename is provided
->  COMMENT: Configure the layout of the plot
->  COMMENT: Edge traces
+>  what that part of the code is doing.  
+>  COMMENT: Triangle traces  
+>  COMMENT: Calculate node positions if not provided  
+>  COMMENT: Show the figure  
+>  COMMENT: Node trace  
+>  COMMENT: Save the figure if a filename is provided  
+>  COMMENT: Configure the layout of the plot  
+>  COMMENT: Edge traces  
 > 
->  3) What do you think the simplex tree contain?
->  4) what is the save_fiename doing?
+>  3) What do you think the simplex tree contain?  
+>  4) what is the save_fiename doing?  
 >     
-
-
-
 > ~~~
 > def visualize_simplicial_complex(simplex_tree, filtration_value, vertex_names=None, save_filename=None, plot_size=1, dpi=600, pos=None):
 >    G = nx.Graph()
@@ -442,22 +439,20 @@ simplicial complexes in the following lesson.
 >  
 > > ## Solution
 > >
-> > 1) The sorted comments are:
-> > FIRST COMMENT:   Calculate node positions if not provided
-> > SECOND COMMENT:   Node trace
-> > THIRD COMMENT: Edge traces
-> >FOURTH COMMENT: Triangle traces
-> > 5TH COMMENT: Configure the layout of the plot
-> > 6TH COMMENT: Save the figure if a filename is provided
-> > 7 COMMENT: Show the figure
+> > 1) The sorted comments are:  
+> > FIRST COMMENT:   Calculate node positions if not provided  
+> > SECOND COMMENT:   Node trace  
+> > THIRD COMMENT: Edge traces  
+> >FOURTH COMMENT: Triangle traces  
+> > 5TH COMMENT: Configure the layout of the plot  
+> > 6TH COMMENT: Save the figure if a filename is provided  
+> > 7 COMMENT: Show the figure  
 > >
-> > 2) Object simplex_tree contains information about nodes, edges, and triangles
-> > 3) Is a parameter to save our graphs in a file
+> > 2) Object simplex_tree contains information about nodes, edges, and triangles  
+> > 3) Is a parameter to save our graphs in a file  
 > {: .solution}
 {: .challenge}
 
 
-
-~~~
 
 
