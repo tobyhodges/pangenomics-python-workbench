@@ -366,16 +366,20 @@ simplicial complexes in the following lesson.
 >  Look at the following function used in the Horizontal Gene transfer episode.
 >  1) Based on what you learned about plotting triangles and edges, sort the comments that document
 >  what that part of the code is doing.
->  2) What do you think the simplex tree contain?
->  3) what is the save_fiename doing?
+>  COMMENT: Triangle traces
+>  COMMENT: Calculate node positions if not provided
+>  COMMENT: Show the figure
+>  COMMENT: Node trace
+>  COMMENT: Save the figure if a filename is provided
+>  COMMENT: Configure the layout of the plot
+>  COMMENT: Edge traces
+> 
+>  3) What do you think the simplex tree contain?
+>  4) what is the save_fiename doing?
 >     
->   Calculate node positions if not provided
->   Node trace
->   Edge traces
->   Triangle traces
-> Configure the layout of the plot
-> Save the figure if a filename is provided
->  Show the figure
+
+
+
 > ~~~
 > def visualize_simplicial_complex(simplex_tree, filtration_value, vertex_names=None, save_filename=None, plot_size=1, dpi=600, pos=None):
 >    G = nx.Graph()
@@ -416,7 +420,7 @@ simplicial complexes in the following lesson.
 >        triangle_trace = go.Scatter(x=[x0, x1, x2, x0, None], y=[y0, y1, y2, y0, None], fill='toself', mode='lines+markers', line=dict(width=2), fillcolor='rgba(255,0,0,0.2)')
 >        triangle_traces.append(triangle_trace)
 >    
->    # 5Th comment
+>    # 5Th COMMENT
 >    layout = go.Layout(showlegend=False, hovermode='closest', xaxis=dict(showgrid=False, zeroline=False, tickfont=dict(size=16, family='Arial, sans-serif')), yaxis=dict(showgrid=False, zeroline=False, tickfont=dict(size=16, family='Arial, sans-serif')))
 >    
 >    fig = go.Figure(data=edge_traces + triangle_traces + [node_trace], layout=layout)
@@ -424,12 +428,12 @@ simplicial complexes in the following lesson.
 >    # Set the figure size
 >    fig.update_layout(width=plot_size * dpi, height=plot_size * dpi)
 >   
->    # 6th comment
+>    # 6th COMMENT
 >    if save_filename:
 >        pio.write_image(fig, save_filename, width=plot_size * dpi, height=plot_size * dpi, scale=1)
 >    
 > 
->   # 7th comment
+>   # 7th COMMENT
 >    fig.show()
 >
 >   return G
@@ -438,14 +442,17 @@ simplicial complexes in the following lesson.
 >  
 > > ## Solution
 > >
-> > 
+> > 1) The sorted comments are:
 > > FIRST COMMENT:   Calculate node positions if not provided
 > > SECOND COMMENT:   Node trace
->  > Edge traces
->   Triangle traces
->   Configure the layout of the plot
->   Save the figure if a filename is provided
->   Show the figure
+> > THIRD COMMENT: Edge traces
+> >FOURTH COMMENT: Triangle traces
+> > 5TH COMMENT: Configure the layout of the plot
+> > 6TH COMMENT: Save the figure if a filename is provided
+> > 7 COMMENT: Show the figure
+> >
+> > 2) Object simplex_tree contains information about nodes, edges, and triangles
+> > 3) Is a parameter to save our graphs in a file
 > {: .solution}
 {: .challenge}
 
