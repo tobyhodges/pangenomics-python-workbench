@@ -103,7 +103,6 @@ The bars were colored sky blue with black edges for better visibility.
 > In the DNA sequence stored in the string dna_sequence, we want to graph the frequency of each nucleotide.
 > Sort and fill in the blanks in the following code to get the frequency plot. Notice that we are using the function
 > nucleotide_counts, that we constructed in the previous episode
-> 
 > ~~~~
 > plt.bar(__________, __________, color='skyblue')
 > frequencies = list(nucleotide_counts.values())
@@ -111,6 +110,11 @@ The bars were colored sky blue with black edges for better visibility.
 > dna_sequence = "ATGCTGACCTGAAGCTAAGCTAGGCT"  
 > nucleotides = ____(nucleotide_counts.keys())
 > ~~~
+> <a href="{{ page.root }}/fig/DNAfrequency.png">
+> <img src="{{ page.root }}/fig/DNAfrequency.png" alt=" histogram of the nucleotide frequency on a DNA sequence" />
+> </a>
+> <em> Figure 5. Histogram of the nucleotide frequency on a DNA sequence. <em/>
+
 > {: .language-python}
 > 
 > > ## Solution
@@ -124,10 +128,6 @@ The bars were colored sky blue with black edges for better visibility.
 > >    plt.title('Nucleotide Frequency Histogram')
 > >    plt.bar(nucleotides, frequencies, color='skyblue')
 > >
->> <a href="{{ page.root }}/fig/DNAfrequency.png">
->>  <img src="{{ page.root }}/fig/DNAfrequency.png" alt=" histogram of the nucleotide frequency on a DNA sequence" />
->> </a>
->> <em> Figure 5. Histogram of the nucleotide frequency on a DNA sequence. <em/>
 > >    
 > > ~~~
 > > {: .language-python}
