@@ -104,8 +104,35 @@ distance=0
 {: .language-python}
             
 ## Functions
-The function hamming_distance() takes two parameters: str1 and str2, which are the two strings 
-for which the Hamming distance is to be calculated.
+Apart from the built-in functions and the library functions, you can make your functions, 
+first, you define them, and then you use them. To define a function you need to give it a name, 
+say what information you need to feed to it, and what output you want.
+
+Here we will wrap the conditional to decide if two characters are equal in the function
+equal_chars. First, we defined the function and then we called it.
+~~~
+def equal_chars(character1, character2):
+value=""
+  if character1 == character2:
+    value="equal"
+else:
+  value="Not equal"
+
+return value
+~~~
+{: .language-python}
+
+~~~
+char1='A'
+char1='G'
+
+equal_chars(char1,char2)
+~~~
+{: .language-python}
+
+After we create our first function, Let's create a hamming distance function for two strings. 
+The function hamming_distance() takes two parameters: str1 and str2, the two strings for which the Hamming distance is calculated.
+
 First, we check if the lengths of the two strings are equal. If they are not equal, we raise a ValueError 
 because the Hamming distance is only defined for strings of equal length.
 We initialize a variable distance to store the Hamming distance.
@@ -196,29 +223,55 @@ def hamming_distance(str1, str2):
 {: .challenge}
 
 Combining the data types you just learned, it is possible to automatize the function even more.
-Suppose that "population" is a numpy ndarray with genomes as rows.
+Suppose that "population" is a numpy ndarray with genomes as rows. Genomes are represented with only
+two characters: 1 and 0. 
+> ## Exercise 3: Sort the comments to document a Hamming distance function for matrixes
+>  ~~~
+> # The Hamming distance is multiplied by the number of genes to convert it into an absolute distance
+>  # Number of genomes 
+>  # Calculate the Hamming distance between each pair of genomes
+>  # Saving the distance in the matrix
+>  # Create an empty matrix for Hamming distances
+>  
+>  def calculate_hamming_matrix(population):
+>     # COMMENT 1
+>     num_genomes = population.shape[0]
+>     # COMMENT 2
+>     hamming_matrix = np.zeros((num_genomes, num_genomes), dtype=int)
+>     # COMMENT 3
+>     for i in range(num_genomes):
+>         for j in range(i+1, num_genomes):  # j=i+1 to avoid calculating the same distance twice
+>             #COMMENT 4
+>             distance = hamming(population[i], population[j]) * len(population[i])
+>             hamming_matrix[i, j] = distance # COMMENT 5
+>             hamming_matrix[j, i] = distance  # The matrix is symmetric
+>      
+>     return hamming_matrix
+>   ~~~
+>  {: .language-python}
+>
+> > ## Solution
+> > ~~~
+> > def calculate_hamming_matrix(population):
+> >    # Number of genomes
+> >    num_genomes = population.shape[0]
+> >    # Create an empty matrix for Hamming distances
+> >    hamming_matrix = np.zeros((num_genomes, num_genomes), dtype=int)
+> >   # Calculate the Hamming distance between each pair of genomes
+> >    for i in range(num_genomes):
+> >        for j in range(i+1, num_genomes):  # j=i+1 to avoid calculating the same distance twice
+> >            # The Hamming distance is multiplied by the number of genes to convert it into an absolute distance
+> >            distance = hamming(population[i], population[j]) * len(population[i])
+> >            hamming_matrix[i, j] = distance
+> >            hamming_matrix[j, i] = distance  # The matrix is symmetric
+> >    return hamming_matrix
+> >  ~~~
+> > {: .language-python}
+> {: .solution}
+{: .challenge}
 
-~~~
-def calculate_hamming_matrix(population):
-    # Number of genomes
-    num_genomes = population.shape[0]
-    # Create an empty matrix for Hamming distances
-    hamming_matrix = np.zeros((num_genomes, num_genomes), dtype=int)
-   # Calculate the Hamming distance between each pair of genomes
-    for i in range(num_genomes):
-        for j in range(i+1, num_genomes):  # j=i+1 to avoid calculating the same distance twice
-            # The Hamming distance is multiplied by the number of genes to convert it into an absolute distance
-            distance = hamming(population[i], population[j]) * len(population[i])
-            hamming_matrix[i, j] = distance
-            hamming_matrix[j, i] = distance  # The matrix is symmetric
-    
-    return hamming_matrix
-~~~
-{: .language-python}
 
 
-Apart from the built-in functions and the library functions you can make your own functions, 
-first you define them and then you use them. To define a function you need to give it a name, 
-say what information you need to feed to it, and what output you want.
+
 
 
