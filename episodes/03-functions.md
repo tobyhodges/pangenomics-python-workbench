@@ -70,9 +70,6 @@ Just remember always to keep the same amount of characters in the indentation.
 >       print("Strings does not have equal length")
 > ~~~
 > {: .language-python}
->   
-> 
-{: .language-python}
 > > ## Solution
 > > ~~~
 > > if len(str1) != len(str2):
