@@ -55,7 +55,8 @@ else:
 ~~~
  A is not equal G
 ~~~
-{: .output}
+{: .output}  
+
 You can add as many instructions inside the `if` as you want by indenting the sentences.
 Just remember always to keep the same amount of characters in the indentation. 
 
