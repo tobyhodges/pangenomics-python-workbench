@@ -30,7 +30,7 @@ if condition:
 ~~~
 {: .language-python}
 
-Lets look if two characters representing nucleotides are equal.
+Let's look at whether the two characters representing nucleotides are equal.
 ~~~
 char1='A'
 char2='A'
@@ -86,6 +86,14 @@ for item in sequence:
 
 ~~~
 > str1="ACGTAC"
+distance=0
+    for char in str1:
+        print("The character is",char)
+~~~
+{: .language-python}
+
+~~~
+> str1="ACGTAC"
 > str2="GATAKA"
 distance=0
     for char1, char2 in zip(str1, str2):
@@ -94,19 +102,40 @@ distance=0
             distance += 1
 ~~~
 {: .language-python}
-
             
 ## Functions
 The function hamming_distance() takes two parameters: str1 and str2, which are the two strings 
 for which the Hamming distance is to be calculated.
-We first check if the lengths of the two strings are equal. If they are not equal, we raise a ValueError 
+First, we check if the lengths of the two strings are equal. If they are not equal, we raise a ValueError 
 because the Hamming distance is only defined for strings of equal length.
 We initialize a variable distance to store the Hamming distance.
 We then iterate over the characters of the two strings using the zip() function, which pairs 
-corresponding elements of the two strings together.
+the corresponding elements of the two strings together.
 For each pair of characters, if they are different, we increment the distance variable.
 Finally, we return the calculated Hamming distance.
 You can use this function to calculate the Hamming distance between any two strings in Python.
+~~~
+def hamming_distance(str1, str2):
+    # Check if the strings have equal length
+    if len(str1) != len(str2):
+        raise ValueError("Strings must have equal length")
+
+    # Initialize the Hamming distance to 0
+    distance = 0
+
+    # Iterate over the characters of the strings
+    for char1, char2 in zip(str1, str2):
+        # If the characters are different, increment the distance
+        if char1 != char2:
+            distance += 1
+
+    # Return the calculated Hamming distance
+    return distance
+~~~
+{: .language-python}
+
+
+Now lets add a multiline comment documenting the parameters needed for the fucntion.
 ~~~
 def hamming_distance(str1, str2):
     """
@@ -137,7 +166,7 @@ def hamming_distance(str1, str2):
 ~~~
 {: .language-python}
 
-> ## Exercise 1: Sort the function to count the nucleotides in a string
+> ## Exercise 2: Sort the function to count the nucleotides in a string
 >  ~~~
 >   return nucleotide_counts  
 >    nucleotide_counts = {'A': 0, 'C': 0, 'G': 0, 'T': 0}
@@ -166,17 +195,8 @@ def hamming_distance(str1, str2):
 > {: .solution}
 {: .challenge}
 
-> ## Exercise 2: Evaluate the number of nucleotides in a string 
->
->  
-> > ## Solution
-> >
-> > 
-> {: .solution}
-{: .challenge}
-
-
-Let's assume that "population" is a numpy ndarray with genomes as rows.
+Combining the data types you just learned, it is possible to automatize the function even more.
+Suppose that "population" is a numpy ndarray with genomes as rows.
 
 ~~~
 def calculate_hamming_matrix(population):
