@@ -52,6 +52,13 @@ else:
 ~~~
 {: .language-python}
 
+~~~
+ A is not equal G
+~~~
+{: .output}
+You can add as many instructions inside the `if` as you want by indenting the sentences.
+Just remember always to keep the same amount of characters in the indentation. 
+
 > ## Exercise 1: Evaluate if two strings have equal length
 > Fill in the blanks to evaluate if the following strings have equal lengths.
 > ~~~
@@ -68,6 +75,7 @@ else:
 > > ## Solution
 > > ~~~
 > > if len(str1) != len(str2):
+> >       print(str1,str2)
 > >       print("Strings does not have equal length")
 > > ~~~
 > > {: .language-python}
