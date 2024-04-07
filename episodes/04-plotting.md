@@ -99,11 +99,11 @@ with each bin representing the frequency of values falling within its range.
 The bars were colored sky blue with black edges for better visibility.
 
 
-> ## Exercise 1: The nucleotide frequency of a DNA sequence  
+> ## Exercise 1: The nucleotide frequency of a DNA sequence    
 > In the DNA sequence stored in the string dna_sequence, we want to graph the frequency of each nucleotide.
 > Sort and fill in the blanks in the following code to get the frequency plot. Notice that we are using the function
-> nucleotide_counts, that we constructed in the previous episode
-> ~~~~
+> nucleotide_counts, that we constructed in the previous episode  
+> ~~~~  
 > plt.bar(__________, __________, color='skyblue')
 > frequencies = list(nucleotide_counts.values())
 > nucleotide_counts = calculate_nucleotide_frequency(_______)
@@ -115,23 +115,21 @@ The bars were colored sky blue with black edges for better visibility.
 > </a>
 > <em> Figure 5. Histogram of the nucleotide frequency on a DNA sequence. <em/>
 > {: .language-python}
-> 
-> > ## Solution
-> > ~~~
-> >    nucleotide_counts = calculate_nucleotide_frequency(dna_sequence)
-> >    nucleotides = list(nucleotide_counts.keys())
-> >    frequencies = list(nucleotide_counts.values())
-> >
-> >    plt.xlabel('Nucleotide')
-> >    plt.ylabel('Frequency')
-> >    plt.title('Nucleotide Frequency Histogram')
-> >    plt.bar(nucleotides, frequencies, color='skyblue')
-> >
-> >    
-> > ~~~
-> > {: .language-python}
-> {: .solution}
-{: .challenge}
+>   
+>> ## Solution  
+>> ~~~
+>>    nucleotide_counts = calculate_nucleotide_frequency(dna_sequence)
+>>    nucleotides = list(nucleotide_counts.keys())
+>>    frequencies = list(nucleotide_counts.values())
+>>
+>>    plt.xlabel('Nucleotide')
+>>    plt.ylabel('Frequency')
+>>    plt.title('Nucleotide Frequency Histogram')
+>>    plt.bar(nucleotides, frequencies, color='skyblue')
+>> ~~~
+>> {: .language-python}   
+>{: .solution}  
+{: .challenge}  
 
 ## Creating graphs with NetworkX and Plotly 
 Let's create a simple graph with NetworkX and visualize it using Plotly. 
