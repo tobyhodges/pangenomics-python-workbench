@@ -87,7 +87,7 @@ plt.hist(data, bins=5, color='skyblue', edgecolor='black')
 </a>
 
 
-Notice that if you are not in colab or Jupyter notebook, but in stand-alone Python
+Notice that if you are not in colab or Jupyter Notebook, but in stand-alone Python
 you will need plt.show() to display the plot.
 ~~~
 plt.show()
@@ -102,7 +102,7 @@ The bars were colored sky blue with black edges for better visibility.
 > ## Exercise 1: The nucleotide frequency of a DNA sequence    
 > In the DNA sequence stored in the string dna_sequence, we want to graph the frequency of each nucleotide.
 > Sort and fill in the blanks in the following code to get the frequency plot. Notice that we are using the function
-> nucleotide_counts, that we constructed in the previous episode  
+> nucleotide_counts, which we constructed in the previous episode  
 > ~~~~  
 > plt.bar(__________, __________, color='skyblue')
 > frequencies = list(nucleotide_counts.values())
@@ -110,11 +110,11 @@ The bars were colored sky blue with black edges for better visibility.
 > dna_sequence = "ATGCTGACCTGAAGCTAAGCTAGGCT"  
 > nucleotides = ____(nucleotide_counts.keys())
 > ~~~
+> {: .language-python}  
 > <a href="{{ page.root }}/fig/DNAfrequency.png">
 > <img src="{{ page.root }}/fig/DNAfrequency.png" alt=" histogram of the nucleotide frequency on a DNA sequence" />
 > </a>
 > <em> Figure 5. Histogram of the nucleotide frequency on a DNA sequence. <em/>
-> {: .language-python}
 >   
 >> ## Solution  
 >> ~~~
@@ -353,7 +353,7 @@ fig.show() # Show the figure
 {: .language-python}
 
  <a href="../fig/TrianglesGraph.png">
-  <img src="../fig/TrianglesGraph.png" alt="Example" width="70%" height="auto"/>
+  <img src="../fig/TrianglesGraph.png" alt="Example" width="50%" height="50%"/>
 </a>    
 
 Here, we have plotted two filled triangles, we will need this ability to graph objects called 
