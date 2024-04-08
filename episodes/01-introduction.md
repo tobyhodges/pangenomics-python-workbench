@@ -94,7 +94,7 @@ size_variable
 
 ## Built-in functions and libraries
 
-Python has basic functions to carry out specific actions. In Python, the arguments of the functions go inside parentheses. The function `len()` takes one argument and outputs its length. In the case of a string the length is the number of characters.
+Python has basic functions to carry out specific actions. In Python, the arguments of the functions go inside parentheses, and different functions take different kinds and numbers of arguments. The function `len()` takes one argument and outputs its length. In the case of a string, the length is the number of characters.
 ~~~
 len(new_variable)
 ~~~
@@ -149,7 +149,7 @@ read_csv()
 
 > ## Exercise 1: 
 > Create three variables with the common name of your favorite bird as the variable name and the scientific name as the value.
-> Use built-in functions to get the length of the scientific name that has the *max*imum length.
+> Use [built-in functions](https://docs.python.org/3/library/functions.html) to get the length of the scientific name that has the *max*imum length.
 >  
 > > ## Solution
 > > ~~~
