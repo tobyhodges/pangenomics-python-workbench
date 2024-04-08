@@ -4,32 +4,32 @@ teaching: 10
 exercises: 10
 questions:
 - "How can I store information in Python?"
-- "How can I acces to the elements of an array or a dictionary?"
+- "How can I access the elements of an array or a dictionary?"
 - "How can I efficiently manage tabular data in Python?"
 
 objectives:
-- "Understand fundamental data structures such as list, arrays, dictionaries and Panda dataframes."
-- "Efficient data manipulation, selectiom and filtering."
+- "Understand fundamental data structures such as lists, arrays, dictionaries, and Pandas dataframes."
+- "Efficient data manipulation, selection and filtering."
 - "Tabular data management with Pandas."
-- "Read data from an URL."
+- "Read data from a URL."
 
 keypoints:
-- "Gain familiarity with fundamental data structures such as tuples, sets, list, dictionaries and arrays."
-- "Develop skills in manipulating data by accessing, modifying and filtering elements within data structures."
-- "Lear to work with tabular data using Pandas DataFrames, including loading and exploring data."
+- "Gain familiarity with fundamental data structures such as tuples, sets, lists, dictionaries, and arrays."
+- "Develop skills in manipulating data by accessing, modifying, and filtering elements within data structures."
+- "Learn to work with tabular data using Pandas DataFrames, including loading and exploring data."
 ---
 
 ## List
 
-A list is indexed, ordered, changeable sequence of elementes that can be of different types and allows duplicate values. They are defined using square brackets `[]`:
+A list is an indexed, ordered, changeable sequence of elements that can be of different types and it allows duplicate values. They are defined using square brackets `[]`:
 
 ~~~
-thislist = ["apple", "banana", "cherry", 4]
+thislist = ["bacteria", "archea", "fungus", 4]
 print(thislist)
 ~~~
 {: .language-python}
 ~~~
-['apple', 'banana', 'cherry', 4]
+['bacteria', 'archea', 'fungus', 4]
 ~~~
 {: .output}
 
@@ -41,7 +41,7 @@ print(first_element)
 {: .language-python}
 
 ~~~
-apple
+bacteria
 ~~~
 {: .output}
 
@@ -60,13 +60,13 @@ print(thislist[-1])
 You can add elements to a list using the `append()` method to add an element to the end of the list.
 
 ~~~
-thislist.append('grape')
+thislist.append('animal')
 print(thislist)
 ~~~
 {: .language-python}
 
 ~~~
-['apple', 'banana', 'cherry', 4, 'grape']
+['bacteria', 'archea', 'fungus', 4, 'animal']
 ~~~
 {: .output}
 
@@ -79,7 +79,7 @@ print(thislist)
 {: .language-python}
 
 ~~~
-['apple', 'banana', 'cherry', 4, 'grape', 1, 2, 3]
+['bacteria', 'archea', 'fungus', 4, 'animal', 1, 2, 3]
 ~~~
 {: .output}
 
@@ -92,28 +92,28 @@ print(thislist)
 {: .language-python}
 
 ~~~
-['apple', 'banana', 'cherry', 'grape', 1, 2, 3]
+['bacteria', 'archea', 'fungus', 'animal', 1, 2, 3]
 ~~~
 {: .output}
 
 You can also use the `remove()` method to remove a specific element by its value.
 
 ~~~
-thislist.remove('grape')
+thislist.remove('animal')
 print(thislist)
 ~~~
 {: .language-python}
 
 ~~~
-['apple', 'banana', 'cherry', 1, 2, 3]
+['bacteria', 'archea', 'fungus', 1, 2, 3]
 ~~~
 {: .output}
 
 You can concatenate two lists using the `+` operator or the `extend()` method.
 
 ~~~
-mylist1 = ['apple', 'banana', 'cherry']
-mylist2 = ['grape', 'lemon', 'orange']
+mylist1 = ['bacteria', 'archea', 'fungus']
+mylist2 = ['animal', 'algae', 'plant']
 
 newlist = mylist1 + mylist2
 print(newlist)
@@ -121,11 +121,11 @@ print(newlist)
 {: .language-python}
 
 ~~~
-['apple', 'banana', 'cherry', 'grape', 'lemon', 'orange']
+['bacteria', 'archea', 'fungus', 'animal', 'algae', 'plant']
 ~~~
 {: .output}
 
-The `sort()` method sorts the elements of the list in ascending order by default. All elements need to be of the same type. If we try to sort the elements of the list thislist, we will get an error.
+The `sort()` method sorts the elements of the list in ascending order by default. All elements need to be of the same type. If we try to sort the elements of the list `thislist`, we will get an error.
 
 ~~~
 thislist.sort()
@@ -144,7 +144,7 @@ print(newlist)
 {: .language-python}
 
 ~~~
-['apple', 'banana', 'cherry', 'grape', 'lemon', 'orange']
+['bacteria', 'archea', 'fungus', 'animal', 'algae', 'plant']
 ~~~
 {: .output}
 
@@ -157,7 +157,7 @@ print(newlist)
 {: .language-python}
 
 ~~~
-['orange', 'lemon', 'grape', 'cherry', 'banana', 'apple']
+['plant', 'algae', 'animal', 'fungus', 'archea', 'bacteria']
 ~~~
 {: .output}
 
@@ -178,7 +178,7 @@ Consider that the `sort()` method modifies the original list and does not return
 >> {: .language-python}
 >> 
 >> ~~~
->> ['lemon', 'grape', 'cherry']
+>> ['algae', 'animal', 'fungus']
 >> ~~~
 >> {: .output}
 >>
@@ -195,7 +195,7 @@ Consider that the `sort()` method modifies the original list and does not return
 >> {: .language-python}
 >>
 >> ~~~
->> ['orange', 'grape', 'banana']
+>> ['plant', 'animal', 'archea']
 >> ~~~
 >> {: .output}
 >>
@@ -1017,13 +1017,13 @@ A909|MGIDGNCP_01268  A909|MGIDGNCP_01268  2603V|GBPINHCM_01231   515|LHMFJANI_01
 >> Tuples are indexed and ordered sequences, they are immutable, meaning they cannot be modified after creation. The elements of a tuple can be numbers, strings, or combinations of both types. A tuple is defined using parentheses `()`:
 >> 
 >> ~~~
->> thistuple = ("apple", "banana", "cherry", 3)
+>> thistuple = ("bacteria", "archea", "fungus", 3)
 >> print(thistuple)
 >> ~~~
 >> {: .language-python}
 >>
 >> ~~~
->> ('apple', 'banana', 'cherry', 3)
+>> ('bacteria', 'archea', 'fungus', 3)
 >> ~~~
 >> {: .output}
 >> 
@@ -1036,7 +1036,7 @@ A909|MGIDGNCP_01268  A909|MGIDGNCP_01268  2603V|GBPINHCM_01231   515|LHMFJANI_01
 >> {: .language-python}
 >> 
 >> ~~~
->> apple
+>> bacteria
 >> ~~~
 >> {: .output}
 >> 
@@ -1057,26 +1057,26 @@ A909|MGIDGNCP_01268  A909|MGIDGNCP_01268  2603V|GBPINHCM_01231   515|LHMFJANI_01
 >> Sets are unindexed, unordered collections of  unique element, duplicates are not allowed. The sets can contain different data types. They are defined using curly braces {}:
 >> 
 >> ~~~
->> myset = {"apple", "banana", "cherry", 4}
+>> myset = {"bacteria", "archea", "fungus", 4}
 >> print(myset)
 >> ~~~
 >> {: .language-python}
 >>
 >> ~~~
->> {'banana', 3, 'cherry', 'apple'}
+>> {'archea', 3, 'fungus', 'bacteria'}
 >> ~~~
 >> {: .output}
 >> 
 >> Sets in Python are mutable, meaning you can add and remove elements, but you cannot directly modify existing elements. To add elements to a set, you can use the `add()` method.
 >>
 >> ~~~
->> myset.add('grape')
+>> myset.add('animal')
 >> print(myset)
 >> ~~~
 >> {: .language-python}
 >>
 >> ~~~
->> {3, 'cherry', 'apple', 'grape', 'banana'}
+>> {3, 'fungus', 'bacteria', 'animal', 'archea'}
 >> ~~~
 >> {: .output}
 >>
@@ -1088,7 +1088,7 @@ A909|MGIDGNCP_01268  A909|MGIDGNCP_01268  2603V|GBPINHCM_01231   515|LHMFJANI_01
 >> {: .language-python}
 >>
 >> ~~~
->> {'cherry', 'apple', 'grape', 'banana'}
+>> {'fungus', 'bacteria', 'animal', 'archea'}
 >> ~~~
 >> {: .output}
 >> 
