@@ -75,32 +75,32 @@ a_new_number
 And if we want to be more efficient, we can assign values to more than one variable in the same line.
 
 ~~~
-nice_variable , ugly_variable = "nice_value", "ugly_value"
-nice_variable
+color_variable , size_variable = "blue", "big"
+color_variable
 ~~~
 {: .language-python}
 ~~~
-'nice_value'
+'blue'
 ~~~
 {: .output}
 ~~~
-ugly_variable
+size_variable
 ~~~
 {: .language-python}
 ~~~
-'ugly_value'
+'big'
 ~~~
 {: .output}
 
 ## Built-in functions and libraries
 
-Python has basic functions to carry out specific actions. For example `len()``
+Python has basic functions to carry out specific actions. In Python, the arguments of the functions go inside parentheses. The function `len()` takes one argument and outputs its length. In the case of a string the length is the number of characters.
 ~~~
 len(new_variable)
 ~~~
 {: .language-python}
 ~~~
-12 # The value 'aLongerValue' has 12 characters
+12
 ~~~
 {: .output}
 ~~~
@@ -148,10 +148,19 @@ read_csv()
 {: .language-python}
 
 > ## Exercise 1: 
->
+> Create three variables with the common name of your favorite bird as the variable name and the scientific name as the value.
+> Use built-in functions to get the length of the scientific name that has the *max*imum length.
 >  
 > > ## Solution
-> >
+> > ~~~
+> > swallow, goldcrest, sparrow = "Tachycineta thalassina", "Regulus regulus", "Passer domesticus"
+> > max(len(swallow), len(goldcrest),len(sparrow))
+> > ~~~
+> > {: .language-python}
+> > ~~~
+> > 22
+> > ~~~
+> > {: .output}
 > > 
 > {: .solution}
 {: .challenge}
