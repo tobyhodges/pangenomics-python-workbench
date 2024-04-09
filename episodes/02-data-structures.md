@@ -1,7 +1,7 @@
 ---
 title: "Data Structures"
 teaching: 10
-exercises: 10
+exercises: 20
 questions:
 - "How can I store information in Python?"
 - "How can I access the elements of an array or a dictionary?"
