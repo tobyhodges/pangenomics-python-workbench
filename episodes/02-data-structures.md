@@ -203,7 +203,7 @@ Consider that the `sort()` method modifies the original list and does not return
 {: .callout}
 
 
-> ## Exercise 1: 
+> ## Exercise 1: Manipulating lists
 > You are working with genetic data represented by the following list:
 > 
 > ~~~
@@ -482,7 +482,7 @@ dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 2022)])
 {: .callout}
 
 
-> ## Exercise 2: 
+> ## Exercise 2: Manipulating Dictionaries
 > Suppose that you have the following dictionary:
 > 
 > ~~~~
@@ -692,7 +692,7 @@ array([[   2.728,    6.513],
 ~~~
 {: .output}
 
-> ## Exercise 3: 
+> ## Exercise 3: Manipulating arrays
 > Suppose you have a the following array dna_array containing DNA sequences as strings.
 > ~~~
 > dna_sequences = ["AGCT", "TCGA", "ATCG", "CGTA", "GATTACA"]
@@ -996,7 +996,7 @@ A909|MGIDGNCP_01268  A909|MGIDGNCP_01268  2603V|GBPINHCM_01231   515|LHMFJANI_01
 {: .output}
 
 
-> ## Exercise 4: 
+> ## Exercise 4: Manipulating dataframes
 > Use the dataframe `df_genes` and add a column that counts how many genes are in each row, for example, the first row has 4 genes but the third row has only two. 
 >  
 > > ## Solution
