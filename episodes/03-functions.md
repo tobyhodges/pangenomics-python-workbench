@@ -1,7 +1,7 @@
 ---
 title: "Functions"
 teaching: 10
-exercises: 10
+exercises: 20
 questions:
 - "How can evaluate a condition?"
 - "How can I repeat an action?"
