@@ -1,7 +1,7 @@
 ---
 title: "Plotting"
 teaching: 10
-exercises: 10
+exercises: 15
 questions:
 - "How can I plot histograms"
 - "How can I plot a graph with vertex and edges"
