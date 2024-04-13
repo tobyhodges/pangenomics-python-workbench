@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Python"
-teaching:  10
+teaching:  15
 exercises: 5
 questions:
 - "How can I store information?"
