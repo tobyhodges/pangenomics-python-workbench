@@ -147,7 +147,7 @@ read_csv()
 ~~~
 {: .language-python}
 
-> ## Exercise 1: Creating variables and using functions
+> ## Exercise 1(Begginer): Creating variables and using functions
 > Create three variables with the common name of your favorite bird as the variable name and the scientific name as the value.
 > Use [built-in functions](https://docs.python.org/3/library/functions.html) to get the length of the scientific name that has the *max*imum length.
 >  
