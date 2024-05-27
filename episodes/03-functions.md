@@ -60,7 +60,7 @@ else:
 You can add as many instructions inside the `if` as you want by indenting the sentences.
 Just remember always to keep the same amount of characters in the indentation. 
 
-> ## Exercise 1: Evaluate if two strings have equal length
+> ## Exercise 1(Begginer): Evaluate if two strings have equal length
 > Fill in the blanks to evaluate if the following strings have equal lengths.
 > ~~~
 > str1="ACGT"
@@ -199,7 +199,7 @@ def hamming_distance(str1, str2):
 ~~~
 {: .language-python}
 
-> ## Exercise 2: Sort the function to count the nucleotides in a string
+> ## Exercise 2(Intermediate): Sort the function to count the nucleotides in a string
 >  ~~~
 >   return nucleotide_counts  
 >    nucleotide_counts = {'A': 0, 'C': 0, 'G': 0, 'T': 0}
@@ -231,7 +231,8 @@ def hamming_distance(str1, str2):
 Combining the data types you just learned, it is possible to automatize the function even more.
 Suppose that "population" is a numpy ndarray with genomes as rows. Genomes are represented with only
 two characters: 1 and 0. 
-> ## Exercise 3: Sort the comments to document a Hamming distance function for matrixes
+
+> ## Exercise 3(Intermediate): Sort the comments to document a Hamming distance function for matrixes
 >  ~~~
 > # The Hamming distance is multiplied by the number of genes to convert it into an absolute distance
 >  # Number of genomes 
