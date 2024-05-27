@@ -98,7 +98,7 @@ In this example, we produced a simple histogram of the sample data with five bin
 with each bin representing the frequency of values falling within its range. 
 The bars were colored sky blue with black edges for better visibility.
 
-> ## Exercise 1: The nucleotide frequency of a DNA sequence    
+> ## Exercise 1(Begginer): The nucleotide frequency of a DNA sequence    
 > In the DNA sequence stored in the string dna_sequence, we want to graph the frequency of each nucleotide.
 > Sort and fill in the blanks in the following code to get the frequency plot. Notice that we are using the function
 > nucleotide_counts, which we constructed in the previous episode  
@@ -357,7 +357,7 @@ fig.show() # Show the figure
 Here, we have plotted two filled triangles, we will need this ability to graph objects called 
 simplicial complexes in the following lesson.
 
-> ## Exercise 2: Documenting a graph plot code
+> ## Exercise 2(Intermediate): Documenting a graph plot code
 >  Look at the following function used in the Horizontal Gene transfer episode.
 >  1) Based on what you learned about plotting triangles and edges, sort the comments that document
 >  what that part of the code is doing.  
