@@ -54,6 +54,8 @@ plt.show()
 ~~~
 {: .language-python}
 
+<img src="{{ page.root }}/fig/hist1.png" />
+
 The `plt.hist` function has [many many options](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html)
 that allow you to customize how the chart looks like. For instance, we can use
 the `bins` parameter to set the number of bars in the histogram. Furthermore,
@@ -69,6 +71,8 @@ plt.title("Number of genes per Streptomyces assembly")
 plt.show()
 ~~~
 {: .language-python}
+
+<img src="{{ page.root }}/fig/hist2.png" />
 
 ## Bars and lines
 
@@ -109,11 +113,13 @@ plt.show()
 ~~~
 {: .language-python}
 
->> ## Going horizontal: creating horizontal bar plots
->>
->> If you wish to use a horizontal bar plot instead of a vertical one, use the
->> `plt.barh` function. Don't forget to change your labels accordingly!
->>
+<img src="{{ page.root }}/fig/bar.png" />
+
+> ## Going horizontal: creating horizontal bar plots
+>
+> If you wish to use a horizontal bar plot instead of a vertical one, use the
+> `plt.barh` function. Don't forget to change your labels accordingly!
+>
 {: .callout}
 
 Let's now learn how to build line plots using [`plt.plot`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html)
@@ -162,6 +168,8 @@ plt.show()
 ~~~
 {: .language-python}
 
+<img src="{{ page.root }}/fig/lines1.png" />
+
 A nice feature about `plt.plot` is that we can change the way the line looks
 like, either by modifying the edges and/or the vertices. You can find the format
 guide in the "Format Strings" section of the [function's documentation](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html). Some example
@@ -190,6 +198,8 @@ plt.show()
 ~~~
 {: .language-python}
 
+<img src="{{ page.root }}/fig/lines2.png" />
+
 > ## Exercise (Beginner): Plotting with Matplotlib
 > 
 > Complete the following code block to create a horizontal bar plot with the
@@ -217,6 +227,9 @@ plt.show()
 >> plt.show()
 >> ~~~
 >> {: .language-python}
+>>
+>> <img src="{{ page.root }}/fig/barh.png" />
+>>
 > {: .solution}
 {: .challenge}
 
@@ -262,5 +275,8 @@ plt.show()
 >> plt.show()
 >> ~~~
 >> {: .language-python}
+>>
+>> <img src="{{ page.root }}/fig/subplots.png" />
+>>
 > {: .solution}
 {: .callout}
