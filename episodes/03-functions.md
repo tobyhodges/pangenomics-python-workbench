@@ -36,7 +36,7 @@ char1='A'
 char2='A'
 
 if char1 == char2:
-  print( char1,"equal", char2)
+    print( char1,"equal", char2)
 ~~~
 {: .language-python}
 
@@ -46,9 +46,9 @@ char1='A'
 char1='G'
 
 if char1 == char2:
-  print( char1,"equal", char2)
+    print( char1,"equal", char2)
 else:
-  print( char1,"is not equal", char2)
+    print( char1,"is not equal", char2)
 ~~~
 {: .language-python}
 
@@ -73,8 +73,8 @@ Just remember always to keep the same amount of characters in the indentation.
 > > ## Solution
 > > ~~~
 > > if len(str1) != len(str2):
-> >       print(str1,str2)
-> >       print("Strings does not have equal length")
+> >     print(str1,str2)
+> >     print("Strings does not have equal length")
 > > ~~~
 > > {: .language-python}
 > {: .solution}
@@ -91,21 +91,21 @@ for item in sequence:
 {: .language-python}
 
 ~~~
-> str1="ACGTAC"
+str1="ACGTAC"
 distance=0
-    for char in str1:
-        print("The character is",char)
+for char in str1:
+    print("The character is",char)
 ~~~
 {: .language-python}
 
 ~~~
-> str1="ACGTAC"
-> str2="GATAKA"
+str1="ACGTAC"
+str2="GATAKA"
 distance=0
-    for char1, char2 in zip(str1, str2):
-        # If the characters are different, increment the distance
-        if char1 != char2:
-            distance += 1
+for char1, char2 in zip(str1, str2):
+    # If the characters are different, increment the distance
+    if char1 != char2:
+        distance += 1
 ~~~
 {: .language-python}
             
@@ -118,13 +118,13 @@ Here we will wrap the conditional to decide if two characters are equal in the f
 equal_chars. First, we defined the function and then we called it.
 ~~~
 def equal_chars(character1, character2):
-value=""
-  if character1 == character2:
-    value="equal"
-else:
-  value="Not equal"
+    value=""
+    if character1 == character2:
+        value="equal"
+    else:
+        value="Not equal"
 
-return value
+    return value
 ~~~
 {: .language-python}
 
@@ -208,13 +208,13 @@ def hamming_distance(str1, str2):
 >    for nucleotide in sequence:
 >            nucleotide_counts[nucleotide] += 1
 >
->     def calculate_nucleotide_frequency(sequence):
+>  def calculate_nucleotide_frequency(sequence):
 >  ~~~
 > {: .language-python}
 >
 > > ## Solution
 > > ~~~
-> >     def calculate_nucleotide_frequency(sequence):
+> > def calculate_nucleotide_frequency(sequence):
 > >     nucleotide_counts = {'A': 0, 'C': 0, 'G': 0, 'T': 0}
 > > 
 > >     for nucleotide in sequence:
@@ -264,7 +264,7 @@ two characters: 1 and 0.
 > >    num_genomes = population.shape[0]
 > >    # Create an empty matrix for Hamming distances
 > >    hamming_matrix = np.zeros((num_genomes, num_genomes), dtype=int)
-> >   # Calculate the Hamming distance between each pair of genomes
+> >    # Calculate the Hamming distance between each pair of genomes
 > >    for i in range(num_genomes):
 > >        for j in range(i+1, num_genomes):  # j=i+1 to avoid calculating the same distance twice
 > >            # The Hamming distance is multiplied by the number of genes to convert it into an absolute distance
