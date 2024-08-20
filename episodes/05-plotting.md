@@ -13,8 +13,8 @@ keypoints:
 ---
 
 There are several different Python plotting libraries. Perhaps the most
-popular one is [Matplotlib](https://matplotlib.org), initially released back in
-2003. Another library, called [Seaborn](https://seaborn.pydata.org/), is based
+popular one is [Matplotlib](https://matplotlib.org), initially released back in 2003.
+Another library, called [Seaborn](https://seaborn.pydata.org/), is based
 on Matplotlib, and provides "nicer" defaults for colors and plots, making it
 easier to build beautiful publication-ready plots. A modern alternative is
 [Plotly](https://plotly.com/), that is available not only in Python, but also
