@@ -1,0 +1,604 @@
+organism,taxonomy_status,chromosomes,assembly_level,release_day,release_month,release_year,scaffold_n50,scaffold_count,genes,protein_coding,pseudogenes,checkm_completeness,checkm_contamination
+Streptomyces griseus subsp. griseus NBRC 13350,OK,1.0,Complete Genome,8,4,2008,8545929.0,1.0,7226,7018,120,99.91,
+Streptomyces himastatinicus ATCC 53653,OK,,Scaffold,2,3,2009,10901646.0,2.0,9680,8720,888,93.84,0.32
+Streptomyces viridochromogenes DSM 40736,Inconclusive,,Scaffold,2,3,2009,8653262.0,1.0,7837,7256,506,96.78,
+Streptomyces scabiei 87.22,OK,1.0,Complete Genome,6,10,2009,10148695.0,1.0,8899,8594,211,100.0,0.76
+Streptomyces sviceus ATCC 29083,Inconclusive,1.0,Chromosome,28,5,2010,9313494.0,1.0,8633,7856,702,96.94,0.38
+Streptomyces zinciresistens K42,OK,,Contig,7,9,2011,,,7665,7234,354,100.0,1.48
+Streptomyces xiaopingdaonensis,OK,,Contig,11,5,2012,,,5773,5551,169,99.07,0.63
+Streptomyces davaonensis JCM 4913,OK,2.0,Chromosome,9,10,2012,9466619.0,2.0,8686,8396,199,99.27,0.88
+Streptomyces albidoflavus,OK,1.0,Complete Genome,9,4,2013,6841649.0,1.0,5979,5818,70,99.53,1.42
+Streptomyces hokutonensis,OK,,Contig,12,4,2013,,,10911,10617,218,99.24,1.26
+Streptomyces sulphureus DSM 40104,OK,,Scaffold,24,4,2013,482388.0,26.0,6193,6022,98,99.62,0.23
+Streptomyces bottropensis ATCC 25435,OK,,Scaffold,26,4,2013,8955726.0,1.0,7904,7556,259,100.0,1.59
+Streptomyces purpureus KA281,OK,,Scaffold,26,4,2013,7458334.0,1.0,6866,6594,182,99.91,
+Streptomyces afghaniensis 772,OK,,Scaffold,27,6,2013,23632.0,1726.0,10107,8178,1627,95.43,2.68
+Streptomyces flavidovirens DSM 40150,OK,,Scaffold,15,7,2013,326335.0,49.0,6525,6216,236,100.0,0.51
+Streptomyces roseochromogenus subsp. oscitans DS 12.976,Inconclusive,2.0,Chromosome,27,11,2013,9663240.0,2.0,9098,8393,620,98.67,2.27
+Streptomyces griseorubens,Inconclusive,,Scaffold,18,6,2014,7563100.0,2.0,7036,6620,329,98.78,0.38
+Streptomyces alboflavus,OK,,Contig,1,7,2014,,,8327,8074,171,99.27,0.69
+Streptomyces atroolivaceus,OK,,Contig,1,7,2014,,,7323,6971,275,99.56,
+Streptomyces yerevanensis,OK,,Contig,1,7,2014,,,10228,9702,451,99.91,1.2
+Streptomyces wedmorensis,OK,,Contig,1,7,2014,,,8465,8028,353,99.91,0.99
+Streptomyces novaecaesareae,Inconclusive,,Contig,1,7,2014,,,6645,6379,186,97.67,2.11
+Streptomyces monomycini,OK,,Scaffold,1,7,2014,86123.0,223.0,8105,7660,380,98.48,2.15
+Streptomyces baarnensis,OK,,Scaffold,1,7,2014,225547.0,77.0,7395,7173,173,99.91,0.41
+Streptomyces xylophagus,Inconclusive,,Contig,1,7,2014,,,10442,10126,225,99.49,1.04
+Streptomyces bikiniensis,OK,,Contig,1,7,2014,,,6750,6462,203,99.18,0.8
+Streptomyces achromogenes subsp. achromogenes,OK,,Contig,2,7,2014,,,7418,7101,234,99.62,0.47
+Streptomyces niger,Inconclusive,,Contig,2,7,2014,,,7593,7286,226,99.62,2.46
+Streptomyces violens,OK,,Contig,2,7,2014,,,7067,6843,143,99.53,2.9
+Streptomyces avicenniae,OK,,Contig,2,7,2014,,,6081,5916,97,95.3,0.57
+Streptomyces varsoviensis,OK,,Contig,2,7,2014,,,7328,7094,147,99.67,4.21
+Streptomyces roseoverticillatus,OK,,Contig,2,7,2014,,,6307,6078,145,98.85,1.25
+Streptomyces ochraceiscleroticus,OK,,Contig,2,7,2014,,,7485,7214,189,99.85,2.34
+Streptomyces griseolus,OK,,Contig,2,7,2014,,,6625,6362,190,99.53,1.64
+Streptomyces lavenduligriseus,OK,,Contig,2,7,2014,,,8008,7600,322,100.0,1.09
+Streptomyces violaceorubidus,OK,,Contig,2,7,2014,,,6980,6580,321,100.0,
+Streptomyces catenulae,OK,,Contig,2,7,2014,,,6119,5942,94,99.62,2.21
+Streptomyces fulvoviolaceus,OK,,Contig,2,7,2014,,,10757,10246,433,99.91,1.88
+Streptomyces megasporus,OK,,Contig,2,7,2014,,,5423,5157,186,97.32,1.23
+Streptomyces globisporus subsp. globisporus,Inconclusive,,Contig,2,7,2014,,,6797,6452,264,99.11,0.38
+Streptomyces flavochromogenes,Inconclusive,,Contig,2,7,2014,,,8109,7744,284,99.81,1.37
+Streptomyces bicolor,Inconclusive,,Contig,2,7,2014,,,8656,8231,335,100.0,1.14
+Streptomyces cellulosae,Inconclusive,,Contig,2,7,2014,,,9207,8664,461,100.0,0.95
+Streptomyces toyocaensis,Inconclusive,,Contig,14,7,2014,,,6708,6429,207,99.91,0.47
+Streptomyces peucetius,OK,,Scaffold,15,7,2014,220172.0,125.0,8366,8091,194,99.53,2.18
+Streptomyces exfoliatus,OK,,Scaffold,15,7,2014,254413.0,129.0,7202,6925,199,99.34,1.8
+Streptomyces flavovariabilis,Inconclusive,,Scaffold,15,7,2014,285929.0,141.0,8051,7651,322,100.0,
+Streptomyces durhamensis,OK,,Scaffold,15,7,2014,256603.0,218.0,8689,8216,391,99.47,1.86
+Streptomyces aureus,Inconclusive,,Scaffold,15,7,2014,317517.0,131.0,8708,8386,232,99.15,2.1
+Streptomyces aureocirculatus,OK,,Scaffold,15,7,2014,136678.0,205.0,8251,7829,345,98.9,0.69
+Streptomyces mutabilis,OK,,Scaffold,12,8,2014,3062555.0,39.0,7263,6754,407,99.24,1.1
+Streptomyces vietnamensis,OK,2.0,Complete Genome,29,1,2015,8867142.0,2.0,8292,8010,187,99.91,2.19
+Streptomyces natalensis ATCC 27448,Inconclusive,,Contig,27,2,2015,,,7923,7550,295,99.53,1.14
+Streptomyces variegatus,Inconclusive,,Contig,18,3,2015,,,8114,7717,315,100.0,
+Streptomyces lydicamycinicus,OK,,Scaffold,24,3,2015,866216.0,20.0,7323,7092,145,99.88,1.26
+Streptomyces rubellomurinus,OK,,Contig,24,3,2015,,,7768,7473,206,98.48,3.61
+Streptomyces katrae,OK,,Contig,31,3,2015,,,8437,7407,970,92.7,1.7
+Streptomyces odonnellii,OK,,Contig,29,4,2015,,,7388,6936,371,98.36,0.51
+Streptomyces showdoensis,OK,,Contig,15,5,2015,,,7503,7260,164,97.95,1.14
+Streptomyces leeuwenhoekii,OK,3.0,Complete Genome,21,5,2015,7903895.0,3.0,7096,6806,199,100.0,1.52
+Streptomyces incarnatus,Inconclusive,4.0,Chromosome,3,6,2015,8648285.0,4.0,8137,7775,286,99.62,0.41
+Streptomyces roseus,Inconclusive,,Scaffold,1,7,2015,95271.0,163.0,7191,6890,221,99.06,1.28
+Streptomyces caatingaensis,OK,,Contig,24,7,2015,,,6219,5955,160,99.21,3.27
+Streptomyces azureus,OK,,Scaffold,6,8,2015,54489.0,350.0,8360,7735,547,99.91,0.51
+Streptomyces ambofaciens ATCC 23877,OK,2.0,Complete Genome,17,8,2015,8303940.0,2.0,7510,7242,176,99.11,0.44
+Streptomyces pristinaespiralis,Inconclusive,1.0,Complete Genome,2,9,2015,8532592.0,1.0,7424,7202,133,100.0,0.38
+Streptomyces chattanoogensis,OK,,Contig,18,9,2015,,,8319,7912,328,99.38,0.42
+Streptomyces ossamyceticus,OK,,Scaffold,28,10,2015,16332.0,1008.0,8680,7973,633,94.95,1.52
+Streptomyces atriruber,OK,,Scaffold,28,10,2015,24134.0,703.0,8297,7834,390,98.46,0.82
+Streptomyces pathocidini,OK,,Scaffold,28,10,2015,11466.0,743.0,5217,4730,426,93.38,0.38
+Streptomyces graminilatus,Inconclusive,,Scaffold,28,10,2015,19214.0,859.0,8764,8211,490,97.73,1.44
+Streptomyces silaceus,Inconclusive,,Scaffold,29,10,2015,20506.0,732.0,8059,7586,399,97.1,2.08
+Streptomyces torulosus,OK,,Scaffold,29,10,2015,15874.0,1055.0,9193,8429,694,94.76,1.42
+Streptomyces roseifaciens,OK,,Scaffold,18,11,2015,2630732.0,13.0,7528,7245,205,98.77,2.26
+Streptomyces specialis,OK,,Scaffold,22,12,2015,569072.0,143.0,5530,5162,300,92.27,1.33
+Streptomyces kanasensis,Inconclusive,,Contig,4,1,2016,,,6362,5932,352,96.47,1.3
+Streptomyces regalis,Inconclusive,,Contig,8,1,2016,,,10225,9541,603,100.0,1.23
+Streptomyces cellostaticus,OK,,Scaffold,13,1,2016,265228.0,129.0,8804,8364,363,99.47,2.62
+Streptomyces caeruleatus,OK,,Scaffold,13,1,2016,556829.0,64.0,9152,8716,356,99.95,1.52
+Streptomyces corchorusii,OK,,Scaffold,13,1,2016,535873.0,71.0,9290,8845,367,99.53,2.34
+Streptomyces curacoi,OK,,Scaffold,13,1,2016,765357.0,31.0,7531,7251,204,100.0,0.76
+Streptomyces longwoodensis,OK,,Scaffold,13,1,2016,452173.0,32.0,7411,7196,144,100.0,0.95
+Streptomyces resistomycificus,OK,,Scaffold,13,1,2016,697917.0,35.0,8259,7984,200,100.0,1.0
+Streptomyces yokosukanensis,OK,,Scaffold,13,1,2016,463572.0,98.0,9122,8757,288,99.81,1.31
+Streptomyces griseoruber,OK,,Scaffold,13,1,2016,380444.0,88.0,9283,8819,385,99.91,1.26
+Streptomyces bungoensis,OK,,Scaffold,13,1,2016,318751.0,73.0,7539,7226,237,99.53,1.52
+Streptomyces dysideae,OK,,Scaffold,13,1,2016,214515.0,152.0,10166,9349,741,100.0,1.12
+Streptomyces avermitilis MA-4680 = NBRC 14893,OK,2.0,Complete Genome,24,3,2016,9025608.0,2.0,8040,7651,293,99.91,1.17
+Streptomyces qaidamensis,OK,1.0,Complete Genome,6,4,2016,9083372.0,1.0,8226,7871,266,99.81,0.76
+Streptomyces jeddahensis,OK,,Contig,12,5,2016,,,7518,7129,322,99.91,1.39
+Streptomyces parvulus,OK,2.0,Complete Genome,8,6,2016,7149446.0,2.0,6975,6818,70,99.91,0.76
+Streptomyces griseochromogenes,OK,1.0,Complete Genome,5,7,2016,10764674.0,1.0,9786,9277,413,99.15,1.14
+Streptomyces mutomycini,OK,,Scaffold,5,8,2016,35885.0,410.0,6359,5951,336,97.85,0.38
+Streptomyces lushanensis,OK,,Scaffold,5,8,2016,21630.0,732.0,6758,6263,429,94.98,0.69
+Streptomyces sparsogenes,OK,,Contig,14,8,2016,,,7983,7611,284,98.01,1.26
+Streptomyces luteocolor,Inconclusive,,Scaffold,22,8,2016,56991.0,262.0,8303,7983,251,99.43,2.46
+Streptomyces fodineus,OK,1.0,Complete Genome,20,9,2016,9698948.0,1.0,8735,8216,429,98.83,0.62
+Streptomyces thermolilacinus SPC6,Inconclusive,,Contig,28,9,2016,,,5706,5505,109,99.4,0.77
+Streptomyces agglomeratus,Inconclusive,1.0,Contig,29,9,2016,,,8160,7665,404,99.38,0.13
+Streptomyces oceani,OK,,Scaffold,4,10,2016,132276.0,166.0,5403,5078,261,97.25,0.95
+Streptomyces abyssalis,Inconclusive,,Scaffold,4,10,2016,1628581.0,42.0,5754,5575,103,99.09,
+Streptomyces nanshensis,Inconclusive,,Scaffold,4,10,2016,19859.0,731.0,6909,6485,353,99.24,1.49
+Streptomyces indicus,Inconclusive,,Scaffold,21,10,2016,404776.0,45.0,7469,7309,79,99.53,0.97
+Streptomyces prasinopilosus,OK,,Scaffold,21,10,2016,465502.0,28.0,6269,5988,202,100.0,1.58
+Streptomyces wuyuanensis,OK,,Scaffold,21,10,2016,270588.0,52.0,7246,6939,225,99.62,0.98
+Streptomyces misionensis,OK,,Contig,22,10,2016,,,7685,7435,160,100.0,1.19
+Streptomyces melanosporofaciens,OK,,Contig,22,10,2016,,,9320,8679,554,98.64,2.27
+Streptomyces qinglanensis,OK,,Scaffold,31,10,2016,373215.0,34.0,6231,6018,132,98.67,0.32
+Streptomyces radiopugnans,OK,,Scaffold,31,10,2016,335828.0,40.0,5515,5315,125,98.03,0.85
+Streptomyces monashensis,OK,,Contig,4,11,2016,,,9407,8900,427,99.91,1.37
+Streptomyces malaysiense,OK,,Contig,4,11,2016,,,7207,6902,233,99.62,0.47
+Streptomyces mangrovisoli,OK,,Contig,4,11,2016,,,8005,7768,157,100.0,0.95
+Streptomyces colonosanans,OK,,Contig,4,11,2016,,,6520,6087,355,99.57,0.95
+Streptomyces pini,OK,,Scaffold,5,11,2016,282394.0,57.0,5762,5560,117,97.57,0.85
+Streptomyces aidingensis,OK,,Scaffold,5,11,2016,320607.0,43.0,5712,5511,130,96.55,0.88
+Streptomyces humi,OK,,Contig,15,11,2016,,,8781,8514,190,99.62,0.27
+Streptomyces venezuelae,OK,2.0,Complete Genome,28,11,2016,8222198.0,2.0,7609,7426,88,99.91,0.95
+Streptomyces kebangsaanensis,OK,,Scaffold,16,12,2016,110055.0,170.0,8130,7232,816,96.47,1.59
+Streptomyces amritsarensis,OK,,Scaffold,18,1,2017,63430.0,208.0,7125,6872,178,100.0,0.38
+Streptomyces lydicus,OK,1.0,Complete Genome,3,2,2017,8243179.0,1.0,7331,7079,161,99.53,1.89
+Streptomyces antioxidans,OK,,Contig,14,3,2017,,,7647,7386,188,99.91,2.08
+Streptomyces gilvosporeus,Inconclusive,1.0,Complete Genome,10,4,2017,8482298.0,1.0,7581,7296,195,99.47,0.76
+Streptomyces pluripotens,OK,1.0,Complete Genome,9,5,2017,7346075.0,1.0,6464,6141,232,99.4,1.26
+Streptomyces marincola,OK,1.0,Complete Genome,11,5,2017,6287975.0,1.0,5513,5343,95,96.05,1.45
+Streptomyces swartbergensis,OK,,Scaffold,18,5,2017,21344.0,870.0,8992,8253,640,97.92,0.04
+Streptomyces alboverticillatus,Inconclusive,,Scaffold,19,5,2017,18609.0,852.0,6845,6249,513,97.1,1.06
+Streptomyces glaucescens,Inconclusive,,Scaffold,22,5,2017,13850.0,1135.0,8280,7528,681,97.82,0.32
+Streptomyces carpinensis,OK,,Scaffold,22,5,2017,27358.0,824.0,9895,9085,732,98.9,3.88
+Streptomyces albovinaceus,OK,,Scaffold,22,5,2017,23195.0,594.0,6910,6413,426,95.76,0.13
+Streptomyces thermovulgaris,Inconclusive,,Scaffold,22,5,2017,21010.0,595.0,5555,5107,373,95.45,1.1
+Streptomyces fimicarius,Inconclusive,,Scaffold,22,5,2017,17809.0,846.0,7497,6978,444,94.45,0.13
+Streptomyces recifensis,OK,,Scaffold,22,5,2017,12194.0,926.0,6239,5688,482,94.95,1.89
+Streptomyces hyaluromycini,OK,,Scaffold,1,7,2017,536976.0,52.0,10306,9900,327,100.0,0.51
+Streptomyces capitiformicae,OK,1.0,Chromosome,3,7,2017,10989391.0,1.0,9979,9250,651,99.91,1.23
+Streptomyces diastatochromogenes,Inconclusive,,Scaffold,7,8,2017,262623.0,242.0,9602,9191,330,99.72,0.09
+Streptomyces kasugaensis,OK,,Scaffold,21,8,2017,5071473.0,5.0,7951,7657,206,99.94,2.56
+Streptomyces olivochromogenes,OK,,Contig,28,8,2017,,,10706,10145,470,100.0,2.27
+Streptomyces xinghaiensis S187,OK,1.0,Complete Genome,12,9,2017,7137891.0,1.0,6157,5922,150,98.39,0.88
+Streptomyces zhaozhouensis,OK,,Contig,28,9,2017,,,5630,5468,93,94.92,0.06
+Streptomyces carminius,OK,,Scaffold,20,11,2017,300464.0,71.0,6521,6276,162,97.76,3.5
+Streptomyces cavourensis,OK,1.0,Complete Genome,4,12,2017,7600475.0,1.0,6541,6342,113,99.86,0.87
+Streptomyces barkulensis,OK,,Scaffold,15,12,2017,127012.0,119.0,5969,5747,143,97.76,1.17
+Streptomyces populi,OK,,Scaffold,20,12,2017,75083.0,277.0,8510,8147,277,99.62,1.08
+Streptomyces eurocidicus,OK,,Contig,17,1,2018,,,6735,6469,181,98.8,1.03
+Streptomyces cahuitamycinicus,OK,,Contig,17,1,2018,,,8825,8119,621,99.4,1.04
+Streptomyces geranii,OK,,Scaffold,16,2,2018,175548.0,100.0,8943,8677,189,89.44,0.28
+Streptomyces dengpaensis,OK,3.0,Complete Genome,22,2,2018,8541354.0,3.0,8144,7606,443,99.91,1.23
+Streptomyces cinnamoneus,OK,,Contig,23,2,2018,,,5788,5598,89,100.0,0.8
+Streptomyces solincola,OK,,Scaffold,8,3,2018,13225.0,748.0,5974,5597,309,96.29,0.38
+Streptomyces dioscori,OK,,Scaffold,25,3,2018,463380.0,44.0,8663,8401,187,99.84,1.26
+Streptomyces ardesiacus,OK,,Contig,30,3,2018,,,7015,6812,117,100.0,0.88
+Streptomyces rubrogriseus,OK,,Scaffold,30,3,2018,684865.0,21.0,7675,7449,149,100.0,0.24
+Streptomyces fragilis,OK,,Contig,30,3,2018,,,5993,5803,108,98.3,0.47
+Streptomyces rishiriensis,OK,,Scaffold,30,3,2018,343791.0,76.0,8111,7730,304,99.62,1.14
+Streptomyces lunaelactis,OK,3.0,Complete Genome,17,4,2018,8396100.0,3.0,7821,7366,366,99.12,1.52
+Streptomyces nigra,OK,1.0,Complete Genome,30,4,2018,7641029.0,1.0,6985,6738,155,99.53,0.19
+Streptomyces tirandamycinicus,OK,1.0,Complete Genome,8,5,2018,7289495.0,1.0,6244,5991,164,99.15,
+Streptomyces orinoci,OK,,Contig,11,5,2018,,,6811,6474,221,99.15,1.5
+Streptomyces spongiicola,OK,1.0,Complete Genome,14,5,2018,7180417.0,1.0,6004,5718,199,99.53,0.05
+Streptomyces tateyamensis,Inconclusive,,Scaffold,11,6,2018,76804.0,439.0,6840,6526,231,98.48,1.1
+Streptomyces cadmiisoli,OK,2.0,Complete Genome,24,6,2018,9269371.0,2.0,8904,8562,250,100.0,0.82
+Streptomyces triticisoli,OK,,Contig,28,6,2018,,,6582,6066,432,98.22,0.93
+Streptomyces reniochalinae,OK,,Scaffold,15,7,2018,287482.0,70.0,6751,6475,194,99.34,1.04
+Streptomyces diacarni,OK,,Scaffold,15,7,2018,249792.0,80.0,6612,6361,175,98.58,1.52
+Streptomyces globosus,Inconclusive,3.0,Complete Genome,17,7,2018,6863360.0,3.0,6671,6458,118,99.78,
+Streptomyces atratus,OK,1.0,Complete Genome,20,7,2018,9641288.0,1.0,8599,7949,557,100.0,0.51
+Streptomyces lincolnensis,OK,1.0,Complete Genome,27,7,2018,9513637.0,1.0,8585,8292,203,99.24,0.13
+Streptomyces paludis,OK,1.0,Complete Genome,30,7,2018,8454852.0,1.0,7173,6960,125,100.0,0.76
+Streptomyces corynorhini,OK,,Scaffold,30,7,2018,28347.0,480.0,6838,6495,271,95.01,0.57
+Streptomyces armeniacus,OK,1.0,Chromosome,5,8,2018,8083249.0,1.0,7031,6742,221,99.4,0.95
+Streptoverticillium olivoreticuli subsp. olivoreticuli,Inconclusive,1.0,Complete Genome,14,8,2018,8809793.0,1.0,7562,7276,183,100.0,2.26
+Streptomyces triticagri,OK,,Scaffold,28,8,2018,58844.0,239.0,6862,6552,233,98.99,1.14
+Streptomyces griseorubiginosus,OK,1.0,Complete Genome,25,9,2018,9512378.0,1.0,8501,8273,134,100.0,0.38
+Streptomyces klenkii,OK,,Contig,7,10,2018,,,7231,6938,196,100.0,3.39
+Streptomyces hoynatensis,OK,,Contig,7,10,2018,,,6275,6075,132,94.35,1.07
+Streptomyces radicis,OK,,Contig,7,10,2018,,,6464,6247,145,97.57,0.41
+Streptomyces hundungensis,Inconclusive,1.0,Complete Genome,9,10,2018,8393044.0,1.0,7472,7187,191,98.39,0.57
+Streptomyces fungicidicus,Inconclusive,2.0,Complete Genome,17,10,2018,6740768.0,2.0,6868,6660,118,100.0,0.95
+Streptomyces dangxiongensis,OK,2.0,Complete Genome,23,10,2018,8085191.0,2.0,7216,6598,528,96.19,0.41
+Streptomyces rapamycinicus NRRL 5491,OK,,Contig,23,10,2018,,,10419,9905,424,99.91,2.08
+Streptomyces triticirhizae,OK,,Scaffold,29,10,2018,25828.0,428.0,6012,5648,296,94.76,0.81
+Streptomyces botrytidirepellens,OK,,Scaffold,11,11,2018,24675.0,886.0,9973,9242,656,98.47,0.88
+Streptomyces chrestomyceticus JCM 4735,OK,,Contig,28,11,2018,,,8119,7696,332,95.43,1.39
+Streptomyces paromomycinus,OK,,Contig,28,11,2018,,,8174,7932,150,99.24,2.34
+Streptomyces tsukubensis,Inconclusive,3.0,Complete Genome,10,12,2018,7963742.0,3.0,6625,6448,90,99.36,0.76
+Streptomyces aquilus,OK,1.0,Complete Genome,19,12,2018,10393987.0,1.0,9498,9231,169,100.0,0.57
+Streptomyces cyaneochromogenes,OK,1.0,Complete Genome,23,12,2018,10677137.0,1.0,9553,9125,336,99.95,1.99
+Streptomyces cavernae,OK,,Scaffold,15,1,2019,275254.0,131.0,9184,8664,433,99.53,4.07
+Streptomyces cyaneus,OK,,Scaffold,17,1,2019,710572.0,33.0,8717,8413,222,100.0,0.38
+Streptomyces otsuchiensis,OK,,Scaffold,17,1,2019,18370.0,752.0,5345,5047,229,94.85,0.6
+Streptomyces roseicoloratus,OK,,Scaffold,29,1,2019,83322.0,181.0,6883,6632,172,99.95,0.8
+Streptomyces sioyaensis,OK,,Contig,30,1,2019,,,6783,6515,191,99.84,1.17
+Streptomyces seoulensis,OK,2.0,Complete Genome,6,3,2019,6339363.0,2.0,5877,5708,82,99.75,1.14
+Streptomyces hainanensis,OK,,Contig,13,3,2019,,,7456,7027,359,96.15,1.42
+Streptomyces palmae,OK,,Contig,7,4,2019,,,6581,6207,294,98.67,1.85
+Streptomyces bauhiniae,OK,,Contig,11,4,2019,,,6208,6048,82,99.65,0.95
+Streptomyces rhizosphaericola,OK,,Contig,14,4,2019,,,6649,6154,423,99.34,1.3
+Streptomyces hawaiiensis,Inconclusive,1.0,Complete Genome,23,4,2019,8876928.0,1.0,8184,7715,379,99.09,0.38
+Streptomyces piniterrae,OK,,Contig,2,5,2019,,,7560,7274,201,99.91,1.18
+Streptomyces galbus,OK,,Scaffold,10,5,2019,326353.0,111.0,7113,6851,186,99.91,1.33
+Streptomyces lasalocidi,Inconclusive,,Scaffold,10,5,2019,7982833.0,4.0,7479,7208,177,99.62,1.61
+Streptomyces vilmorinianum,OK,1.0,Complete Genome,20,5,2019,7646296.0,1.0,7099,6853,158,99.81,1.17
+Streptomyces marianii,OK,,Contig,23,5,2019,,,8162,7683,381,99.19,1.7
+Streptomyces montanus,OK,,Scaffold,23,5,2019,137451.0,168.0,9357,8912,360,99.91,2.02
+Streptomyces tibetensis,OK,,Contig,28,5,2019,,,8126,7781,261,99.24,0.39
+Streptomyces albidochromogenes,OK,,Contig,4,6,2019,,,7021,6530,411,98.74,0.88
+Streptomyces spinoverrucosus,OK,,Contig,12,6,2019,,,8484,8071,343,99.91,2.08
+Streptomyces sedi,OK,,Contig,12,6,2019,,,5630,5473,91,94.85,0.16
+Streptomyces sporangiiformans,OK,,Scaffold,25,6,2019,59982.0,352.0,9386,8891,415,99.15,2.02
+Streptomyces ipomoeae,Inconclusive,,Scaffold,3,7,2019,144065.0,178.0,9483,8986,423,99.91,2.4
+Streptomyces calvus,OK,1.0,Complete Genome,8,7,2019,7766581.0,1.0,6637,6437,117,99.78,0.57
+Streptomyces puniciscabiei,OK,,Contig,8,7,2019,,,8504,8094,317,99.53,0.28
+Streptomyces benahoarensis,OK,,Contig,22,7,2019,,,6371,5852,437,99.21,1.33
+Streptomyces capillispiralis,OK,,Contig,2,8,2019,,,7247,7022,135,100.0,0.44
+Streptomyces brevispora,OK,,Contig,2,8,2019,,,6886,6460,337,100.0,0.76
+Streptomyces qinzhouensis,OK,1.0,Complete Genome,6,8,2019,8146484.0,1.0,6667,6475,103,99.17,0.76
+Streptomyces xiamenensis,OK,1.0,Complete Genome,19,8,2019,5961402.0,1.0,5452,5232,143,95.2,0.13
+Streptomyces cacaoi,OK,,Scaffold,6,9,2019,882760.0,32.0,6960,6740,147,98.14,1.04
+Streptomyces marokkonensis,Inconclusive,,Contig,6,9,2019,,,7033,6739,215,100.0,
+Streptomyces apricus,OK,,Scaffold,10,9,2019,296590.0,309.0,7976,7451,439,96.91,0.85
+Streptomyces tailanensis,OK,,Scaffold,16,9,2019,115964.0,183.0,9233,8617,541,99.81,1.64
+Streptomyces filamentosus,OK,,Contig,23,9,2019,,,7177,6942,137,99.62,1.37
+Streptomyces albofaciens JCM 4342,OK,,Contig,23,9,2019,,,7905,7678,135,99.24,1.77
+Streptomyces fradiae ATCC 10745 = DSM 40063,OK,1.0,Complete Genome,26,9,2019,6725579.0,1.0,5785,5573,126,99.34,1.59
+Streptomyces spectabilis,OK,1.0,Complete Genome,26,9,2019,9807160.0,1.0,8279,8075,118,99.15,0.88
+Streptomyces cinereoruber,OK,1.0,Complete Genome,26,9,2019,7516652.0,1.0,6780,6545,144,99.62,0.8
+Streptomyces chartreusis,OK,1.0,Complete Genome,26,9,2019,9912098.0,1.0,8688,8512,82,100.0,0.13
+Streptomyces platensis,OK,1.0,Complete Genome,26,9,2019,8501012.0,1.0,7469,7176,203,99.46,0.38
+Streptomyces kanamyceticus,OK,1.0,Complete Genome,26,9,2019,10133897.0,1.0,8784,8529,166,99.91,1.58
+Streptomyces coeruleorubidus,OK,1.0,Complete Genome,26,9,2019,9335698.0,1.0,8499,8179,229,100.0,
+Streptomyces alboniger,OK,1.0,Complete Genome,26,9,2019,7962786.0,1.0,6975,6741,145,99.91,1.45
+Streptomyces galilaeus,OK,1.0,Complete Genome,26,9,2019,7756194.0,1.0,6993,6808,86,100.0,
+Streptomyces vinaceus,OK,1.0,Complete Genome,26,9,2019,7673509.0,1.0,6989,6735,162,99.89,0.95
+Streptomyces prasinus,OK,1.0,Complete Genome,26,9,2019,7647592.0,1.0,6683,6375,216,99.91,0.59
+Streptomyces subrutilus,OK,1.0,Complete Genome,26,9,2019,7604974.0,1.0,6761,6555,114,99.53,0.69
+Streptomyces nitrosporeus,OK,1.0,Complete Genome,26,9,2019,7581562.0,1.0,6704,6461,146,99.85,0.41
+Streptomyces viridosporus T7A,OK,1.0,Complete Genome,26,9,2019,7280536.0,1.0,6545,6253,200,99.53,0.42
+Streptomyces luteolifulvus,OK,,Scaffold,2,10,2019,198006.0,105.0,8298,7879,337,99.53,2.15
+Streptomyces abyssomicinicus,OK,,Scaffold,5,10,2019,851274.0,24.0,6768,6547,144,98.57,0.88
+Streptomyces triticiradicis,OK,,Scaffold,7,10,2019,170991.0,127.0,8876,8478,310,99.62,0.7
+Streptomyces albicerus,OK,,Scaffold,8,10,2019,138999.0,200.0,10903,10386,437,99.91,0.76
+Streptomyces arboris,OK,,Scaffold,9,10,2019,161029.0,121.0,7567,7255,239,99.91,1.1
+Streptomyces phaeolivaceus,OK,2.0,Complete Genome,20,10,2019,10116136.0,2.0,9092,8613,390,99.91,1.04
+Streptomyces mimosae,OK,,Contig,22,10,2019,,,6164,5997,100,95.77,0.57
+Streptomyces acidicola,OK,,Contig,28,10,2019,,,9271,8753,434,99.24,1.53
+Streptomyces adustus,OK,,Contig,28,10,2019,,,9264,8744,424,99.91,3.0
+Streptomyces phyllanthi,OK,,Contig,28,10,2019,,,9222,8700,437,98.39,1.91
+Streptomyces spongiae,OK,,Contig,28,10,2019,,,10087,9536,476,98.48,1.23
+Streptomyces fagopyri,OK,1.0,Complete Genome,4,11,2019,8880330.0,1.0,7722,7429,198,99.95,2.05
+Streptomyces kaniharaensis,Inconclusive,,Contig,5,11,2019,,,8163,7841,214,98.47,4.42
+Streptomyces jumonjinensis,Inconclusive,,Scaffold,5,11,2019,91474.0,209.0,7694,7267,352,98.43,0.95
+Streptomyces katsurahamanus,Inconclusive,,Scaffold,5,11,2019,37935.0,412.0,6558,6171,311,98.86,1.14
+Streptomyces smaragdinus,OK,,Contig,6,11,2019,,,7205,6985,139,99.53,0.51
+Streptomyces taklimakanensis,OK,,Contig,26,11,2019,,,5393,5168,142,98.67,0.34
+Streptomyces blattellae,OK,,Scaffold,26,11,2019,97082.0,253.0,7922,7433,417,99.81,0.47
+Streptomyces lycii,OK,,Scaffold,9,12,2019,32682.0,431.0,6543,6181,288,98.82,0.43
+Streptomyces libani subsp. libani,OK,,Contig,10,12,2019,,,7928,7661,174,99.94,0.76
+Streptomyces tubercidicus,OK,,Contig,10,12,2019,,,6856,6608,158,99.57,1.33
+Streptomyces glebosus,OK,,Contig,10,12,2019,,,7454,7127,235,99.84,0.57
+Streptomyces apocyni,OK,,Scaffold,10,12,2019,342607.0,78.0,6389,6191,120,99.91,6.06
+Streptomyces ficellus,Inconclusive,1.0,Complete Genome,11,12,2019,7078240.0,1.0,6402,6224,92,99.81,
+Streptomyces typhae,OK,,Scaffold,15,12,2019,321896.0,62.0,8326,8037,204,99.34,1.26
+Streptomyces broussonetiae,OK,1.0,Complete Genome,24,12,2019,9735779.0,1.0,9014,8478,445,99.81,1.14
+Streptomyces boluensis,OK,,Contig,20,1,2020,,,7679,7330,269,98.77,0.93
+Streptomyces harenosi,OK,,Contig,25,2,2020,,,6897,6128,686,85.21,0.51
+Streptomyces scabichelini,OK,,Contig,1,3,2020,,,10245,9733,434,99.4,1.2
+Streptomyces ureilyticus,OK,,Scaffold,1,3,2020,39427.0,532.0,9779,9118,580,99.81,1.39
+Streptomyces mesophilus,OK,,Scaffold,1,3,2020,31168.0,505.0,8192,7873,232,99.4,0.84
+Streptomyces coryli,OK,,Contig,1,3,2020,,,8498,8142,281,98.72,1.06
+Streptomyces boncukensis,OK,,Contig,1,3,2020,,,7686,7179,434,98.77,1.3
+Streptomyces chilikensis,OK,,Scaffold,18,3,2020,4553814.0,197.0,6425,6052,301,97.4,0.76
+Streptomyces pacificus,OK,,Contig,23,3,2020,,,5737,5468,189,98.39,
+Streptomyces liangshanensis,OK,1.0,Complete Genome,24,3,2020,7716784.0,1.0,6726,6538,98,99.62,1.12
+Streptomyces composti,OK,,Contig,5,4,2020,,,5821,5587,158,100.0,0.09
+Streptomyces lonarensis,OK,,Scaffold,5,4,2020,20985.0,482.0,5140,4859,210,93.72,0.28
+Streptomyces spiramenti,OK,,Scaffold,5,4,2020,20130.0,474.0,4869,4583,219,94.26,
+Streptomyces bohaiensis,OK,,Scaffold,5,4,2020,17710.0,547.0,4949,4622,255,91.76,0.47
+Streptomyces zingiberis,OK,,Contig,6,4,2020,,,5331,5104,156,97.4,2.27
+Streptomyces physcomitrii,OK,,Scaffold,12,4,2020,302607.0,51.0,6183,5971,132,99.54,1.52
+Streptomyces argyrophyllae,Inconclusive,1.0,Complete Genome,12,5,2020,7815457.0,1.0,6983,6739,154,99.47,0.38
+Streptomyces microflavus,OK,3.0,Complete Genome,22,6,2020,7790974.0,3.0,7492,7215,186,99.91,0.3
+Streptomyces harbinensis,OK,1.0,Complete Genome,22,6,2020,5802668.0,1.0,5275,5120,76,96.69,1.2
+Streptomyces rectiverticillatus,Inconclusive,1.0,Complete Genome,8,7,2020,7679243.0,1.0,6642,6394,149,99.53,2.45
+Streptomyces fulvorobeus,OK,,Contig,13,7,2020,,,5955,5685,171,99.53,0.38
+Streptomyces gossypiisoli,OK,,Scaffold,21,7,2020,147083.0,168.0,8550,8081,370,100.0,1.83
+Streptomyces alkaliterrae,OK,,Contig,24,7,2020,,,5551,5294,176,96.78,1.2
+Streptomyces himalayensis subsp. aureolus,OK,,Contig,29,7,2020,,,8207,7794,354,99.91,1.14
+Streptomyces phytophilus,OK,,Contig,29,7,2020,,,7157,6407,685,87.0,0.38
+Streptomyces calidiresistens,OK,,Contig,10,8,2020,,,5785,5313,402,95.9,1.75
+Streptomyces alkaliphilus,OK,,Contig,10,8,2020,,,5396,4906,422,95.44,0.19
+Streptomyces durbertensis,OK,,Contig,11,8,2020,,,5648,5288,280,95.36,0.76
+Streptomyces collinus,OK,,Contig,14,8,2020,,,7993,7713,192,100.0,
+Streptomyces echinatus,OK,,Scaffold,14,8,2020,515526.0,56.0,8461,8070,306,99.86,0.82
+Streptomyces luteogriseus,OK,,Contig,14,8,2020,,,7801,7480,229,100.0,
+Streptomyces caelestis,OK,,Contig,14,8,2020,,,8239,7742,405,100.0,0.69
+Streptomyces nymphaeiformis,OK,,Scaffold,14,8,2020,683317.0,32.0,8475,8198,194,99.53,2.31
+Streptomyces olivoverticillatus,OK,,Scaffold,14,8,2020,758686.0,16.0,5033,4874,77,99.43,0.9
+Streptomyces paradoxus,OK,,Scaffold,14,8,2020,603596.0,42.0,7917,7597,240,99.91,
+Streptomyces zagrosensis,OK,,Contig,14,8,2020,,,7258,6885,295,97.13,1.4
+Streptomyces rutgersensis,OK,2.0,Complete Genome,17,8,2020,6848830.0,2.0,5915,5619,206,99.43,0.19
+Streptomyces cupreus,OK,,Contig,20,8,2020,,,8969,8502,397,99.62,1.33
+Streptomyces salinarius,OK,,Contig,24,8,2020,,,7685,7429,181,100.0,0.6
+Streptomyces buecherae,OK,1.0,Complete Genome,25,8,2020,8416829.0,1.0,6697,6444,164,98.3,0.22
+Streptomyces roseirectus,OK,1.0,Complete Genome,6,9,2020,9947447.0,1.0,8632,8361,179,100.0,0.61
+Streptomyces genisteinicus,OK,3.0,Complete Genome,6,9,2020,7631890.0,3.0,6815,6634,92,99.81,0.51
+Streptomyces polyasparticus,OK,,Contig,8,9,2020,,,9235,8932,218,100.0,1.87
+Streptomyces aurantiacus,OK,1.0,Complete Genome,11,9,2020,9428393.0,1.0,8211,7928,194,99.46,0.76
+Streptomyces tuirus,OK,1.0,Complete Genome,11,9,2020,7561001.0,1.0,6940,6675,177,99.91,0.38
+Streptomyces parvus,OK,,Scaffold,12,9,2020,533932.0,57.0,7173,6958,132,99.86,0.88
+Streptomyces tendae,OK,,Scaffold,12,9,2020,452485.0,139.0,8257,7980,197,99.57,0.76
+Streptomyces diastaticus subsp. diastaticus,OK,,Scaffold,12,9,2020,252209.0,100.0,5946,5689,187,99.43,0.95
+Streptomyces violarus,OK,,Scaffold,12,9,2020,680113.0,28.0,8336,8037,220,99.62,0.28
+Streptomyces candidus,OK,,Scaffold,12,9,2020,557868.0,69.0,6622,6343,206,100.0,0.57
+Streptomyces griseocarneus,OK,,Scaffold,12,9,2020,527527.0,41.0,6696,6476,138,100.0,0.8
+Streptomyces thermodiastaticus,OK,,Scaffold,12,9,2020,146276.0,85.0,5441,5197,170,99.44,0.74
+Streptomyces griseoflavus,OK,,Scaffold,12,9,2020,360777.0,64.0,6930,6679,173,100.0,0.24
+Streptomyces abikoensis,OK,,Contig,12,9,2020,,,6243,6055,99,100.0,0.93
+Streptomyces lomondensis,OK,,Scaffold,12,9,2020,594419.0,59.0,7871,7546,248,100.0,
+Streptomyces lanatus,OK,,Scaffold,12,9,2020,419497.0,50.0,9242,8958,202,100.0,1.61
+Streptomyces melanogenes,OK,,Scaffold,12,9,2020,374786.0,102.0,8641,8350,211,99.91,1.7
+Streptomyces umbrinus,OK,,Scaffold,12,9,2020,613472.0,63.0,9231,8972,186,99.08,0.76
+Streptomyces chryseus,OK,,Contig,12,9,2020,,,6640,6392,174,99.91,0.69
+Streptomyces avidinii,OK,,Scaffold,12,9,2020,567444.0,68.0,7640,7316,247,100.0,0.38
+Streptomyces roseolus,Inconclusive,,Scaffold,12,9,2020,188765.0,97.0,7387,7104,202,99.43,1.7
+Streptomyces lateritius,OK,,Scaffold,12,9,2020,400966.0,54.0,7122,6766,277,99.84,0.85
+Streptomyces badius,OK,,Scaffold,12,9,2020,308300.0,74.0,6906,6561,277,99.44,0.09
+Streptomyces griseosporeus,OK,,Scaffold,12,9,2020,1004467.0,16.0,7352,7162,107,99.91,
+Streptomyces roseolilacinus,OK,,Scaffold,12,9,2020,527492.0,46.0,6032,5826,131,99.91,0.35
+Streptomyces plicatus,Inconclusive,,Scaffold,12,9,2020,512933.0,241.0,7363,7141,146,100.0,0.05
+Streptomyces fumanus,OK,,Scaffold,12,9,2020,488703.0,45.0,7069,6868,124,99.62,0.22
+Streptomyces pilosus,OK,,Scaffold,12,9,2020,465971.0,139.0,6813,6597,143,100.0,
+Streptomyces pluricolorescens,Inconclusive,,Scaffold,12,9,2020,459850.0,50.0,6774,6609,94,94.82,
+Streptomyces purpurascens,OK,,Scaffold,12,9,2020,517256.0,72.0,8612,8336,198,100.0,0.09
+Streptomyces cirratus,OK,,Contig,12,9,2020,,,6625,6375,174,99.61,2.18
+Streptomyces violaceochromogenes,Inconclusive,,Scaffold,12,9,2020,933328.0,23.0,8074,7796,203,100.0,
+Streptomyces flavofungini,OK,,Scaffold,12,9,2020,524149.0,75.0,7857,7615,168,99.05,0.32
+Streptomyces mashuensis,OK,,Contig,12,9,2020,,,6584,6408,96,99.53,0.24
+Streptomyces lucensis JCM 4490,OK,,Scaffold,12,9,2020,406335.0,65.0,6981,6723,180,99.81,1.36
+Streptomyces xanthochromogenes,OK,,Scaffold,12,9,2020,557778.0,66.0,7808,7613,120,99.62,0.98
+Streptomyces flaveolus,OK,,Contig,12,9,2020,,,7284,7030,175,99.62,1.26
+Streptomyces narbonensis,OK,,Scaffold,12,9,2020,388913.0,221.0,6898,6695,130,99.91,1.95
+Streptomyces termitum,OK,,Contig,12,9,2020,,,6306,6110,114,99.94,1.31
+Streptomyces bluensis,OK,,Contig,12,9,2020,,,7853,7548,231,99.62,0.69
+Streptomyces litmocidini,OK,,Scaffold,12,9,2020,364208.0,87.0,7200,6935,191,100.0,0.75
+Streptomyces cinerochromogenes,OK,,Scaffold,12,9,2020,354079.0,63.0,7925,7665,181,100.0,0.49
+Streptomyces lavendofoliae,OK,,Scaffold,12,9,2020,400468.0,70.0,6621,6359,187,98.86,0.32
+Streptomyces griseomycini,OK,,Contig,12,9,2020,,,7505,7027,401,99.91,0.51
+Streptomyces longisporoflavus,OK,,Scaffold,12,9,2020,346887.0,167.0,8832,8547,206,99.91,1.01
+Streptomyces djakartensis,OK,,Scaffold,12,9,2020,341741.0,109.0,6962,6697,182,100.0,0.93
+Streptomyces filipinensis,OK,,Scaffold,12,9,2020,364515.0,101.0,8412,8050,280,99.82,1.56
+Streptomyces aurantiogriseus,OK,,Scaffold,12,9,2020,330889.0,90.0,9709,9262,361,99.53,0.38
+Streptomyces hiroshimensis,OK,,Scaffold,12,9,2020,435958.0,38.0,6806,6600,121,99.53,1.25
+Streptomyces massasporeus,OK,,Scaffold,12,9,2020,311383.0,83.0,8374,8063,236,100.0,0.47
+Streptomyces finlayi,OK,,Scaffold,12,9,2020,413334.0,65.0,8424,8191,158,99.43,1.14
+Streptomyces griseoluteus,OK,,Scaffold,12,9,2020,584698.0,25.0,6174,5949,150,99.75,1.33
+Streptomyces gougerotii,OK,,Contig,12,9,2020,,,5579,5371,135,98.86,0.19
+Streptomyces lasiicapitis,OK,,Scaffold,12,9,2020,446090.0,49.0,8321,8087,159,99.53,1.1
+Streptomyces poonensis,OK,,Scaffold,12,9,2020,379875.0,46.0,7563,7199,288,99.91,1.14
+Streptomyces sulfonofaciens,OK,,Scaffold,12,9,2020,315753.0,114.0,6982,6659,253,98.77,1.64
+Streptomyces eurythermus,OK,,Scaffold,12,9,2020,347049.0,70.0,8146,7833,227,99.91,1.55
+Streptomyces ruber,Inconclusive,,Scaffold,12,9,2020,337019.0,100.0,6947,6599,269,99.91,0.38
+Streptomyces daqingensis,OK,,Scaffold,12,9,2020,323157.0,50.0,5661,5492,104,98.59,0.19
+Streptomyces olivaceoviridis,OK,,Scaffold,12,9,2020,278653.0,135.0,8734,8288,367,99.53,1.33
+Streptomyces rubiginosohelvolus,Inconclusive,,Scaffold,12,9,2020,350824.0,40.0,6830,6639,120,99.53,0.38
+Streptomyces morookaense,OK,,Scaffold,12,9,2020,718210.0,31.0,6723,6503,139,99.91,1.12
+Streptomyces niveoruber,Inconclusive,,Scaffold,12,9,2020,262670.0,82.0,6889,6599,215,100.0,0.51
+Streptomyces phaeofaciens,OK,,Scaffold,12,9,2020,258264.0,103.0,9210,8871,254,100.0,0.69
+Streptomyces vinaceusdrappus,Inconclusive,,Scaffold,12,9,2020,284295.0,72.0,7603,7378,150,100.0,0.05
+Streptomyces fuscichromogenes,OK,,Scaffold,12,9,2020,307198.0,129.0,10168,9806,284,100.0,0.92
+Streptomyces omiyaensis,OK,,Scaffold,12,9,2020,298436.0,100.0,7670,7451,134,99.91,1.6
+Streptomyces lacrimifluminis,OK,,Scaffold,12,9,2020,247165.0,132.0,8138,7691,372,99.65,0.38
+Streptomyces thermoviolaceus subsp. thermoviolaceus,OK,,Scaffold,12,9,2020,232536.0,49.0,5151,4922,150,99.49,0.28
+Streptomyces alanosinicus,OK,,Contig,12,9,2020,,,9494,8913,499,100.0,1.37
+Streptomyces coeruleorubidus,OK,,Scaffold,12,9,2020,304449.0,73.0,8597,8247,275,99.91,0.38
+Streptomyces zaomyceticus,OK,,Contig,12,9,2020,,,7327,7162,86,99.53,0.8
+Streptomyces albiflavescens,OK,,Scaffold,12,9,2020,424854.0,56.0,9821,9339,399,100.0,2.18
+Streptomyces xantholiticus,OK,,Scaffold,12,9,2020,219100.0,80.0,7087,6673,339,100.0,0.42
+Streptomyces humidus,OK,,Scaffold,12,9,2020,194407.0,181.0,8418,8021,320,99.62,1.85
+Streptomyces kronopolitis,OK,,Scaffold,12,9,2020,191127.0,141.0,6794,6548,169,99.37,0.76
+Streptomyces camponoticapitis,OK,,Scaffold,12,9,2020,255124.0,83.0,7487,7178,232,99.15,0.51
+Streptomyces sindenensis,OK,,Contig,12,9,2020,,,6681,6462,147,99.86,0.81
+Streptomyces gelaticus,OK,,Scaffold,12,9,2020,237536.0,114.0,7040,6692,279,99.83,1.14
+Streptomyces brasiliensis,OK,,Scaffold,12,9,2020,168452.0,285.0,10195,9331,781,99.91,2.49
+Streptomyces variabilis,Inconclusive,,Scaffold,12,9,2020,287350.0,73.0,6729,6471,183,99.81,
+Streptomyces fructofermentans,OK,,Scaffold,12,9,2020,217015.0,86.0,7660,7421,159,99.13,0.73
+Streptomyces viridiviolaceus,OK,,Scaffold,12,9,2020,263771.0,153.0,8325,7906,346,99.91,1.36
+Streptomyces canarius,OK,,Scaffold,12,9,2020,185453.0,272.0,9487,8939,466,99.53,2.18
+Streptomyces echinoruber,OK,,Scaffold,12,9,2020,181340.0,108.0,6606,6302,228,99.15,0.85
+Streptomyces inusitatus,OK,,Scaffold,12,9,2020,226038.0,108.0,6852,6651,126,99.24,0.82
+Streptomyces minutiscleroticus,OK,,Scaffold,12,9,2020,140288.0,296.0,8365,7794,491,100.0,0.95
+Streptomyces toxytricini,OK,,Scaffold,12,9,2020,248576.0,53.0,6520,6329,112,99.91,0.09
+Streptomyces rubiginosus,OK,,Scaffold,12,9,2020,271392.0,97.0,6664,6442,147,99.56,0.09
+Streptomyces flaveus,OK,,Scaffold,12,9,2020,262738.0,108.0,9485,9110,306,99.91,0.88
+Streptomyces spiralis,OK,,Scaffold,12,9,2020,150732.0,176.0,9048,8561,408,100.0,1.74
+Streptomyces albaduncus,OK,,Scaffold,12,9,2020,245055.0,111.0,7196,6784,333,100.0,1.33
+Streptomyces albospinus,OK,,Scaffold,12,9,2020,201243.0,165.0,8439,7937,421,99.08,1.52
+Streptomyces longispororuber,OK,,Scaffold,12,9,2020,45204.0,354.0,7749,7417,251,99.81,0.69
+Streptomyces anandii JCM 4720,OK,,Scaffold,12,9,2020,327315.0,128.0,7620,7094,452,98.75,0.87
+Streptomyces capoamus,OK,,Scaffold,12,9,2020,257073.0,147.0,8260,7610,573,97.64,2.39
+Streptomyces naganishii JCM 4654,OK,,Contig,14,9,2020,,,6933,6663,189,99.24,1.52
+Streptomyces griseicoloratus,OK,,Scaffold,14,9,2020,166916.0,241.0,7936,7666,201,100.0,1.85
+Streptomyces xanthii,OK,3.0,Complete Genome,15,9,2020,7867709.0,3.0,7606,7442,72,99.91,1.14
+Streptomyces griseofuscus,OK,4.0,Complete Genome,21,9,2020,8721740.0,4.0,8257,7903,255,99.91,0.6
+Streptomyces chumphonensis,OK,,Contig,28,9,2020,,,5231,5085,78,98.01,0.76
+Streptomyces stelliscabiei,OK,,Contig,9,10,2020,,,9308,8904,313,100.0,1.52
+Streptomyces ferrugineus,OK,1.0,Complete Genome,1,11,2020,9959088.0,1.0,8984,8643,251,99.81,0.77
+Streptomyces chromofuscus,OK,1.0,Complete Genome,1,11,2020,7483282.0,1.0,6801,6406,304,99.43,0.19
+Streptomyces olivaceus,OK,1.0,Complete Genome,5,11,2020,8458055.0,1.0,7338,7076,175,99.53,
+Streptomyces solisilvae,Inconclusive,1.0,Complete Genome,25,11,2020,11639536.0,1.0,9472,9008,373,97.51,2.4
+Streptomyces gardneri,OK,1.0,Complete Genome,2,12,2020,9054805.0,1.0,8178,7894,187,99.91,0.62
+Streptomyces clavuligerus,OK,2.0,Complete Genome,6,12,2020,6868099.0,2.0,6253,6052,115,99.62,0.76
+Streptomyces bathyalis,OK,1.0,Complete Genome,10,12,2020,7377472.0,1.0,6467,6276,111,99.89,0.85
+Streptomyces pactum,OK,,Contig,14,12,2020,,,6138,5721,332,96.24,2.53
+Streptomyces sabulosicollis,Inconclusive,,Contig,16,12,2020,,,9084,8511,491,99.72,1.86
+Streptomyces javensis,OK,,Contig,16,12,2020,,,9452,8842,544,94.29,2.4
+Streptomyces fildesensis,Inconclusive,,Contig,17,12,2020,,,8782,8321,387,99.62,1.24
+Streptomyces murinus,OK,1.0,Complete Genome,4,1,2021,8539264.0,1.0,7587,7374,115,99.91,1.36
+Streptomyces spororaveus,OK,,Contig,7,1,2021,,,8084,7791,198,100.0,1.81
+Streptomyces adelaidensis,OK,,Contig,9,1,2021,,,8532,8014,446,99.57,1.37
+Streptomyces liliifuscus,OK,2.0,Complete Genome,10,1,2021,11027222.0,2.0,10003,9748,161,99.46,0.88
+Streptomyces asoensis,OK,,Contig,19,1,2021,,,7649,7420,138,100.0,0.76
+Streptomyces rubradiris,OK,,Contig,19,1,2021,,,8101,7742,266,99.91,1.84
+Streptomyces musisoli,OK,,Contig,21,1,2021,,,8237,7909,251,100.0,1.91
+Streptomyces endocoffeicus,OK,,Contig,21,1,2021,,,11064,10633,354,99.34,3.69
+Streptomyces actinomycinicus,OK,,Contig,21,1,2021,,,7813,7494,237,100.0,1.45
+Streptomyces coffeae,OK,,Contig,21,1,2021,,,8438,8012,353,99.91,2.34
+Streptomyces pratensis,Inconclusive,2.0,Complete Genome,3,2,2021,8270263.0,2.0,7031,6744,199,99.91,0.47
+Streptomyces koyangensis,OK,2.0,Complete Genome,3,2,2021,6861301.0,2.0,6073,5844,139,99.08,0.25
+Streptomyces durocortorensis,OK,,Scaffold,16,2,2021,26787.0,616.0,7298,6824,399,96.8,
+Streptomyces californicus,OK,3.0,Complete Genome,18,2,2021,7814960.0,3.0,7047,6840,120,100.0,0.38
+Streptomyces noursei,OK,1.0,Complete Genome,22,2,2021,9857535.0,1.0,8673,8247,332,99.72,2.29
+Streptomyces zhihengii,OK,5.0,Scaffold,23,2,2021,6589952.0,7.0,8137,7836,210,99.43,1.17
+Streptomyces actuosus,Inconclusive,,Contig,23,2,2021,,,7270,6919,267,99.78,1.06
+Streptomyces verrucosisporus,OK,,Contig,1,3,2021,,,5576,5354,155,97.76,0.62
+Streptomyces beijiangensis,OK,,Scaffold,10,3,2021,21718.0,1769.0,8781,7802,906,99.05,2.68
+Streptomyces triculaminicus,Inconclusive,,Contig,13,3,2021,,,6805,6367,336,99.08,1.06
+Streptomyces nodosus,OK,1.0,Complete Genome,14,3,2021,7621081.0,1.0,6724,6461,174,99.91,3.16
+Streptomyces rimosus subsp. rimosus ATCC 10970,OK,2.0,Complete Genome,19,3,2021,9351267.0,2.0,8497,8216,189,99.62,1.86
+Streptomyces cyanogenus,Inconclusive,1.0,Complete Genome,22,3,2021,8773899.0,1.0,7747,7375,281,100.0,0.19
+Streptomyces nojiriensis,OK,1.0,Complete Genome,30,3,2021,9022916.0,1.0,8247,7962,183,99.95,0.99
+Streptomyces smyrnaeus,OK,,Contig,2,4,2021,,,7161,6931,163,98.39,1.7
+Streptomyces spirodelae,OK,,Contig,2,4,2021,,,6529,6296,168,98.58,0.38
+Streptomyces oryzae,OK,,Contig,2,4,2021,,,6964,6664,232,99.43,1.04
+Streptomyces montanisoli,OK,,Contig,6,4,2021,,,6710,6359,268,98.24,1.23
+Streptomyces virginiae,OK,,Contig,8,4,2021,,,7793,7578,120,100.0,1.33
+Streptomyces iranensis,OK,,Contig,8,4,2021,,,9847,9493,271,99.91,1.14
+Streptomyces syringium,OK,,Contig,8,4,2021,,,6623,6435,90,99.91,0.62
+Streptomyces clavifer,OK,,Contig,8,4,2021,,,6741,6481,170,99.91,0.19
+Streptomyces rhizosphaericus,OK,,Contig,13,4,2021,,,9214,8764,361,99.72,0.92
+Streptomyces tagetis,OK,,Scaffold,17,4,2021,781243.0,17.0,6319,6136,103,99.85,2.46
+Streptomyces yatensis,OK,1.0,Complete Genome,18,4,2021,10360357.0,1.0,8684,8388,210,99.72,0.76
+Streptomyces liliiviolaceus,OK,2.0,Scaffold,18,4,2021,8435489.0,4.0,9488,9252,144,99.37,0.88
+Streptomyces auratus AGR0001,Inconclusive,1.0,Complete Genome,21,4,2021,7901452.0,1.0,6793,6567,137,99.91,0.79
+Streptomyces indonesiensis,OK,,Contig,24,4,2021,,,9798,9290,419,99.34,1.23
+Streptomyces asiaticus,OK,,Contig,24,4,2021,,,10097,9579,428,99.34,1.23
+Streptomyces alfalfae,OK,2.0,Complete Genome,27,4,2021,8254035.0,2.0,7240,6967,175,99.47,0.39
+Streptomyces lavendulae subsp. lavendulae,OK,1.0,Complete Genome,4,5,2021,8035918.0,1.0,7221,6964,159,100.0,0.85
+Streptomyces niphimycinicus,OK,1.0,Scaffold,14,6,2021,17460.0,1379.0,10091,9178,832,99.24,2.78
+Streptomyces brasiliscabiei,Inconclusive,,Scaffold,17,6,2021,43214.0,898.0,9622,9190,333,99.57,2.08
+Streptomyces tardus,OK,,Scaffold,23,6,2021,4878575.0,10.0,5192,4908,204,97.82,0.19
+Streptomyces cangkringensis,OK,,Contig,29,6,2021,,,9860,9333,437,98.96,1.23
+Streptomyces corallincola,OK,,Contig,4,7,2021,,,5620,5420,132,96.21,1.07
+Streptomyces halstedii,OK,,Scaffold,14,7,2021,6188247.0,7.0,6748,6543,124,99.53,0.88
+Streptomyces anatolicus,OK,,Contig,29,7,2021,,,6643,6328,242,96.97,1.2
+Streptomyces poriferorum,OK,,Scaffold,29,7,2021,29528.0,653.0,8196,7729,391,98.71,0.09
+Streptomyces akebiae,OK,2.0,Complete Genome,15,8,2021,10257202.0,2.0,9124,8717,316,99.43,0.93
+Streptomyces plumbidurans,Inconclusive,,Contig,2,9,2021,,,8093,7829,178,100.0,1.52
+Streptomyces decoyicus,OK,1.0,Complete Genome,5,9,2021,8632952.0,1.0,7643,7282,270,99.94,
+Streptomyces acidipaludis,Inconclusive,,Contig,6,9,2021,,,7483,7247,164,98.55,1.94
+Streptomyces sennicomposti,OK,,Contig,6,9,2021,,,6323,6107,138,98.48,0.38
+Streptomyces angustmyceticus,OK,1.0,Complete Genome,13,9,2021,8116382.0,1.0,7096,6858,147,99.62,0.93
+Streptomyces griseiscabiei,OK,,Contig,16,9,2021,,,9216,8940,182,94.6,1.89
+Streptomyces acidiscabies,OK,,Contig,16,9,2021,,,9746,9427,223,99.53,1.07
+Streptomyces purpurogeneiscleroticus,OK,,Scaffold,17,9,2021,23973.0,494.0,7038,6766,197,98.86,2.9
+Streptomyces huiliensis,OK,,Contig,19,9,2021,,,7169,6766,325,98.73,1.88
+Streptomyces mobaraensis,OK,2.0,Complete Genome,23,9,2021,7638929.0,2.0,6725,6474,157,98.79,1.5
+Streptomyces violascens,OK,,Contig,30,9,2021,,,8146,7806,242,98.86,5.49
+Streptomyces daghestanicus,OK,,Contig,30,9,2021,,,7258,6874,295,100.0,2.49
+Streptomyces hydrogenans,OK,,Contig,30,9,2021,,,9543,9086,350,99.62,4.26
+Streptomyces sichuanensis,OK,,Contig,6,10,2021,,,6393,6140,176,100.0,0.93
+Streptomyces werraensis,Inconclusive,,Contig,6,10,2021,,,6643,6433,140,99.62,0.38
+Streptomyces solaniscabiei,OK,,Contig,6,10,2021,,,7602,7365,174,100.0,2.01
+Streptomyces aculeolatus,OK,,Contig,8,10,2021,,,7799,7608,124,98.93,
+Streptomyces spinosus,Inconclusive,,Contig,8,10,2021,,,8199,7898,227,99.15,0.95
+Streptomyces hyderabadensis,OK,,Contig,9,10,2021,,,7470,7248,146,99.87,0.38
+Streptomyces bambusae,OK,,Contig,19,10,2021,,,7512,7296,141,98.39,0.95
+Streptomyces antimicrobicus,OK,,Contig,19,10,2021,,,5990,5779,133,99.38,1.52
+Streptomyces pinistramenti,OK,,Contig,25,10,2021,,,6937,6617,246,99.18,1.61
+Streptomyces longhuiensis,OK,2.0,Complete Genome,26,10,2021,9816795.0,2.0,9208,8846,269,99.87,0.99
+Streptomyces flavotricini,Inconclusive,,Scaffold,26,10,2021,8677784.0,45.0,8117,7728,308,99.91,2.65
+Streptomyces anulatus,OK,2.0,Complete Genome,7,11,2021,8372992.0,2.0,7552,7332,130,99.91,
+Streptomyces barringtoniae,OK,,Contig,9,11,2021,,,8230,7800,351,99.62,0.8
+Streptomyces coriariae,OK,,Scaffold,18,11,2021,78904.0,211.0,8529,8114,334,100.0,0.38
+Streptomyces huasconensis,OK,1.0,Complete Genome,2,12,2021,8236582.0,1.0,7260,7018,148,100.0,0.25
+Streptomyces gobiensis,OK,1.0,Complete Genome,16,12,2021,5691859.0,1.0,5308,5098,130,99.24,1.33
+Streptomyces albireticuli,OK,,Scaffold,18,12,2021,523938.0,115.0,6001,5741,175,99.91,0.52
+Streptomyces guryensis,OK,,Scaffold,21,12,2021,288553.0,78.0,9606,9081,445,99.24,2.37
+Streptomyces spinosirectus,Inconclusive,1.0,Complete Genome,12,1,2022,8624193.0,1.0,7930,7713,123,100.0,1.33
+Streptomyces glomeratus,OK,,Contig,13,1,2022,,,7124,6797,250,100.0,0.82
+Streptomyces shenzhenensis,OK,,Contig,13,1,2022,,,9522,9054,387,99.81,1.32
+Streptomyces indiaensis,OK,,Contig,15,1,2022,,,7300,6903,315,99.34,0.09
+Streptomyces muensis,OK,,Contig,15,1,2022,,,8992,8540,373,100.0,0.57
+Streptomyces fuscigenes,OK,,Contig,23,1,2022,,,5732,5322,334,96.05,1.7
+Streptomyces tricolor,OK,,Contig,2,2,2022,,,8685,8272,332,99.08,1.44
+Streptomyces inhibens,OK,1.0,Complete Genome,14,2,2022,9696490.0,1.0,8775,8305,377,99.56,1.33
+Streptomyces deccanensis,OK,1.0,Complete Genome,24,2,2022,10101518.0,1.0,8889,8620,178,99.24,1.94
+Streptomyces marispadix,OK,,Contig,8,3,2022,,,5538,5250,213,97.42,0.09
+Streptomyces formicae,OK,2.0,Complete Genome,21,3,2022,8177291.0,2.0,7451,6991,369,98.71,0.79
+Streptomyces cylindrosporus,OK,,Contig,26,3,2022,,,10181,9930,173,99.91,0.88
+Streptomyces spinosisporus,OK,,Contig,26,3,2022,,,8766,8532,159,100.0,1.33
+Streptomyces tubbatahanensis,OK,1.0,Complete Genome,27,3,2022,7760770.0,1.0,6652,6424,147,99.05,1.64
+Streptomyces rhizoryzae,OK,,Contig,27,4,2022,,,7013,6741,205,99.16,1.52
+Streptomyces lichenis,OK,,Contig,2,5,2022,,,6242,6013,152,99.37,0.88
+Streptomyces halobius,OK,1.0,Complete Genome,9,5,2022,9239126.0,1.0,8403,7793,518,99.03,1.89
+Streptomyces durmitorensis,OK,2.0,Complete Genome,18,5,2022,9715409.0,2.0,8703,8449,164,100.0,0.19
+Streptomyces panaciradicis,OK,,Contig,22,5,2022,,,8880,8499,303,99.53,1.33
+Streptomyces sudanensis,OK,1.0,Chromosome,31,5,2022,5259510.0,1.0,4838,4308,446,94.74,0.57
+Streptomyces meridianus,OK,,Scaffold,12,6,2022,127529.0,93.0,5110,4910,136,99.56,0.57
+Streptomyces macrolidinus,OK,,Contig,23,6,2022,,,6122,5907,139,98.86,0.71
+Streptomyces phaeoluteigriseus,OK,3.0,Complete Genome,27,6,2022,9026270.0,3.0,8100,7707,299,100.0,0.09
+Streptomyces somaliensis DSM 40738,OK,,Scaffold,20,7,2022,3991522.0,2.0,4637,3991,559,94.17,0.19
+Streptomyces humicola,Inconclusive,,Contig,25,7,2022,,,6577,6233,280,98.96,2.35
+Streptomyces koelreuteriae,OK,2.0,Complete Genome,26,7,2022,8599387.0,2.0,7798,7633,73,100.0,0.19
+Streptomyces rugosispiralis,OK,,Contig,1,8,2022,,,9484,9071,341,99.91,1.7
+Streptomyces samsunensis,OK,,Contig,3,8,2022,,,9767,9232,463,96.02,2.05
+Streptomyces telluris,OK,,Contig,3,8,2022,,,7240,7012,157,96.59,1.63
+Streptomyces hilarionis,OK,,Scaffold,4,8,2022,44277.0,949.0,7919,7571,273,99.81,0.43
+Streptomyces changanensis,Inconclusive,2.0,Complete Genome,9,8,2022,6817869.0,2.0,6072,5789,194,99.17,0.16
+Streptomyces yangpuensis,OK,4.0,Complete Genome,15,8,2022,7435303.0,4.0,7314,7082,135,99.51,1.2
+Streptomyces albus,OK,2.0,Complete Genome,28,8,2022,7889116.0,2.0,6759,6528,150,99.05,0.69
+Streptomyces ginkgonis,Inconclusive,,Contig,29,8,2022,,,5327,5189,68,96.69,1.39
+Streptomyces gossypii,OK,,Scaffold,13,9,2022,454632.0,49.0,6800,6556,171,99.47,1.42
+Streptomyces rhizosphaerihabitans,Inconclusive,,Contig,25,9,2022,,,9108,8607,418,99.62,0.8
+Streptomyces lusitanus,Inconclusive,1.0,Chromosome,27,9,2022,7417890.0,1.0,6707,6446,169,98.58,
+Streptomyces cynarae,OK,2.0,Complete Genome,11,10,2022,9054161.0,2.0,8523,7828,604,97.06,1.74
+Streptomyces milbemycinicus,OK,1.0,Complete Genome,30,10,2022,12063392.0,1.0,10157,9716,351,98.9,1.04
+Streptomyces endophytica,OK,1.0,Complete Genome,13,11,2022,6901780.0,1.0,6171,5167,917,80.57,1.39
+Streptomyces justiciae,OK,,Contig,15,11,2022,,,9712,9499,136,100.0,0.76
+Streptomyces beihaiensis,OK,,Contig,21,11,2022,,,6459,6078,304,98.98,0.57
+Streptomyces ortus,OK,,Scaffold,23,11,2022,8605295.0,8.0,8123,7808,228,98.77,0.76
+Streptomyces mirabilis,OK,,Contig,23,11,2022,,,11781,11105,579,99.91,2.16
+Streptomyces coelicoflavus,OK,,Contig,23,11,2022,,,7097,6900,108,100.0,
+Streptomyces phaeochromogenes,OK,,Contig,23,11,2022,,,9730,9494,144,99.84,1.45
+Streptomyces prunicolor,OK,,Contig,23,11,2022,,,10318,10062,162,100.0,2.27
+Streptomyces bobili,OK,,Contig,23,11,2022,,,8015,7681,235,100.0,
+Streptomyces viridodiastaticus,OK,,Contig,23,11,2022,,,7119,6910,121,99.95,0.38
+Streptomyces tanashiensis,OK,1.0,Complete Genome,28,11,2022,8694918.0,1.0,7893,7610,186,99.53,1.33
+Streptomyces cinnabarinus,OK,1.0,Complete Genome,24,12,2022,9621721.0,1.0,8670,8405,172,99.85,0.82
+Streptomyces nigrescens,Inconclusive,2.0,Complete Genome,10,1,2023,9513687.0,2.0,8249,7938,220,99.84,1.89
+Streptomyces goshikiensis,OK,5.0,Complete Genome,23,1,2023,7239828.0,5.0,7266,7009,162,99.53,1.45
+Streptomyces lienomycini,OK,1.0,Complete Genome,25,1,2023,7863969.0,1.0,7187,6847,250,99.91,0.76
+Streptomyces gilvifuscus,OK,,Contig,1,2,2023,,,8963,8720,166,99.53,0.43
+Streptomyces heilongjiangensis,OK,,Contig,1,2,2023,,,7748,7393,280,98.48,1.96
+Streptomyces xanthophaeus,OK,3.0,Complete Genome,2,2,2023,8204848.0,3.0,7850,7606,146,99.87,1.89
+Streptomyces spiramyceticus,Inconclusive,,Contig,22,2,2023,,,6454,6104,255,99.85,1.07
+Streptomyces neyagawaensis,OK,,Contig,26,2,2023,,,8747,8396,273,99.62,2.7
+Streptomyces yunnanensis,OK,1.0,Complete Genome,6,3,2023,9982274.0,1.0,8744,8320,329,99.72,2.18
+Streptomyces coacervatus,OK,,Contig,15,3,2023,,,10177,9777,316,99.57,0.95
+Streptomyces caniscabiei,OK,1.0,Complete Genome,16,3,2023,10262635.0,1.0,9042,8683,268,99.62,1.89
+Streptomyces tropicalis,OK,,Contig,19,3,2023,,,6659,6329,249,99.87,0.41
+Streptomyces silvisoli,Inconclusive,,Contig,19,3,2023,,,7150,6817,255,97.73,2.71
+Streptomyces graminofaciens,Inconclusive,1.0,Complete Genome,28,3,2023,11602651.0,1.0,10267,9716,457,100.0,1.77
+Streptomyces cathayae,OK,2.0,Complete Genome,15,4,2023,7464554.0,2.0,6970,6590,289,99.81,1.07
+Streptomyces chitinivorans,OK,,Contig,19,4,2023,,,5586,5401,112,96.95,0.47
+Streptomyces chengmaiensis,OK,,Scaffold,19,4,2023,127268.0,146.0,7359,6989,291,99.58,0.57
+Streptomyces iconiensis,OK,,Contig,23,5,2023,,,8599,8252,270,98.77,2.46
+Streptomyces pakalii,OK,,Contig,25,5,2023,,,6893,6676,143,99.53,
+Streptomyces fuscus,OK,,Contig,12,6,2023,,,7733,7515,137,99.91,1.45
+Streptomyces antimycoticus,OK,1.0,Complete Genome,20,6,2023,9718239.0,1.0,8468,7967,416,99.72,1.74
+Streptomyces laculatispora,Inconclusive,5.0,Complete Genome,14,8,2023,8504600.0,5.0,7651,7147,413,98.81,0.38
+Streptomyces griseoviridis,OK,,Contig,18,8,2023,,,6914,6630,197,100.0,0.38
+Streptomyces demainii,OK,,Contig,18,8,2023,,,8727,8324,314,98.38,2.27
+Streptomyces africanus,OK,,Contig,18,8,2023,,,8266,7839,339,98.55,0.08
+Streptomyces rochei,OK,2.0,Complete Genome,23,8,2023,8030667.0,2.0,7205,6996,119,100.0,
+Streptomyces janthinus,OK,2.0,Complete Genome,18,9,2023,9361893.0,2.0,8689,8323,273,100.0,0.66
+Streptomyces tamarix,OK,,Contig,5,10,2023,,,6516,6273,150,99.91,0.4
+Streptomyces herbicida,OK,,Scaffold,13,10,2023,323485.0,101.0,9785,9262,433,99.91,11.01
+Streptomyces sasae,OK,,Scaffold,13,10,2023,267306.0,98.0,10917,10329,498,95.74,3.82
+Streptomyces cyaneofuscatus,OK,1.0,Complete Genome,30,10,2023,8117999.0,1.0,7185,6966,131,99.91,1.07
+Streptomyces violaceoruber,OK,1.0,Complete Genome,7,11,2023,8629698.0,1.0,7781,7526,168,100.0,
+Streptomyces turgidiscabies,OK,,Scaffold,17,11,2023,448794.0,57.0,9538,9233,221,99.81,0.85
+Streptomyces niveiscabiei,Inconclusive,,Scaffold,17,11,2023,189010.0,135.0,8845,8559,200,99.91,0.88
+Streptomyces kunmingensis,OK,,Contig,12,1,2024,,,8862,8483,298,99.91,0.95
+Streptomyces endophyticus,OK,,Contig,17,1,2024,,,8743,8455,193,99.53,1.14
+Streptomyces anthocyanicus,OK,2.0,Complete Genome,20,1,2024,8677221.0,2.0,8057,7807,162,100.0,
+Streptomyces scopuliridis,OK,3.0,Complete Genome,20,1,2024,9080322.0,3.0,8402,7930,383,99.12,0.32
+Streptomyces hirsutus,OK,1.0,Complete Genome,20,1,2024,8843894.0,1.0,7984,7436,456,100.0,0.45
+Streptomyces canus,OK,2.0,Complete Genome,25,1,2024,10691412.0,2.0,9827,9336,402,100.0,0.8
+Streptomyces tauricus,OK,1.0,Complete Genome,25,1,2024,10308633.0,1.0,8840,8513,235,99.75,0.95
+Streptomyces niveus,OK,2.0,Complete Genome,25,1,2024,8500400.0,2.0,7666,7410,169,99.69,0.88
+Streptomyces violaceus,OK,2.0,Complete Genome,25,1,2024,8918193.0,2.0,8112,7789,235,100.0,0.47
+Streptomyces caniferus,OK,2.0,Complete Genome,25,1,2024,8848699.0,2.0,7946,7641,206,100.0,0.76
+Streptomyces erythrochromogenes,Inconclusive,2.0,Complete Genome,25,1,2024,8498532.0,2.0,7952,7624,232,100.0,0.02
+Streptomyces jietaisiensis,OK,3.0,Complete Genome,25,1,2024,7415029.0,3.0,6648,6434,126,99.84,
+Streptomyces uncialis,Inconclusive,3.0,Complete Genome,26,1,2024,9117749.0,3.0,7799,7534,176,99.47,0.84
+[Kitasatospora] papulosa,OK,2.0,Complete Genome,26,1,2024,7413447.0,2.0,6651,6445,118,99.91,0.09
+Streptomyces iakyrus,OK,1.0,Complete Genome,29,1,2024,9116509.0,1.0,8471,8127,256,99.91,2.27
+Streptomyces chiangmaiensis,OK,,Contig,29,1,2024,,,9375,8585,744,99.45,1.76
+Streptomyces europaeiscabiei,Inconclusive,3.0,Complete Genome,2,2,2024,10755582.0,3.0,9598,9100,406,100.0,0.8
+Streptomyces pseudovenezuelae,OK,2.0,Complete Genome,2,2,2024,10077198.0,2.0,9056,8780,187,99.91,0.51
+Streptomyces silvae,OK,,Contig,28,2,2024,,,7107,6819,199,99.53,
+Streptomyces netropsis,OK,1.0,Complete Genome,5,4,2024,8144008.0,1.0,7027,6794,133,99.91,0.99
+Streptomyces hygroscopicus subsp. hygroscopicus,OK,1.0,Complete Genome,5,4,2024,9682870.0,1.0,7987,7610,291,99.72,2.02
