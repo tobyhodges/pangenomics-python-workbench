@@ -8,18 +8,21 @@ Make a suggestion or correct an error by [raising an Issue](https://github.com/C
 
 ## Code of Conduct
 
-All participants should agree to abide by the [Data Carpentry Code of Conduct](http://www.datacarpentry.org/code-of-conduct/).
+All participants should agree to abide by the [Data Carpentry Code of Conduct](https://www.datacarpentry.org/code-of-conduct/).
+
 ## Maintainer(s)
- 
+
 Current maintainers of this lesson are
- 
-* [Nelly Selem Mojica](https://github.com/nselem)
-* [Claudia Zirion Martinez](https://github.com/Czirion)
+
+- [Nelly Selem Mojica](https://github.com/nselem)
+- [Claudia Zirion Martinez](https://github.com/Czirion)
 
 ## Authors
 
-A list of contributors to the lesson can be found in [AUTHORS](AUTHORS) 
+A list of contributors to the lesson can be found in <AUTHORS>
 
 ## Citation
 
 Please cite as:
+
+
