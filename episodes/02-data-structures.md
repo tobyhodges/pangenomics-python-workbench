@@ -149,7 +149,7 @@ Consider that the `sort()` method modifies the original list and does not return
 
 ## Select elements of a list with slices
 
-:::::::::::::::  solution
+:::::::::::::::  spoiler
 
 ## Extra content
 
@@ -368,7 +368,7 @@ dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 2022)])
 
 ## Modify a dictionary
 
-:::::::::::::::  solution
+:::::::::::::::  spoiler
 
 ## Extra content
 
@@ -523,7 +523,7 @@ print(ones_array)
 
 ## Other ways to create arrays and multidimensional arrays
 
-:::::::::::::::  solution
+:::::::::::::::  spoiler
 
 ## Extra content
 
@@ -932,7 +932,7 @@ df_genes['Number of genes'] = df_genes.count(axis=1)
 
 ## Another data structures: Sets and Tuples
 
-:::::::::::::::  solution
+:::::::::::::::  spoiler
 
 ## Extra content
 

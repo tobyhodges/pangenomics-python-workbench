@@ -234,7 +234,7 @@ plt.show()
 
 ## Multiple plots in a single figure
 
-:::::::::::::::  solution
+:::::::::::::::  spoiler
 
 ## Extra content
 

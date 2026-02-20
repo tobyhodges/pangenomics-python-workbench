@@ -20,7 +20,7 @@ carpentry: 'incubator'
 title: 'Introduction to Python'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: 
+created: 2024-01-15 
 
 # Comma-separated list of keywords for the lesson
 keywords: 'software, data, lesson, The Carpentries'
